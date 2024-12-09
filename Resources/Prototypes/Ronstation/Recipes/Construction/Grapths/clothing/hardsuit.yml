@@ -1,0 +1,94 @@
+﻿- type: constructionGraph
+  id: Hardsuit
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: frameUnfinishedLimbless
+          completed:
+            - !type:SetAnchor
+              value: false
+          steps:
+            - material: Steel
+              amount: 5
+              doAfter: 2.5
+
+    - node: frameUnfinishedLimbless
+      actions:
+      - !type:AppearanceChange
+      entity: HardsuitFrameLimbless
+      edges:
+        - to: frameUnfinishedLegless
+          steps:
+          - tag: HardsuitPartArms
+            name: "hardsuit arms"
+            icon:
+              sprite: "Objects/Misc/hardsuit_parts.rsi"
+              state: "hardsuit_arms"
+            doAfter: 1
+        - to: frameUnfinishedArmless
+          steps:
+          - tag: HardsuitPartLegs
+            name: "hardsuit legs"
+            icon:
+              sprite: "Objects/Misc/hardsuit_parts.rsi"
+              state: "hardsuit_legs"
+            doAfter: 1
+
+    - node: frameUnfinishedLegless
+      actions:
+      - !type:AppearanceChange
+      entity: HardsuitFrameLegless
+      edges:
+        - to: frameUnsecured
+          steps:
+          - tag: HardsuitPartArms
+            name: "hardsuit arms"
+            icon:
+              sprite: "Objects/Misc/hardsuit_parts.rsi"
+              state: "hardsuit_arms"
+            doAfter: 1
+
+    - node: frameUnfinishedArmless
+      actions:
+      - !type:AppearanceChange
+      entity: HardsuitFrameArmless
+      edges:
+        - to: frameUnsecured
+          steps:
+          - tag: HardsuitPartLegs
+            name: "hardsuit legs"
+            icon:
+              sprite: "Objects/Misc/hardsuit_parts.rsi"
+              state: "hardsuit_legs"
+            doAfter: 1
+
+    - node: frameUnsecured
+      actions:
+      - !type:AppearanceChange
+      entity: HardsuitFrameFull
+      edges:
+        - to: boardUnsecured
+          steps:
+            - component: HardsuitBoard
+              store: board
+              name: any hardsuit circuit board
+              icon:
+                sprite: "Objects/Misc/module.rsi"
+                state: "id_mod"
+
+    - node: boardUnsecured
+      actions:
+      - !type:AppearanceChange
+      edges:
+        - to: missingWires
+          steps:
+            - tool: Screwing
+
+        - to: frameUnsecured
+          conditions:
+            - !type:EntityAnchored { }
+          completed:
+            - !type:EmptyAllContainers {}
+          steps:
+            - tool: Prying
