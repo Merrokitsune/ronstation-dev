@@ -53469,9 +53469,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 5.5,28.5
       parent: 1
-    - type: DeviceNetwork
-      configurators:
-      - invalid
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 10727
