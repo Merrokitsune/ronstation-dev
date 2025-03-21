@@ -1,0 +1,1761 @@
+# КПК химических оперативников
+- type: entity
+  parent: BasePDA
+  id: ChimeraPDA_vol1
+  name: токсично-жёлтый КПК
+  description: Смотря на этот КПК, ваше сердцебиение учащается... словно его владелец совершил нечто ужасное.
+  components:
+  - type: Pda
+    id: AgentIDCard
+  - type: Sprite
+    sprite: /Uploaded/chimera/pda/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+      state: "pda"
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
+  - type: Icon
+    sprite: /Uploaded/chimera/pda/pda.rsi
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#56665e"
+    accentVColor: "#f7c113"
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - NotekeeperCartridge
+      - BankCartridge
+      - AstroNavCartridge
+
+# медицинский КПК химических оперативников
+- type: entity
+  parent: ChimeraPDA_vol1
+  id: ChimeraMedPDA_vol1
+  name: медицинский токсично-жёлтый КПК
+  description: Когда лечения простых агентов Синдиката недостаточно, займитесь лечением Химических Оперативников!
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/pda/pda_med.rsi
+  - type: Icon
+    sprite: /Uploaded/chimera/pda/pda_med.rsi
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#56665e"
+    accentVColor: "#13c9f7"
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - NotekeeperCartridge
+      - MedTekCartridge
+      - BankCartridge
+
+# EMAG КПК химических оперативников
+- type: entity
+  parent: ChimeraPDA_vol1
+  id: ChimeraEmagPDA_vol1
+  name: модифицированный токсично-жёлтый КПК
+  description: Зачем кому-то портить КПК? Он вообще работает? Еще и провода из него торчат... лучше не трогать.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/pda/pda_emag.rsi
+  - type: Icon
+    sprite: /Uploaded/chimera/pda/pda_emag.rsi
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#56665e"
+    accentVColor: "#f7134c"
+  - type: Emag
+    emagType: Access
+  - type: LimitedCharges
+  - type: AutoRecharge
+
+# ГРЕНАДЁР - СОЛИСТ
+# Скафандр гренадёра является базовым для отряда Химеры.
+- type: entity
+  parent: [ ClothingOuterHardsuitBase, BaseSyndicateContraband ]
+  id: ChimeraClothingOuterHardsuit_vol1
+  name: скафандр Солиста
+  description: Тяжелобронированный скафандр, предназначенный для террористических представлений.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/hardsuite.rsi
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: /Uploaded/chimera/hardsuite.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: FireProtection
+    reduction: 0.8
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.55
+        Heat: 0.55
+        Cold: 0.55
+        Shock: 0.55
+        Radiation: 0.1
+        Caustic: 0.1
+        Stun: 0.55
+  - type: ClothingSpeedModifier
+    walkModifier: 0.916
+    sprintModifier: 0.916
+  - type: HeldSpeedModifier
+  - type: HardsuitIdentification
+  - type: ToggleableClothing
+    clothingPrototype: ChimeraClothingOuterHardsuitHelmet_vol1
+  - type: Tag
+    tags:
+    - Hardsuit
+    - WhitelistChameleon
+  - type: Speech
+  - type: TTS
+    voice: Overwatch
+
+# Базовый шлем
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ChimeraClothingOuterHardsuitHelmet_vol1
+  name: шлем Солиста
+  description: Тяжелобронированный шлем, предназначенный для террористических представлений.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/hardsuite_helmet.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/hardsuite_helmet.rsi
+  - type: PointLight
+    color: orange
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.005
+    coolingCoefficient: 0.005
+  - type: FireProtection
+    reduction: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+        Cold: 0.9
+        Shock: 0.9
+        Radiation: 0.9
+        Caustic: 0.9
+
+# ЛИДЕР - ВОКАЛИСТ
+# Скафандр лидера
+- type: entity
+  parent: [ ClothingOuterHardsuitBase, BaseSyndicateContraband ]
+  id: ChimeraLeaderClothingOuterHardsuit_vol1
+  name: скафандр Вокалиста
+  description: Тяжелобронированный скафандр, изготовленный на заказ.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/hardsuite_leader.rsi
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: /Uploaded/chimera/hardsuite_leader.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.6
+  - type: FireProtection
+    reduction: 0.8
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.5
+        Heat: 0.5
+        Cold: 0.5
+        Shock: 0.5
+        Radiation: 0.1
+        Caustic: 0.1
+        Stun: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ChimeraLeaderClothingOuterHardsuitHelmet_vol1
+  - type: Tag
+    tags:
+    - Hardsuit
+    - WhitelistChameleon
+  - type: HardsuitIdentification
+  - type: Speech
+  - type: TTS
+    voice: Overwatch
+
+# Шлем лидера
+- type: entity
+  parent: ChimeraClothingOuterHardsuitHelmet_vol1
+  id: ChimeraLeaderClothingOuterHardsuitHelmet_vol1
+  name: шлем Вокалиста
+  description: Тяжелобронированный шлем, изготовленный на заказ.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/hardsuite_leader_helmet.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/hardsuite_leader_helmet.rsi
+  - type: PointLight
+    color: orange
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.005
+    coolingCoefficient: 0.005
+  - type: FireProtection
+    reduction: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.85
+        Heat: 0.85
+        Cold: 0.85
+        Shock: 0.85
+        Radiation: 0.85
+        Caustic: 0.85
+
+# МЕДИК - ПИАНИСТ
+# Скафандр медика
+- type: entity
+  parent: ChimeraClothingOuterHardsuit_vol1
+  id: ChimeraMedicClothingOuterHardsuit_vol1
+  name: скафандр Пианиста
+  description: Тяжелобронированный скафандр, предназначенный для оказания медицинской помощи.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/hardsuite_medic.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/hardsuite_medic.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ChimeraMedicClothingOuterHardsuitHelmet_vol1
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.6
+        Heat: 0.6
+        Cold: 0.6
+        Shock: 0.6
+        Radiation: 0.1
+        Caustic: 0.1
+        Stun: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+
+# Шлем медика
+- type: entity
+  parent: ChimeraClothingOuterHardsuitHelmet_vol1
+  id: ChimeraMedicClothingOuterHardsuitHelmet_vol1
+  name: шлем Пианиста
+  description: Тяжелобронированный шлем, предназначенный для оказания медицинской помощи.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/hardsuite_medic_helmet.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/hardsuite_medic_helmet.rsi
+  - type: PointLight
+    color: "#adffec"
+
+# ПИАНИСТ-ФЕЛЬДШЕР
+# Скафандр пианиста-фельдшера
+- type: entity
+  parent: ChimeraClothingOuterHardsuit_vol1
+  id: ChimeraParamedicClothingOuterHardsuit_vol1
+  name: скафандр Мелодиста
+  description: Облегчённый скафандр, повышает скорость носителя, предназначен для оказания скорой медицинской помощи.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/hardsuite_paramedic.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/hardsuite_paramedic.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ChimeraParamedicClothingOuterHardsuitHelmet_vol1
+  - type: ExplosionResistance
+    damageCoefficient: 0.75
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.65
+        Heat: 0.65
+        Cold: 0.65
+        Shock: 0.65
+        Radiation: 0.1
+        Caustic: 0.1
+        Stun: 0.65
+  - type: ClothingSpeedModifier
+    walkModifier: 1.125
+    sprintModifier: 1.125
+
+# Шлем пианиста-фельдшера
+- type: entity
+  parent: ChimeraClothingOuterHardsuitHelmet_vol1
+  id: ChimeraParamedicClothingOuterHardsuitHelmet_vol1
+  name: шлем Мелодиста
+  description: Облегчённый шлем, предназначенный для оказания скорой медицинской помощи.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/hardsuite_paramedic_helmet.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/hardsuite_paramedic_helmet.rsi
+  - type: PointLight
+    color: "#adffec"
+
+# Органист
+# Скафандр Органиста
+- type: entity
+  parent: ChimeraClothingOuterHardsuit_vol1
+  id: ChimeraChemistClothingOuterHardsuit_vol1
+  name: скафандр Органиста
+  description: Тяжелобронированный скафандр, излучает радиацию.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/hardsuite_chemist.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/hardsuite_chemist.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ChimeraChemistClothingOuterHardsuitHelmet_vol1
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.55
+        Heat: 0.25
+        Cold: 0.25
+        Shock: 0.25
+        Radiation: 0
+        Caustic: 0.1
+        Stun: 0.55
+  - type: RadiationSource
+    intensity: 3.5
+    slope: 0.14
+  - type: Geiger
+  - type: ClothingSpeedModifier
+    walkModifier: 0.833
+    sprintModifier: 0.833
+
+# Шлем органиста
+- type: entity
+  parent: ChimeraClothingOuterHardsuitHelmet_vol1
+  id: ChimeraChemistClothingOuterHardsuitHelmet_vol1
+  name: шлем Органиста
+  description: Тяжелобронированный шлем, излучает радиацию.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/hardsuite_chemist_helmet.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/hardsuite_chemist_helmet.rsi
+  - type: PointLight
+    color: "#00FF7F"
+
+# АТМОС - БАСИСТ
+# Скафандр атмоса
+- type: entity
+  parent: ChimeraClothingOuterHardsuit_vol1
+  id: ChimeraAtmosClothingOuterHardsuit_vol1
+  name: скафандр Басиста
+  description: Тяжелобронированный скафандр, предназначенный для создания подходящей атмосферы.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/hardsuite_atmos.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/hardsuite_atmos.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ChimeraAtmosClothingOuterHardsuitHelmet_vol1
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.6
+        Heat: 0.6
+        Cold: 0.6
+        Shock: 0.6
+        Radiation: 0.1
+        Caustic: 0.1
+        Stun: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+
+# Шлем атмоса
+- type: entity
+  parent: ChimeraClothingOuterHardsuitHelmet_vol1
+  id: ChimeraAtmosClothingOuterHardsuitHelmet_vol1
+  name: шлем Басиста
+  description: Тяжелобронированный шлем, предназначенный для создания подходящей атмосферы.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/hardsuite_atmos_helmet.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/hardsuite_atmos_helmet.rsi
+
+# Скафандр Трубача
+- type: entity
+  parent: [ ClothingOuterHardsuitBase, BaseSyndicateContraband ]
+  id: ChimeraGasClothingOuterHardsuit_vol1
+  name: скафандр Трубача
+  description: Тяжелобронированный скафандр, способный хранить в себе газ.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/hardsuite_gas.rsi
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: /Uploaded/chimera/hardsuite_gas.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: FireProtection
+    reduction: 0.8
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.55
+        Heat: 0.55
+        Cold: 0.55
+        Shock: 0.55
+        Radiation: 0.1
+        Caustic: 0.1
+        Stun: 0.55
+  - type: ClothingSpeedModifier
+    walkModifier: 0.833
+    sprintModifier: 0.833
+  - type: HardsuitIdentification
+  - type: ToggleableClothing
+    clothingPrototype: ChimeraGasClothingOuterHardsuitHelmet_vol1
+  - type: Tag
+    tags:
+    - Hardsuit
+    - WhitelistChameleon
+    - GasTank
+  - type: ActivatableUI
+    key: enum.SharedGasTankUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.SharedGasTankUiKey.Key:
+        type: GasTankBoundUserInterface
+  - type: GasTank
+    outputPressure: 21.3
+    air:
+      volume: 500
+      temperature: 293.15
+    tankLowPressure: 30.0
+
+# Шлем Трубача
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ChimeraGasClothingOuterHardsuitHelmet_vol1
+  name: шлем Трубача
+  description: Тяжелобронированный шлем, предначенный для газовых атак.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/hardsuite_gas_helmet.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/hardsuite_gas_helmet.rsi
+  - type: PointLight
+    color: "#00FF7F"
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.005
+    coolingCoefficient: 0.005
+  - type: FireProtection
+    reduction: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+        Cold: 0.9
+        Shock: 0.9
+        Radiation: 0.9
+        Caustic: 0.9
+
+# Гитара
+- type: entity
+  parent: BaseHandheldInstrument
+  id: ChimeraGuitarInstrument_vol1
+  name: бас-гитара "Химера"
+  description: Вы чувствуете себя увереннее, держа в руках этот увесистый инструмент.
+  components:
+  - type: Instrument
+    program: 29
+  - type: SwappableInstrument
+    instrumentList:
+      "Overdrive": {29: 0}
+      "Distortion": {30: 0}
+      "Harmonics": {31: 0}
+  - type: Sprite
+    sprite: /Uploaded/chimera/guitar.rsi
+    state: icon
+  - type: Item
+    size: Normal
+    sprite: /Uploaded/chimera/guitar.rsi
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+    - suitStorage
+    sprite: /Uploaded/chimera/guitar.rsi
+  - type: Tag
+    tags:
+    - StringInstrument
+  - type: MeleeWeapon
+    wideAnimationRotation: 45
+    damage:
+      types:
+        Blunt: 15
+    soundHit:
+      collection: MetalThud
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 15
+  - type: Reflect
+
+# ЭКИПИРОВКА
+# РПС
+- type: entity
+  parent: ClothingBeltMilitaryWebbing
+  id: ChimeraClothingBeltWebbing_vol1
+  name: РПС художника-музыканта
+  description: Универсальный разгрузочный жилет для баллончиков с краской и музыкальных инструментов.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/webbing.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/webbing.rsi
+
+# Заполненный РПС
+- type: entity
+  id: ChimeraClothingBeltWebbingFilled_vol1
+  parent: ChimeraClothingBeltWebbing_vol1
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: CrowbarYellow
+      - id: Wrench
+      - id: Screwdriver
+      - id: Wirecutter
+      - id: Welder
+      - id: Multitool
+      - id: trayScanner
+      - id: GasAnalyzer
+
+# Рюкзак
+- type: entity
+  parent: ClothingMilitaryBackpack
+  id: ChimeraClothingBackpack_vol1
+  name: чёрный рюкзак
+  description: Стильный чёрный рюкзак для хранения рок-атрибутики.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/backpack.rsi
+
+# Мантия
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ChimeraMantle_vol1
+  name: мантия "Химера"
+  description: Мантия предназначенная для лидера Химических Оперативников. На вид, изготовлена на заказ.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/mantle.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/mantle.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.85
+        Piercing: 0.9
+        Heat: 0.9
+        Cold: 0.75
+        Caustic: 0.7
+
+# Магнитные ботинки
+- type: entity
+  parent: ClothingShoesBootsMag
+  id: ChimeraClothingShoesBootsMagBase_vol1
+  name: боевые магнитные ботинки
+  description: Шмель, Бамбл, БМБ, или же просто - боевые магнитные ботинки. Имеют слот для хранения.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/magboots.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/magboots.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Radiation: 0.95
+        Caustic: 0.95
+  - type: Matchbox
+  - type: ItemSlots
+    slots:
+      item:
+        name: clothing-boots-sidearm
+        whitelist:
+          tags:
+          - Knife
+          - Sidearm
+  - type: StaticPrice
+    price: 600
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+
+# Заполненные магнитные ботинки
+- type: entity
+  parent: ChimeraClothingShoesBootsMagBase_vol1
+  id: ChimeraClothingShoesBootsMagBaseFilled_vol1
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - KukriKnife
+
+# Знак Химических Оперативников
+- type: entity
+  parent: BaseSign
+  id: ChimeraSign_vol1
+  name: стальной знак "Химера"
+  description: Стальной знак с эмблемой Химических Оперативников.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/poster_chimera.rsi
+    state: poster_chimera
+    scale: 0.85, 0.85
+
+# Знак Serpent Aria
+- type: entity
+  parent: BaseSign
+  id: SerpentAriaSign_vol1
+  name: стальной знак "Serpent Aria"
+  description: Стальной знак с эмблемой неизвестной организации.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/poster_serpent_aria.rsi
+    state: poster_serpent_aria
+    scale: 0.85, 0.85
+
+# Кислотный пистолет "Лаймер", прототип toperor
+- type: entity
+  name: лаймер
+  parent: BaseWeaponBatterySmall
+  id: ChimeraWeaponLaimer_vol1
+  description: Самозарядный пистолет с растворяющими зарядами.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/pistol.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Clothing
+    sprite: /Uploaded/chimera/pistol.rsi
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Uploaded/chimera/audio/laser-absorb.ogg
+  - type: HitscanBatteryAmmoProvider
+    proto: PulseYellow_vol1
+    fireCost: 200
+  - type: Battery
+    maxCharge: 2000
+    startingCharge: 2000
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 13
+
+# Радиоимпульсный заряд
+- type: hitscan
+  id: PulseYellow_vol1
+  damage:
+    types:
+      Caustic: 13
+  muzzleFlash:
+    sprite: /Uploaded/chimera/hitscan.rsi
+    state: muzzle_beam_yellow
+  travelFlash:
+    sprite: /Uploaded/chimera/hitscan.rsi
+    state: beam_yellow
+  impactFlash:
+    sprite: /Uploaded/chimera/hitscan.rsi
+    state: impact_beam_yellow
+
+# Лаймер для крутых.
+- type: entity
+  name: лаймер для крутых
+  parent: ChimeraWeaponLaimer_vol1
+  id: ChimeraWeaponLaimerCool_vol1
+  description: Самозарядный пистолет с растворяющими зарядами, только для крутых.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/pistol_cool.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Clothing
+    sprite: /Uploaded/chimera/pistol_cool.rsi
+  - type: HitscanBatteryAmmoProvider
+    proto: PulseYellowCool_vol1
+
+# Радиоимпульсный заряд, для крутых.
+- type: hitscan
+  id: PulseYellowCool_vol1
+  damage:
+    types:
+      Caustic: 15
+  muzzleFlash:
+    sprite: /Uploaded/chimera/hitscan.rsi
+    state: muzzle_beam_yellow
+  travelFlash:
+    sprite: /Uploaded/chimera/hitscan.rsi
+    state: beam_yellow
+  impactFlash:
+    sprite: /Uploaded/chimera/hitscan.rsi
+    state: impact_beam_yellow
+
+# Комбинезон
+- type: entity
+  parent: ClothingUniformJumpsuitOperative
+  id: ChimeraClothingUJumpsuit_vol1
+  name: тактический комбинезон "Химера"
+  description: Тактический комбинезон с защитой от порезов, едких веществ и радиации.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/jumpsuit.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/jumpsuit.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.8
+        Radiation: 0.2
+        Caustic: 0.2
+
+# Баллончик (Шейкер) - жёлтый
+- type: entity
+  parent: DrinkShaker
+  id: ChimeraDrink_vol1
+  name: лимонный баллончик "Химера"
+  description: Баллончик предназначенный для хранения энергетиков с красителем, со вкусом лимона.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/drink/drink_yellow.rsi
+  - type: Item
+    size: Small
+
+# Баллончик (Шейкер) - оранжевый
+- type: entity
+  parent: ChimeraDrink_vol1
+  id: ChimeraDrinkOrange_vol1
+  name: апельсиновый баллончик "Химера"
+  description: Баллончик предназначенный для хранения энергетиков с красителем, со вкусом апельсина.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/drink/drink_orange.rsi
+
+# Баллончик (Шейкер) - красный
+- type: entity
+  parent: ChimeraDrink_vol1
+  id: ChimeraDrinkRed_vol1
+  name: гранатовый баллончик "Химера"
+  description: Баллончик предназначенный для хранения энергетиков с красителем, со вкусом граната.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/drink/drink_red.rsi
+
+# Баллончик (Шейкер) - зелёный
+- type: entity
+  parent: ChimeraDrink_vol1
+  id: ChimeraDrinkGreen_vol1
+  name: яблочный баллончик "Химера"
+  description: Баллончик предназначенный для хранения энергетиков с красителем, со вкусом яблока.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/drink/drink_green.rsi
+
+# Баллончик (Шейкер) - синий
+- type: entity
+  parent: ChimeraDrink_vol1
+  id: ChimeraDrinkBlue_vol1
+  name: голубичный баллончик "Химера"
+  description: Баллончик предназначенный для хранения энергетиков с красителем, со вкусом голубики.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/drink/drink_blue.rsi
+
+# Баллончик (Шейкер) - фиолетовый
+- type: entity
+  parent: ChimeraDrink_vol1
+  id: ChimeraDrinkPurple_vol1
+  name: виноградный баллончик "Химера"
+  description: Баллончик предназначенный для хранения энергетиков с красителем, со вкусом винограда.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/drink/drink_purple.rsi
+
+# Баллончик (Шейкер) - фиолетовый
+- type: entity
+  parent: ChimeraDrink_vol1
+  id: ChimeraDrinkPink_vol1
+  name: бабл гам баллончик "Химера"
+  description: Баллончик предназначенный для хранения энергетиков с красителем, со вкусом бабл гам.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/drink/drink_pink.rsi
+
+# Баллончик (Шейкер) - серый
+- type: entity
+  parent: ChimeraDrink_vol1
+  id: ChimeraDrinkGrey_vol1
+  name: классический баллончик "Химера"
+  description: Баллончик предназначенный для хранения энергетиков с красителем, без сахара.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/drink/drink_grey.rsi
+
+# маска противогаз
+- type: entity
+  parent: ClothingMaskGasSyndicate
+  id: ChimeraClothingMaskGas_vol1
+  name: противогаз "Химера"
+  description: Маска-противогаз для защиты от папарацци и назойливых фанатов.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/mask.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/mask.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.9
+        Radiation: 0.9
+        Caustic: 0.9
+
+# перчатки
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ChimeraClothingHandsGlovesCombat_vol1
+  name: боевые перчатки "Химера"
+  description: Эти тактические перчатки огнеупорны и ударопрочны.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/gloves.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/gloves.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Radiation: 0.95
+        Caustic: 0.95
+
+# НАДУВНЫЕ СТЕНЫ
+# Прототип сортировки
+- type: stack
+  id: ChimeraInflatableWallSwap_vol1
+  name: ChimeraInflatable Wall
+  spawn: ChimeraInflatableWallStack1_vol1
+  maxCount: 8
+
+# Сложенная баррикада
+- type: entity
+  id: ChimeraInflatableWallStack_vol1
+  parent: BaseItem
+  name: надувная стена
+  description: Сложенная надувная стена, которая быстро расширяется в укреплённую кубическую форму при активации.
+  suffix: Full
+  components:
+    - type: Stack
+      stackType: ChimeraInflatableWallSwap_vol1
+      count: 8
+    - type: Sprite
+      sprite: /Uploaded/chimera/inflatable_wall.rsi
+      state: item_wall
+    - type: Item
+      sprite: /Uploaded/chimera/inflatable_wall.rsi
+      size: Small
+    - type: SpawnAfterInteract
+      prototype: ChimeraInflatableWall_vol1
+      doAfter: 1
+      removeOnInteract: true
+    - type: Clickable
+
+# Одна сложенная баррикада
+- type: entity
+  parent: ChimeraInflatableWallStack_vol1
+  id: ChimeraInflatableWallStack1_vol1
+  suffix: 1
+  components:
+    - type: Sprite
+      state: item_wall
+    - type: Stack
+      count: 1
+
+# Разложенная баррикада
+- type: entity
+  id: ChimeraInflatableWall_vol1
+  name: надувная стена
+  description: Надувная стена из прочной ткани.
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: /Uploaded/chimera/inflatable_wall.rsi
+    state: inflatable_wall
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        density: 15
+        layer:
+        - WallLayer
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Inflatable
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 240
+      behaviors:
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: SmokeOnTrigger
+    duration: 10
+    spreadAmount: 30
+    solution:
+      reagents:
+      - ReagentId: TearGas
+        Quantity: 50
+  - type: SoundOnTrigger
+    sound: /Audio/Items/smoke_grenade_smoke.ogg
+  - type: DisassembleOnAltVerb
+    prototype: ChimeraInflatableWallStack1_vol1
+    doAfter: 7
+  - type: Airtight
+  - type: Transform
+    anchored: true
+  placement:
+    mode: SnapgridCenter
+
+# НАДУВНЫЕ ДВЕРИ
+# Прототип сортировки
+- type: stack
+  id: ChimeraInflatableDoorSwap_vol1
+  name: ChimeraInflatable Door
+  spawn: ChimeraInflatableDoorStack1_vol1
+  maxCount: 4
+
+# Сложенная дверь
+- type: entity
+  id: ChimeraInflatableDoorStack_vol1
+  parent: BaseItem
+  name: надувная дверь
+  description: Сложенная надувная стена с дверью, которая быстро расширяется в укреплённую кубическую форму при активации.
+  suffix: Full
+  components:
+    - type: Stack
+      stackType: ChimeraInflatableDoorSwap_vol1
+      count: 4
+    - type: Sprite
+      sprite: /Uploaded/chimera/inflatable_door.rsi
+      state: item_door
+    - type: Item
+      sprite: /Uploaded/chimera/inflatable_door.rsi
+      size: Small
+    - type: SpawnAfterInteract
+      prototype: ChimeraInflatableDoor_vol1
+      doAfter: 1
+      removeOnInteract: true
+    - type: Clickable
+
+# Одна сложенная дверь
+- type: entity
+  parent: ChimeraInflatableDoorStack_vol1
+  id: ChimeraInflatableDoorStack1_vol1
+  suffix: 1
+  components:
+    - type: Sprite
+      state: item_door
+    - type: Stack
+      count: 1
+
+# Разложенная дверь
+- type: entity
+  id: ChimeraInflatableDoor_vol1
+  name: надувная дверь Химических Оперативников
+  parent: BaseMaterialDoor
+  description: Надувная дверь из прочного материала.
+  components:
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: /Uploaded/chimera/inflatable_door.rsi
+    state: closed
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        density: 15
+        layer:
+        - WallLayer
+  - type: Door
+    occludes: false
+    openSound:
+      path: /Audio/Misc/zip.ogg
+    closeSound:
+      path: /Audio/Misc/zip.ogg
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Inflatable
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 240
+      behaviors:
+      - !type:TriggerBehavior
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: SmokeOnTrigger
+    duration: 10
+    spreadAmount: 30
+    solution:
+      reagents:
+      - ReagentId: TearGas
+        Quantity: 50
+  - type: SoundOnTrigger
+    sound: /Audio/Items/smoke_grenade_smoke.ogg
+  - type: DisassembleOnAltVerb
+    prototype: ChimeraInflatableDoorStack1_vol1
+
+    doAfter: 7
+  - type: Occluder
+    enabled: false
+
+# Завёрнутый батончик
+- type: entity
+  parent: FoodSnackBase
+  id: ChimeraFoodSnackEnergy_vol1
+  name: энергетический батончик
+  description: Энергетический батончик с большим запасом энергии.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/snacks.rsi
+    state: energybar
+  - type: Item
+  - type: SpawnItemsOnUse
+    items:
+      - id: ChimeraFoodPacketEnergyTrash_vol1
+      - id: ChimeraFoodSnackEnergyBar_vol1
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+# Батончик
+- type: entity
+  parent: FoodSnackBase
+  id: ChimeraFoodSnackEnergyBar_vol1
+  name: энергетический батончик
+  description: Энергетический батончик с большим запасом энергии.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - nutty
+      - oats
+      - fiber
+      - sweet
+  - type: Sprite
+    sprite: /Uploaded/chimera/snacks.rsi
+    state: energybar-open
+  - type: Item
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30 # Room for extra condiments
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+
+# Фантик от батончика
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: FoodPacketTrash
+  id: ChimeraFoodPacketEnergyTrash_vol1
+  name: обёртка от энергетического батончика
+  description: Это мусор.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/snacks.rsi
+    state: energybar-trash
+
+# ПОДДЕРЖКА - Барабанщик
+# Скафандр Поддержки
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseSyndicateContraband]
+  id: ChimeraSupportOuterClothingHardsuit_vol1
+  name: силовой костюм Барабанщика
+  description: Силовой костюм Барабанщика.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/hardsuite_support.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/hardsuite_support.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.25
+  - type: FireProtection
+    reduction: 0.8
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.25
+        Slash: 0.25
+        Piercing: 0.15
+        Heat: 0.15
+        Cold: 0.15
+        Shock: 0.15
+        Radiation: 0.1
+        Caustic: 0.1
+        Stun: 0.15
+  - type: ClothingSpeedModifier
+    walkModifier: 0.416
+    sprintModifier: 0.416
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ChimeraSupportClothingHeadHelmetHardsuit_vol1
+  - type: HardsuitIdentification
+  - type: Speech
+  - type: TTS
+    voice: Overwatch
+
+# Шлем поддержки
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ChimeraSupportClothingHeadHelmetHardsuit_vol1
+  name: силовой шлем Баранщика
+  description: Силовой шлем не менее тяжёлого Барабанщика.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/hardsuite_support_helmet.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/hardsuite_support_helmet.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.005
+    coolingCoefficient: 0.005
+  - type: FireProtection
+    reduction: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.85
+        Heat: 0.85
+        Cold: 0.85
+        Shock: 0.85
+        Radiation: 0.85
+        Caustic: 0.85
+  - type: PointLight
+    color: "#66FF00"
+
+# Голопроектор барьеров
+- type: entity
+  parent: HoloprojectorField
+  id: ChimeraHoloProjector_vol1
+  name: проектор химьеров
+  description: Для суицидально настроеных ассистентов и убийства остальных во время разгерметизации.
+  components:
+  - type: HolosignProjector
+    signProto: ChimeraHolo_vol1
+    chargeUse: 120
+  - type: Sprite
+    sprite: /Uploaded/chimera/holoprojector.rsi
+    state: icon
+
+# Барьер голопроектора
+- type: entity
+  parent: HoloFan
+  id: ChimeraHolo_vol1
+  name: химьер
+  description: Голографический барьер с символикой химических оперативников, он явно не сулит ничего хорошего.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/holo.rsi
+    state: icon
+  - type: PointLight
+    enabled: true
+    radius: 3
+    color: orange
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 30
+  - type: RadiationSource
+    intesnity: 5
+    slope: 5
+
+# Дробовоик "Коррозор"
+- type: entity
+  name: коррозор
+  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseRestrictedContraband]
+  id: ChimeraWeaponCorrozor_vol1
+  description: Модифицированный Силовик, вмещающий заветный восьмой патрон. Использует калибр .50 ружейный.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/corrozor.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/corrozor.rsi
+  - type: Item
+    sprite: /Uploaded/chimera/corrozor_inhands_64x.rsi
+  - type: BallisticAmmoProvider
+    capacity: 8
+  - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
+  - type: Gun # Corvax-Guns
+    soundGunshot:
+      path: /Uploaded/chimera/audio/corrozor.ogg
+
+# Щит
+- type: entity
+  name: противопульный щит "химера"
+  parent: RiotBulletShield
+  id: ChimeraShield_vol1
+  description: Щит созданный для противостояния пулям и не более того.
+  components:
+    - type: Sprite
+      sprite: /Uploaded/chimera/shield.rsi
+      state: icon
+    - type: Item
+      sprite: /Uploaded/chimera/shield.rsi
+      heldPrefix: icon
+    - type: Clothing
+      sprite: /Uploaded/chimera/shield.rsi
+      quickEquip: false
+      slots:
+      - suitStorage
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.6
+          Piercing: 0.5
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.4
+          Piercing: 0.3
+        flatReductions:
+          Piercing: 1
+
+# Жёлтая древняя канистра
+- type: entity
+  parent: GasCanister
+  id: ChimeraGasCanister_vol1
+  name: жёлтая древняя газовая канистра
+  description: Древняя канистра, которая может содержать огромное количество газа любого вида. Можно прикрепить к порту коннектора с помощью гаечного ключа.
+  components:
+    - type: Sprite
+      sprite: /Uploaded/chimera/canister.rsi
+      noRot: true
+      layers:
+        - state: yellow
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 600
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 300
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ChimeraGasCanisterBroken_vol1:
+                  min: 1
+                  max: 1
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:DumpCanisterBehavior
+    - type: GasCanister
+      gasTankSlot:
+        name: comp-gas-canister-slot-name-gas-tank
+        whitelist:
+          components:
+            - GasTank
+      gasMixture:
+        volume: 3500
+        moles: # List of gasses for easy reference
+          - 0 # oxygen
+          - 0 # nitrogen
+          - 0 # CO2
+          - 0 # Plasma
+          - 0 # Tritium
+          - 0 # Water vapor
+          - 0 # Ammonia
+          - 0 # N2O
+          - 0 # Frezon
+        temperature: 293.15
+    - type: AccessReader
+      access: [["SyndicateAgent"]]
+    - type: Lock
+      locked: true
+
+# Разбитая жёлтая древняя канистра
+- type: entity
+  parent: GasCanisterBrokenBase
+  id: ChimeraGasCanisterBroken_vol1
+  name: разбитая жёлтая древняя газовая канистра
+  description: Разбитая канистра для газа. Не совсем бесполезна, так как может быть разобрана для получения высококачественных материалов.
+  components:
+    - type: Sprite
+      sprite: /Uploaded/chimera/canister.rsi
+      state: yellow_broken
+
+# Красная древняя канистра
+- type: entity
+  parent: ChimeraGasCanister_vol1
+  id: ChimeraGasCanisterRed_vol1
+  name: красная древняя газовая канистра
+  description: Древняя канистра, которая может содержать огромное количество газа любого вида. Можно прикрепить к порту коннектора с помощью гаечного ключа.
+  components:
+    - type: Sprite
+      sprite: /Uploaded/chimera/canister.rsi
+      noRot: true
+      layers:
+        - state: red
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 600
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 300
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ChimeraGasCanisterRedBroken_vol1:
+                  min: 1
+                  max: 1
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:DumpCanisterBehavior
+    - type: GasCanister
+      gasTankSlot:
+        name: comp-gas-canister-slot-name-gas-tank
+        whitelist:
+          components:
+            - GasTank
+      gasMixture:
+        volume: 3500
+        moles: # List of gasses for easy reference
+          - 0 # oxygen
+          - 0 # nitrogen
+          - 0 # CO2
+          - 0 # Plasma
+          - 0 # Tritium
+          - 0 # Water vapor
+          - 0 # Ammonia
+          - 0 # N2O
+          - 0 # Frezon
+        temperature: 293.15
+
+# Разбитая красная древняя канистра
+- type: entity
+  parent: GasCanisterBrokenBase
+  id: ChimeraGasCanisterRedBroken_vol1
+  name: разбитая красная древняя газовая канистра
+  description: Разбитая канистра для газа. Не совсем бесполезна, так как может быть разобрана для получения высококачественных материалов.
+  components:
+    - type: Sprite
+      sprite: /Uploaded/chimera/canister.rsi
+      state: red_broken
+
+# Зелёная древняя канистра
+- type: entity
+  parent: ChimeraGasCanister_vol1
+  id: ChimeraGasCanisterGreen_vol1
+  name: зелёная древняя газовая канистра
+  description: Древняя канистра, которая может содержать огромное количество газа любого вида. Можно прикрепить к порту коннектора с помощью гаечного ключа.
+  components:
+    - type: Sprite
+      sprite: /Uploaded/chimera/canister.rsi
+      noRot: true
+      layers:
+        - state: green
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 600
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 300
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ChimeraGasCanisterGreenBroken_vol1:
+                  min: 1
+                  max: 1
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:DumpCanisterBehavior
+    - type: GasCanister
+      gasTankSlot:
+        name: comp-gas-canister-slot-name-gas-tank
+        whitelist:
+          components:
+            - GasTank
+      gasMixture:
+        volume: 3500
+        moles: # List of gasses for easy reference
+          - 0 # oxygen
+          - 0 # nitrogen
+          - 0 # CO2
+          - 0 # Plasma
+          - 0 # Tritium
+          - 0 # Water vapor
+          - 0 # Ammonia
+          - 0 # N2O
+          - 0 # Frezon
+        temperature: 293.15
+
+# Разбитая зелёная древняя канистра
+- type: entity
+  parent: GasCanisterBrokenBase
+  id: ChimeraGasCanisterGreenBroken_vol1
+  name: разбитая зелёная древняя газовая канистра
+  description: Разбитая канистра для газа. Не совсем бесполезна, так как может быть разобрана для получения высококачественных материалов.
+  components:
+    - type: Sprite
+      sprite: /Uploaded/chimera/canister.rsi
+      state: green_broken
+
+# Синяя древняя канистра
+- type: entity
+  parent: ChimeraGasCanister_vol1
+  id: ChimeraGasCanisterBlue_vol1
+  name: синяя древняя газовая канистра
+  description: Древняя канистра, которая может содержать огромное количество газа любого вида. Можно прикрепить к порту коннектора с помощью гаечного ключа.
+  components:
+    - type: Sprite
+      sprite: /Uploaded/chimera/canister.rsi
+      noRot: true
+      layers:
+        - state: blue
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 600
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 300
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ChimeraGasCanisterBlueBroken_vol1:
+                  min: 1
+                  max: 1
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:DumpCanisterBehavior
+    - type: GasCanister
+      gasTankSlot:
+        name: comp-gas-canister-slot-name-gas-tank
+        whitelist:
+          components:
+            - GasTank
+      gasMixture:
+        volume: 3500
+        moles: # List of gasses for easy reference
+          - 0 # oxygen
+          - 0 # nitrogen
+          - 0 # CO2
+          - 0 # Plasma
+          - 0 # Tritium
+          - 0 # Water vapor
+          - 0 # Ammonia
+          - 0 # N2O
+          - 0 # Frezon
+        temperature: 293.15
+
+# Разбитая синяя древняя канистра
+- type: entity
+  parent: GasCanisterBrokenBase
+  id: ChimeraGasCanisterBlueBroken_vol1
+  name: разбитая синяя древняя газовая канистра
+  description: Разбитая канистра для газа. Не совсем бесполезна, так как может быть разобрана для получения высококачественных материалов.
+  components:
+    - type: Sprite
+      sprite: /Uploaded/chimera/canister.rsi
+      state: blue_broken
+
+# Древняя канистра воздуха
+- type: entity
+  parent: ChimeraGasCanister_vol1
+  id: ChimeraGasCanisterAir_vol1
+  name: древняя газовая канистра воздуха
+  description: Древняя канистра, которая может содержать огромное количество газа любого вида. Можно прикрепить к порту коннектора с помощью гаечного ключа.
+  components:
+    - type: Sprite
+      sprite: /Uploaded/chimera/canister.rsi
+      noRot: true
+      layers:
+        - state: air
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 600
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 300
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ChimeraGasCanisterAirBroken_vol1:
+                  min: 1
+                  max: 1
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:DumpCanisterBehavior
+    - type: GasCanister
+      gasMixture:
+        volume: 3500
+        moles:
+          - 393.0592071 # oxygen 21%
+          - 1478.6513029 # nitrogen 79%
+        temperature: 293.15
+
+# Разбитая древняя канистра воздуха
+- type: entity
+  parent: GasCanisterBrokenBase
+  id: ChimeraGasCanisterAirBroken_vol1
+  name: разбитая древняя газовая канистра воздуха
+  description: Разбитая канистра для газа. Не совсем бесполезна, так как может быть разобрана для получения высококачественных материалов.
+  components:
+    - type: Sprite
+      sprite: /Uploaded/chimera/canister.rsi
+      state: air_broken
+
+# Древняя канистра сжиженного кислорода
+- type: entity
+  parent: ChimeraGasCanister_vol1
+  id: ChimeraGasCanisterOxygen_vol1
+  name: древняя газовая канистра сжиженного кислорода
+  description: Древняя канистра, которая может содержать огромное количество газа любого вида. Можно прикрепить к порту коннектора с помощью гаечного ключа.
+  components:
+    - type: InteractionOutline
+    - type: Transform
+      noRot: true
+    - type: Sprite
+      sprite: /Uploaded/chimera/canister.rsi
+      noRot: true
+      layers:
+        - state: oxygen
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 600
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 300
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ChimeraGasCanisterOxygenBroken_vol1:
+                  min: 1
+                  max: 1
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:DumpCanisterBehavior
+    - type: GasCanister
+      gasMixture:
+        volume: 3500
+        moles:
+          - 18710.71051 # oxygen
+        temperature: 72
+
+# Разбитая древняя канистра кислорода
+- type: entity
+  parent: ChimeraGasCanisterBroken_vol1
+  name: разбитая древняя канистра кислорода
+  id: ChimeraGasCanisterOxygenBroken_vol1
+  components:
+    - type: Sprite
+      state: oxygen_broken
+
+# Древняя канистра сжиженного азота
+- type: entity
+  parent: ChimeraGasCanister_vol1
+  id: ChimeraGasCanisterNitrogen_vol1
+  name: древняя газовая канистра сжиженного азота
+  description: Древняя канистра, которая может содержать огромное количество газа любого вида. Можно прикрепить к порту коннектора с помощью гаечного ключа.
+  components:
+    - type: InteractionOutline
+    - type: Transform
+      noRot: true
+    - type: Sprite
+      sprite: /Uploaded/chimera/canister.rsi
+      noRot: true
+      layers:
+        - state: nitrogen
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 600
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 300
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ChimeraGasCanisterNitrogenBroken_vol1:
+                  min: 1
+                  max: 1
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:DumpCanisterBehavior
+    - type: GasCanister
+      gasMixture:
+        volume: 3500
+        moles:
+        - 0 # oxygen
+        - 18710.71051 # nitrogen
+        temperature: 72
+
+# Разбитая древняя канистра азота
+- type: entity
+  parent: ChimeraGasCanisterBroken_vol1
+  name: разбитая древняя канистра азота
+  id: ChimeraGasCanisterNitrogenBroken_vol1
+  components:
+    - type: Sprite
+      state: nitrogen_broken

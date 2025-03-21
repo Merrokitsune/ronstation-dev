@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-4.0",
+  "copyright": "Doner#4037 (Discord)",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "energybar"
+    },
+    {
+      "name": "energybar-open"
+    },
+    {
+      "name": "energybar-trash"
+    }
+  ]
+}

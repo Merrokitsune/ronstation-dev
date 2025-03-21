@@ -1,0 +1,167 @@
+- type: entity
+  parent: [ ClothingOuterHardsuitBase, BaseSyndicateContraband ]
+  id: CustomArmadaClothingOuterHardsuit_vol1
+  name: скафандр "Армада"
+  description: Тяжелобронированный скафандр подрывника, предназначенный для террористических представлений, обладает взрывоустойчивой конструкцией.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/custom/hardsuite_armada.rsi
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: /Uploaded/chimera/custom/hardsuite_armada.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.4
+  - type: FireProtection
+    reduction: 0.8
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.6
+        Heat: 0.25
+        Cold: 0.25
+        Shock: 0.25
+        Radiation: 0.1
+        Caustic: 0.1
+        Stun: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: HardsuitIdentification
+  - type: ToggleableClothing
+    clothingPrototype: CustomArmadaClothingOuterHardsuitHelmet_vol1
+  - type: Tag
+    tags:
+    - Hardsuit
+    - WhitelistChameleon
+  - type: Speech
+  - type: TTS
+    voice: Overwatch
+
+# Шлем Армады
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: CustomArmadaClothingOuterHardsuitHelmet_vol1
+  name: шлем "Армада"
+  description: Тяжелобронированный шлем подрывника, предназначенный для террористических представлений, обладает взрывоустойчивой конструкцией.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/custom/hardsuite_armada_helmet.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/custom/hardsuite_armada_helmet.rsi
+  - type: PointLight
+    color: orange
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.005
+    coolingCoefficient: 0.005
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: FireProtection
+    reduction: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+        Cold: 0.9
+        Shock: 0.9
+        Radiation: 0.9
+        Caustic: 0.9
+
+# Химический торговец (жёлтый)
+# Скафандр химического торговца. (жёлтый)
+- type: entity
+  parent: ChimeraClothingOuterHardsuit_vol1
+  id: ChimeraNeutralClothingOuterHardsuit_vol1
+  name: скафандр торговца
+  description: Тяжелобронированный скафандр, предназначенный для торговых операций.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/hardsuite_neutral.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/hardsuite_neutral.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.55
+        Slash: 0.65
+        Piercing: 0.65
+        Heat: 0.55
+        Cold: 0.55
+        Shock: 0.55
+        Radiation: 0.1
+        Caustic: 0.1
+        Stun: 0.55
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+  - type: ToggleableClothing
+    clothingPrototype: ChimeraNeutralClothingOuterHardsuitHelmet_vol1
+
+# шлем химического торговца (жёлтый)
+- type: entity
+  parent: ChimeraClothingOuterHardsuitHelmet_vol1
+  id: ChimeraNeutralClothingOuterHardsuitHelmet_vol1
+  name: шлем торговца
+  description: Тяжелобронированный шлем, предназначенный для торговых операций.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/hardsuite_neutral_helmet.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/hardsuite_neutral_helmet.rsi
+  - type: PointLight
+    color: orange
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+        Cold: 0.95
+        Shock: 0.95
+        Radiation: 0.95
+        Caustic: 0.95
+
+# Химический торговец (синий)
+# Скафандр химического торговца. (синий)
+- type: entity
+  parent: ChimeraNeutralClothingOuterHardsuit_vol1
+  id: ChimeraMerchantClothingOuterHardsuit_vol1
+  name: скафандр торговца
+  description: Тяжелобронированный скафандр, предназначенный для торговых операций.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/hardsuite_merchant.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/hardsuite_merchant.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ChimeraMerchantClothingOuterHardsuitHelmet_vol1
+
+# шлем химического торговца (синий)
+- type: entity
+  parent: ChimeraNeutralClothingOuterHardsuitHelmet_vol1
+  id: ChimeraMerchantClothingOuterHardsuitHelmet_vol1
+  name: шлем торговца
+  description: Тяжелобронированный шлем, предназначенный для торговых операций.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/chimera/hardsuite_merchant_helmet.rsi
+  - type: Clothing
+    sprite: /Uploaded/chimera/hardsuite_merchant_helmet.rsi
