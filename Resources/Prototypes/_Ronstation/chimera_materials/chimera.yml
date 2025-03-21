@@ -1,9 +1,9 @@
-# КПК химических оперативников
+# Chemical operatives' PDA
 - type: entity
   parent: BasePDA
   id: ChimeraPDA_vol1
-  name: токсично-жёлтый КПК
-  description: Смотря на этот КПК, ваше сердцебиение учащается... словно его владелец совершил нечто ужасное.
+  name: toxic yellow PDA
+  description: Looking at this PDA makes your heart beat faster... as if its owner had done something terrible.
   components:
   - type: Pda
     id: AgentIDCard
@@ -33,12 +33,12 @@
       - BankCartridge
       - AstroNavCartridge
 
-# медицинский КПК химических оперативников
+# medical PDA of chemical operatives
 - type: entity
   parent: ChimeraPDA_vol1
   id: ChimeraMedPDA_vol1
-  name: медицинский токсично-жёлтый КПК
-  description: Когда лечения простых агентов Синдиката недостаточно, займитесь лечением Химических Оперативников!
+  name: medical toxic yellow PDA
+  description: When healing simple Syndicate agents isn't enough, turn to healing Chemical Operatives!
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/pda/pda_med.rsi
@@ -55,12 +55,12 @@
       - MedTekCartridge
       - BankCartridge
 
-# EMAG КПК химических оперативников
+# EMAG Chemical Operatives PDA
 - type: entity
   parent: ChimeraPDA_vol1
   id: ChimeraEmagPDA_vol1
-  name: модифицированный токсично-жёлтый КПК
-  description: Зачем кому-то портить КПК? Он вообще работает? Еще и провода из него торчат... лучше не трогать.
+  name: modified toxic yellow PDA
+  description: Why would anyone want to ruin a PDA? Does it even work? And there are wires sticking out of it... better not to touch it.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/pda/pda_emag.rsi
@@ -75,13 +75,13 @@
   - type: LimitedCharges
   - type: AutoRecharge
 
-# ГРЕНАДЁР - СОЛИСТ
-# Скафандр гренадёра является базовым для отряда Химеры.
+# GRENADIER - SOLOIST
+# The Grenadier's suit is the basic suit for the Chimera squad.
 - type: entity
   parent: [ ClothingOuterHardsuitBase, BaseSyndicateContraband ]
   id: ChimeraClothingOuterHardsuit_vol1
-  name: скафандр Солиста
-  description: Тяжелобронированный скафандр, предназначенный для террористических представлений.
+  name: Soloist's spacesuit
+  description: A heavily armored suit designed for terrorist performances.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/hardsuite.rsi
@@ -126,12 +126,12 @@
   - type: TTS
     voice: Overwatch
 
-# Базовый шлем
+# Basic helmet
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ChimeraClothingOuterHardsuitHelmet_vol1
-  name: шлем Солиста
-  description: Тяжелобронированный шлем, предназначенный для террористических представлений.
+  name: Soloist helmet
+  description: A heavily armored helmet designed for terrorist performances.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/hardsuite_helmet.rsi
@@ -159,13 +159,13 @@
         Radiation: 0.9
         Caustic: 0.9
 
-# ЛИДЕР - ВОКАЛИСТ
-# Скафандр лидера
+# LEADER - VOCALIST
+# Leader's suit
 - type: entity
   parent: [ ClothingOuterHardsuitBase, BaseSyndicateContraband ]
   id: ChimeraLeaderClothingOuterHardsuit_vol1
-  name: скафандр Вокалиста
-  description: Тяжелобронированный скафандр, изготовленный на заказ.
+  name: Vocalist's spacesuit
+  description: A custom-made, heavily armored spacesuit.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/hardsuite_leader.rsi
@@ -210,12 +210,12 @@
   - type: TTS
     voice: Overwatch
 
-# Шлем лидера
+# Leader's Helm
 - type: entity
   parent: ChimeraClothingOuterHardsuitHelmet_vol1
   id: ChimeraLeaderClothingOuterHardsuitHelmet_vol1
-  name: шлем Вокалиста
-  description: Тяжелобронированный шлем, изготовленный на заказ.
+  name: Vocalist helmet
+  description: Custom made heavily armored helmet.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/hardsuite_leader_helmet.rsi
@@ -243,13 +243,13 @@
         Radiation: 0.85
         Caustic: 0.85
 
-# МЕДИК - ПИАНИСТ
-# Скафандр медика
+# MEDIC - PIANIST
+# Medic's spacesuit
 - type: entity
   parent: ChimeraClothingOuterHardsuit_vol1
   id: ChimeraMedicClothingOuterHardsuit_vol1
-  name: скафандр Пианиста
-  description: Тяжелобронированный скафандр, предназначенный для оказания медицинской помощи.
+  name: The Pianist's Spacesuit
+  description: A heavily armored suit designed to provide medical assistance.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/hardsuite_medic.rsi
@@ -275,12 +275,12 @@
     walkModifier: 1
     sprintModifier: 1
 
-# Шлем медика
+# Medic Helmet
 - type: entity
   parent: ChimeraClothingOuterHardsuitHelmet_vol1
   id: ChimeraMedicClothingOuterHardsuitHelmet_vol1
-  name: шлем Пианиста
-  description: Тяжелобронированный шлем, предназначенный для оказания медицинской помощи.
+  name: Pianist helmet
+  description: A heavily armored helmet designed to provide medical assistance.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/hardsuite_medic_helmet.rsi
@@ -289,13 +289,13 @@
   - type: PointLight
     color: "#adffec"
 
-# ПИАНИСТ-ФЕЛЬДШЕР
-# Скафандр пианиста-фельдшера
+# PIANIST-PARAMEDIC
+# Pianist-paramedic's spacesuit
 - type: entity
   parent: ChimeraClothingOuterHardsuit_vol1
   id: ChimeraParamedicClothingOuterHardsuit_vol1
-  name: скафандр Мелодиста
-  description: Облегчённый скафандр, повышает скорость носителя, предназначен для оказания скорой медицинской помощи.
+  name: Melodist's spacesuit
+  description: A lightweight spacesuit that increases the wearer's speed and is designed to provide emergency medical care.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/hardsuite_paramedic.rsi
@@ -321,12 +321,12 @@
     walkModifier: 1.125
     sprintModifier: 1.125
 
-# Шлем пианиста-фельдшера
+# Pianist-paramedic helmet
 - type: entity
   parent: ChimeraClothingOuterHardsuitHelmet_vol1
   id: ChimeraParamedicClothingOuterHardsuitHelmet_vol1
-  name: шлем Мелодиста
-  description: Облегчённый шлем, предназначенный для оказания скорой медицинской помощи.
+  name: Melodist helmet
+  description: A lightweight helmet designed to provide emergency medical care.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/hardsuite_paramedic_helmet.rsi
@@ -335,13 +335,13 @@
   - type: PointLight
     color: "#adffec"
 
-# Органист
-# Скафандр Органиста
+# Organist
+# Organist's Spacesuit
 - type: entity
   parent: ChimeraClothingOuterHardsuit_vol1
   id: ChimeraChemistClothingOuterHardsuit_vol1
-  name: скафандр Органиста
-  description: Тяжелобронированный скафандр, излучает радиацию.
+  name: Organist's spacesuit
+  description: Heavily armored spacesuit that emits radiation.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/hardsuite_chemist.rsi
@@ -371,12 +371,12 @@
     walkModifier: 0.833
     sprintModifier: 0.833
 
-# Шлем органиста
+# Organist's Helmet
 - type: entity
   parent: ChimeraClothingOuterHardsuitHelmet_vol1
   id: ChimeraChemistClothingOuterHardsuitHelmet_vol1
-  name: шлем Органиста
-  description: Тяжелобронированный шлем, излучает радиацию.
+  name: Organist helmet
+  description: Heavily armored helmet that emits radiation.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/hardsuite_chemist_helmet.rsi
@@ -385,13 +385,13 @@
   - type: PointLight
     color: "#00FF7F"
 
-# АТМОС - БАСИСТ
-# Скафандр атмоса
+# ATMOS - BASSIST
+# Atmos spacesuit
 - type: entity
   parent: ChimeraClothingOuterHardsuit_vol1
   id: ChimeraAtmosClothingOuterHardsuit_vol1
-  name: скафандр Басиста
-  description: Тяжелобронированный скафандр, предназначенный для создания подходящей атмосферы.
+  name: Basist's spacesuit
+  description: A heavily armored spacesuit designed to create a suitable atmosphere.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/hardsuite_atmos.rsi
@@ -417,24 +417,24 @@
     walkModifier: 1
     sprintModifier: 1
 
-# Шлем атмоса
+# Atmos helmet
 - type: entity
   parent: ChimeraClothingOuterHardsuitHelmet_vol1
   id: ChimeraAtmosClothingOuterHardsuitHelmet_vol1
-  name: шлем Басиста
-  description: Тяжелобронированный шлем, предназначенный для создания подходящей атмосферы.
+  name: Bassist helmet
+  description: A heavily armored helmet designed to create the right atmosphere.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/hardsuite_atmos_helmet.rsi
   - type: Clothing
     sprite: /Uploaded/chimera/hardsuite_atmos_helmet.rsi
 
-# Скафандр Трубача
+# Trumpeter's Spacesuit
 - type: entity
   parent: [ ClothingOuterHardsuitBase, BaseSyndicateContraband ]
   id: ChimeraGasClothingOuterHardsuit_vol1
-  name: скафандр Трубача
-  description: Тяжелобронированный скафандр, способный хранить в себе газ.
+  name: Trumpeter Spacesuit
+  description: A heavily armored spacesuit capable of storing gas.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/hardsuite_gas.rsi
@@ -488,12 +488,12 @@
       temperature: 293.15
     tankLowPressure: 30.0
 
-# Шлем Трубача
+# Trumpeter's Helmet
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ChimeraGasClothingOuterHardsuitHelmet_vol1
-  name: шлем Трубача
-  description: Тяжелобронированный шлем, предначенный для газовых атак.
+  name: Trumpeter helmet
+  description: A heavily armored helmet designed for gas attacks.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/hardsuite_gas_helmet.rsi
