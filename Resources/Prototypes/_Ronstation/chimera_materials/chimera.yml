@@ -521,12 +521,12 @@
         Radiation: 0.9
         Caustic: 0.9
 
-# Гитара
+# Guitar
 - type: entity
   parent: BaseHandheldInstrument
   id: ChimeraGuitarInstrument_vol1
-  name: бас-гитара "Химера"
-  description: Вы чувствуете себя увереннее, держа в руках этот увесистый инструмент.
+  name: bass guitar "Chimera"
+  description: You feel more confident holding this weighty instrument in your hands.
   components:
   - type: Instrument
     program: 29
@@ -564,20 +564,20 @@
         Blunt: 15
   - type: Reflect
 
-# ЭКИПИРОВКА
-# РПС
+# EQUIPMENT
+# RPS
 - type: entity
   parent: ClothingBeltMilitaryWebbing
   id: ChimeraClothingBeltWebbing_vol1
-  name: РПС художника-музыканта
-  description: Универсальный разгрузочный жилет для баллончиков с краской и музыкальных инструментов.
+  name: RPS artist-musician
+  description: Universal unloading vest for spray paint and musical instruments.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/webbing.rsi
   - type: Clothing
     sprite: /Uploaded/chimera/webbing.rsi
 
-# Заполненный РПС
+# Completed RPS
 - type: entity
   id: ChimeraClothingBeltWebbingFilled_vol1
   parent: ChimeraClothingBeltWebbing_vol1
@@ -594,22 +594,22 @@
       - id: trayScanner
       - id: GasAnalyzer
 
-# Рюкзак
+# Backpack
 - type: entity
   parent: ClothingMilitaryBackpack
   id: ChimeraClothingBackpack_vol1
-  name: чёрный рюкзак
-  description: Стильный чёрный рюкзак для хранения рок-атрибутики.
+  name: black backpack
+  description: Stylish black backpack for storing rock paraphernalia.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/backpack.rsi
 
-# Мантия
+# Mantle
 - type: entity
   parent: [ClothingNeckBase, BaseCommandContraband]
   id: ChimeraMantle_vol1
-  name: мантия "Химера"
-  description: Мантия предназначенная для лидера Химических Оперативников. На вид, изготовлена на заказ.
+  name: Mantle "Chimera"
+  description: A robe designed for the leader of the Chemical Operatives. Appears to be custom made.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/mantle.rsi
@@ -624,12 +624,12 @@
         Cold: 0.75
         Caustic: 0.7
 
-# Магнитные ботинки
+# Magnetic boots
 - type: entity
   parent: ClothingShoesBootsMag
   id: ChimeraClothingShoesBootsMagBase_vol1
-  name: боевые магнитные ботинки
-  description: Шмель, Бамбл, БМБ, или же просто - боевые магнитные ботинки. Имеют слот для хранения.
+  name: combat magnetic boots
+  description: Shmel, Bumble, BMB, or simply - combat magnetic boots. Have a slot for storage.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/magboots.rsi
@@ -659,7 +659,7 @@
     tags:
     - WhitelistChameleon
 
-# Заполненные магнитные ботинки
+# Filled magnetic boots
 - type: entity
   parent: ChimeraClothingShoesBootsMagBase_vol1
   id: ChimeraClothingShoesBootsMagBaseFilled_vol1
@@ -670,36 +670,36 @@
       item:
       - KukriKnife
 
-# Знак Химических Оперативников
+# Chemical Operatives Badge
 - type: entity
   parent: BaseSign
   id: ChimeraSign_vol1
-  name: стальной знак "Химера"
-  description: Стальной знак с эмблемой Химических Оперативников.
+  name: steel sign "Chimera"
+  description: Steel badge with the Chemical Operatives emblem.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/poster_chimera.rsi
     state: poster_chimera
     scale: 0.85, 0.85
 
-# Знак Serpent Aria
+# Serpent Aria Sign
 - type: entity
   parent: BaseSign
   id: SerpentAriaSign_vol1
-  name: стальной знак "Serpent Aria"
-  description: Стальной знак с эмблемой неизвестной организации.
+  name: steel sign "Serpent Aria"
+  description: Steel sign with the emblem of an unknown organization.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/poster_serpent_aria.rsi
     state: poster_serpent_aria
     scale: 0.85, 0.85
 
-# Кислотный пистолет "Лаймер", прототип toperor
+# Acid gun "Lymer", prototype toperor
 - type: entity
   name: лаймер
   parent: BaseWeaponBatterySmall
   id: ChimeraWeaponLaimer_vol1
-  description: Самозарядный пистолет с растворяющими зарядами.
+  description: Self-loading pistol with solvent charges.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/pistol.rsi
@@ -728,7 +728,7 @@
     autoRecharge: true
     autoRechargeRate: 13
 
-# Радиоимпульсный заряд
+# Radio pulse charge
 - type: hitscan
   id: PulseYellow_vol1
   damage:
@@ -744,12 +744,12 @@
     sprite: /Uploaded/chimera/hitscan.rsi
     state: impact_beam_yellow
 
-# Лаймер для крутых.
+# Limer for the cool ones.
 - type: entity
   name: лаймер для крутых
   parent: ChimeraWeaponLaimer_vol1
   id: ChimeraWeaponLaimerCool_vol1
-  description: Самозарядный пистолет с растворяющими зарядами, только для крутых.
+  description: A self-loading pistol with solvent charges, only for the tough guys.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/pistol_cool.rsi
@@ -764,7 +764,7 @@
   - type: HitscanBatteryAmmoProvider
     proto: PulseYellowCool_vol1
 
-# Радиоимпульсный заряд, для крутых.
+# Radio pulse charge, for the cool ones.
 - type: hitscan
   id: PulseYellowCool_vol1
   damage:
@@ -780,12 +780,12 @@
     sprite: /Uploaded/chimera/hitscan.rsi
     state: impact_beam_yellow
 
-# Комбинезон
+# Overalls
 - type: entity
   parent: ClothingUniformJumpsuitOperative
   id: ChimeraClothingUJumpsuit_vol1
-  name: тактический комбинезон "Химера"
-  description: Тактический комбинезон с защитой от порезов, едких веществ и радиации.
+  name: Tactical suit "Chimera"
+  description: Tactical suit with protection against cuts, corrosive substances and radiation.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/jumpsuit.rsi
@@ -798,94 +798,94 @@
         Radiation: 0.2
         Caustic: 0.2
 
-# Баллончик (Шейкер) - жёлтый
+# Spray can (Shaker) - yellow
 - type: entity
   parent: DrinkShaker
   id: ChimeraDrink_vol1
-  name: лимонный баллончик "Химера"
-  description: Баллончик предназначенный для хранения энергетиков с красителем, со вкусом лимона.
+  name: lemon spray "Chimera"
+  description: A canister designed for storing energy drinks with dye, lemon flavor.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/drink/drink_yellow.rsi
   - type: Item
     size: Small
 
-# Баллончик (Шейкер) - оранжевый
+# Spray Can (Shaker) - Orange
 - type: entity
   parent: ChimeraDrink_vol1
   id: ChimeraDrinkOrange_vol1
-  name: апельсиновый баллончик "Химера"
-  description: Баллончик предназначенный для хранения энергетиков с красителем, со вкусом апельсина.
+  name: Orange spray can "Chimera"
+  description: A canister designed for storing energy drinks with dye, orange flavor.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/drink/drink_orange.rsi
 
-# Баллончик (Шейкер) - красный
+# Spray Can (Shaker) - Red
 - type: entity
   parent: ChimeraDrink_vol1
   id: ChimeraDrinkRed_vol1
-  name: гранатовый баллончик "Химера"
-  description: Баллончик предназначенный для хранения энергетиков с красителем, со вкусом граната.
+  name: Grenade spray "Chimera"
+  description: A canister designed for storing energy drinks with dye, pomegranate flavor.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/drink/drink_red.rsi
 
-# Баллончик (Шейкер) - зелёный
+# Spray can (Shaker) - green
 - type: entity
   parent: ChimeraDrink_vol1
   id: ChimeraDrinkGreen_vol1
-  name: яблочный баллончик "Химера"
-  description: Баллончик предназначенный для хранения энергетиков с красителем, со вкусом яблока.
+  name: Apple Spray "Chimera"
+  description: A canister designed for storing energy drinks with dye, apple flavor.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/drink/drink_green.rsi
 
-# Баллончик (Шейкер) - синий
+# Spray Can (Shaker) - Blue
 - type: entity
   parent: ChimeraDrink_vol1
   id: ChimeraDrinkBlue_vol1
-  name: голубичный баллончик "Химера"
-  description: Баллончик предназначенный для хранения энергетиков с красителем, со вкусом голубики.
+  name: Blueberry spray "Chimera"
+  description: A canister designed for storing energy drinks with dye, blueberry flavor.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/drink/drink_blue.rsi
 
-# Баллончик (Шейкер) - фиолетовый
+# Spray Can (Shaker) - Purple
 - type: entity
   parent: ChimeraDrink_vol1
   id: ChimeraDrinkPurple_vol1
-  name: виноградный баллончик "Химера"
-  description: Баллончик предназначенный для хранения энергетиков с красителем, со вкусом винограда.
+  name: grape spray "Chimera"
+  description: A canister designed for storing energy drinks with dye, with grape flavor.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/drink/drink_purple.rsi
 
-# Баллончик (Шейкер) - фиолетовый
+# Spray Can (Shaker) - Purple
 - type: entity
   parent: ChimeraDrink_vol1
   id: ChimeraDrinkPink_vol1
-  name: бабл гам баллончик "Химера"
-  description: Баллончик предназначенный для хранения энергетиков с красителем, со вкусом бабл гам.
+  name: bubble gum spray can "Chimera"
+  description: A canister designed for storing energy drinks with coloring, with bubble gum flavor.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/drink/drink_pink.rsi
 
-# Баллончик (Шейкер) - серый
+# Spray Can (Shaker) - Gray
 - type: entity
   parent: ChimeraDrink_vol1
   id: ChimeraDrinkGrey_vol1
-  name: классический баллончик "Химера"
-  description: Баллончик предназначенный для хранения энергетиков с красителем, без сахара.
+  name: classic spray can "Chimera"
+  description: A canister designed for storing energy drinks with dye, without sugar.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/drink/drink_grey.rsi
 
-# маска противогаз
+# gas mask
 - type: entity
   parent: ClothingMaskGasSyndicate
   id: ChimeraClothingMaskGas_vol1
-  name: противогаз "Химера"
-  description: Маска-противогаз для защиты от папарацци и назойливых фанатов.
+  name: gas mask "Chimera"
+  description: Gas mask for protection from paparazzi and annoying fans.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/mask.rsi
@@ -898,12 +898,12 @@
         Radiation: 0.9
         Caustic: 0.9
 
-# перчатки
+# gloves
 - type: entity
   parent: ClothingHandsGlovesCombat
   id: ChimeraClothingHandsGlovesCombat_vol1
-  name: боевые перчатки "Химера"
-  description: Эти тактические перчатки огнеупорны и ударопрочны.
+  name: combat gloves "Chimera"
+  description: These tactical gloves are fireproof and impact resistant.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/gloves.rsi
@@ -916,20 +916,20 @@
         Radiation: 0.95
         Caustic: 0.95
 
-# НАДУВНЫЕ СТЕНЫ
-# Прототип сортировки
+# INFLATABLE WALLS
+# Sorting prototype
 - type: stack
   id: ChimeraInflatableWallSwap_vol1
   name: ChimeraInflatable Wall
   spawn: ChimeraInflatableWallStack1_vol1
   maxCount: 8
 
-# Сложенная баррикада
+# Folded barricade
 - type: entity
   id: ChimeraInflatableWallStack_vol1
   parent: BaseItem
-  name: надувная стена
-  description: Сложенная надувная стена, которая быстро расширяется в укреплённую кубическую форму при активации.
+  name: inflatable wall
+  description: A foldable inflatable wall that quickly expands into a reinforced cubic shape when activated.
   suffix: Full
   components:
     - type: Stack
@@ -947,7 +947,7 @@
       removeOnInteract: true
     - type: Clickable
 
-# Одна сложенная баррикада
+# One folded barricade
 - type: entity
   parent: ChimeraInflatableWallStack_vol1
   id: ChimeraInflatableWallStack1_vol1
@@ -958,11 +958,11 @@
     - type: Stack
       count: 1
 
-# Разложенная баррикада
+# The barricade is laid out
 - type: entity
   id: ChimeraInflatableWall_vol1
-  name: надувная стена
-  description: Надувная стена из прочной ткани.
+  name: inflatable wall
+  description: Inflatable wall made of durable fabric.
   components:
   - type: Clickable
   - type: InteractionOutline
@@ -1010,20 +1010,20 @@
   placement:
     mode: SnapgridCenter
 
-# НАДУВНЫЕ ДВЕРИ
-# Прототип сортировки
+# INFLATABLE DOORS
+# Sorting prototype
 - type: stack
   id: ChimeraInflatableDoorSwap_vol1
   name: ChimeraInflatable Door
   spawn: ChimeraInflatableDoorStack1_vol1
   maxCount: 4
 
-# Сложенная дверь
+# folded door
 - type: entity
   id: ChimeraInflatableDoorStack_vol1
   parent: BaseItem
-  name: надувная дверь
-  description: Сложенная надувная стена с дверью, которая быстро расширяется в укреплённую кубическую форму при активации.
+  name: inflatable door
+  description: A foldable inflatable wall with a door that quickly expands into a reinforced cubic shape when activated.
   suffix: Full
   components:
     - type: Stack
@@ -1041,7 +1041,7 @@
       removeOnInteract: true
     - type: Clickable
 
-# Одна сложенная дверь
+# One folded door
 - type: entity
   parent: ChimeraInflatableDoorStack_vol1
   id: ChimeraInflatableDoorStack1_vol1
@@ -1052,12 +1052,12 @@
     - type: Stack
       count: 1
 
-# Разложенная дверь
+# Unfolded door
 - type: entity
   id: ChimeraInflatableDoor_vol1
-  name: надувная дверь Химических Оперативников
+  name: Chemical Operatives inflatable door
   parent: BaseMaterialDoor
-  description: Надувная дверь из прочного материала.
+  description: Inflatable door made of durable material.
   components:
   - type: Clickable
   - type: InteractionOutline
@@ -1109,12 +1109,12 @@
   - type: Occluder
     enabled: false
 
-# Завёрнутый батончик
+# Wrapped bar
 - type: entity
   parent: FoodSnackBase
   id: ChimeraFoodSnackEnergy_vol1
-  name: энергетический батончик
-  description: Энергетический батончик с большим запасом энергии.
+  name: energy bar
+  description: Energy bar with a large energy reserve.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/snacks.rsi
@@ -1127,12 +1127,12 @@
     sound:
       path: /Audio/Effects/unwrap.ogg
 
-# Батончик
+# Bar
 - type: entity
   parent: FoodSnackBase
   id: ChimeraFoodSnackEnergyBar_vol1
-  name: энергетический батончик
-  description: Энергетический батончик с большим запасом энергии.
+  name: energy bar
+  description: Energy bar with a large energy reserve.
   components:
   - type: FlavorProfile
     flavors:
@@ -1152,13 +1152,13 @@
         - ReagentId: Nutriment
           Quantity: 10
 
-# Фантик от батончика
+# Candy bar wrapper
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: FoodPacketTrash
   id: ChimeraFoodPacketEnergyTrash_vol1
-  name: обёртка от энергетического батончика
-  description: Это мусор.
+  name: energy bar wrapper
+  description: This is trash.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/snacks.rsi
