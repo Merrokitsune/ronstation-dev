@@ -1164,13 +1164,13 @@
     sprite: /Uploaded/chimera/snacks.rsi
     state: energybar-trash
 
-# ПОДДЕРЖКА - Барабанщик
-# Скафандр Поддержки
+# SUPPORT - Drummer
+# Support Suit
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseSyndicateContraband]
   id: ChimeraSupportOuterClothingHardsuit_vol1
-  name: силовой костюм Барабанщика
-  description: Силовой костюм Барабанщика.
+  name: Drummer power suit
+  description: Drummer's Power Suit.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/hardsuite_support.rsi
@@ -1209,12 +1209,12 @@
   - type: TTS
     voice: Overwatch
 
-# Шлем поддержки
+# Support Helmet
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ChimeraSupportClothingHeadHelmetHardsuit_vol1
-  name: силовой шлем Баранщика
-  description: Силовой шлем не менее тяжёлого Барабанщика.
+  name: Ram's Power Helmet
+  description: A power helmet no less heavy than the Drummer.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/hardsuite_support_helmet.rsi
@@ -1242,12 +1242,12 @@
   - type: PointLight
     color: "#66FF00"
 
-# Голопроектор барьеров
+# Barrier Holoprojector
 - type: entity
   parent: HoloprojectorField
   id: ChimeraHoloProjector_vol1
-  name: проектор химьеров
-  description: Для суицидально настроеных ассистентов и убийства остальных во время разгерметизации.
+  name: chimera projector
+  description: For suicidal assistants and killing the rest during depressurization.
   components:
   - type: HolosignProjector
     signProto: ChimeraHolo_vol1
@@ -1256,12 +1256,12 @@
     sprite: /Uploaded/chimera/holoprojector.rsi
     state: icon
 
-# Барьер голопроектора
+# Holoprojector barrier
 - type: entity
   parent: HoloFan
   id: ChimeraHolo_vol1
-  name: химьер
-  description: Голографический барьер с символикой химических оперативников, он явно не сулит ничего хорошего.
+  name: Himier
+  description: A holographic barrier with the symbols of chemical operatives, it clearly does not bode well.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/holo.rsi
@@ -1279,12 +1279,12 @@
     intesnity: 5
     slope: 5
 
-# Дробовоик "Коррозор"
+# Shotgun "Korrozor"
 - type: entity
-  name: коррозор
+  name: korrozor
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseRestrictedContraband]
   id: ChimeraWeaponCorrozor_vol1
-  description: Модифицированный Силовик, вмещающий заветный восьмой патрон. Использует калибр .50 ружейный.
+  description: A modified Silovik that holds the coveted eighth round. Uses the .50 shotgun caliber.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/corrozor.rsi
@@ -1299,12 +1299,12 @@
     soundGunshot:
       path: /Uploaded/chimera/audio/corrozor.ogg
 
-# Щит
+# Shield
 - type: entity
-  name: противопульный щит "химера"
+  name: Bulletproof shield "chimera"
   parent: RiotBulletShield
   id: ChimeraShield_vol1
-  description: Щит созданный для противостояния пулям и не более того.
+  description: A shield designed to resist bullets and nothing more.
   components:
     - type: Sprite
       sprite: /Uploaded/chimera/shield.rsi
@@ -1329,12 +1329,12 @@
         flatReductions:
           Piercing: 1
 
-# Жёлтая древняя канистра
+# Yellow ancient canister
 - type: entity
   parent: GasCanister
   id: ChimeraGasCanister_vol1
-  name: жёлтая древняя газовая канистра
-  description: Древняя канистра, которая может содержать огромное количество газа любого вида. Можно прикрепить к порту коннектора с помощью гаечного ключа.
+  name: yellow ancient gas canister
+  description: An ancient canister that can hold a huge amount of any kind of gas. Can be attached to a connector port with a wrench.
   components:
     - type: Sprite
       sprite: /Uploaded/chimera/canister.rsi
@@ -1388,23 +1388,23 @@
     - type: Lock
       locked: true
 
-# Разбитая жёлтая древняя канистра
+# Broken yellow ancient canister
 - type: entity
   parent: GasCanisterBrokenBase
   id: ChimeraGasCanisterBroken_vol1
-  name: разбитая жёлтая древняя газовая канистра
-  description: Разбитая канистра для газа. Не совсем бесполезна, так как может быть разобрана для получения высококачественных материалов.
+  name: broken yellow ancient gas canister
+  description: Broken Gas Canister. Not entirely useless, as it can be dismantled to obtain high-quality materials.
   components:
     - type: Sprite
       sprite: /Uploaded/chimera/canister.rsi
       state: yellow_broken
 
-# Красная древняя канистра
+# Red Ancient Canister
 - type: entity
   parent: ChimeraGasCanister_vol1
   id: ChimeraGasCanisterRed_vol1
-  name: красная древняя газовая канистра
-  description: Древняя канистра, которая может содержать огромное количество газа любого вида. Можно прикрепить к порту коннектора с помощью гаечного ключа.
+  name: red ancient gas canister
+  description: An ancient canister that can hold a huge amount of any kind of gas. Can be attached to a connector port with a wrench.
   components:
     - type: Sprite
       sprite: /Uploaded/chimera/canister.rsi
@@ -1454,23 +1454,23 @@
           - 0 # Frezon
         temperature: 293.15
 
-# Разбитая красная древняя канистра
+# Broken red ancient canister
 - type: entity
   parent: GasCanisterBrokenBase
   id: ChimeraGasCanisterRedBroken_vol1
-  name: разбитая красная древняя газовая канистра
-  description: Разбитая канистра для газа. Не совсем бесполезна, так как может быть разобрана для получения высококачественных материалов.
+  name: broken red ancient gas canister
+  description: Broken Gas Canister. Not entirely useless, as it can be dismantled to obtain high-quality materials.
   components:
     - type: Sprite
       sprite: /Uploaded/chimera/canister.rsi
       state: red_broken
 
-# Зелёная древняя канистра
+# Green Ancient Canister
 - type: entity
   parent: ChimeraGasCanister_vol1
   id: ChimeraGasCanisterGreen_vol1
-  name: зелёная древняя газовая канистра
-  description: Древняя канистра, которая может содержать огромное количество газа любого вида. Можно прикрепить к порту коннектора с помощью гаечного ключа.
+  name: green ancient gas canister
+  description: An ancient canister that can hold a huge amount of any kind of gas. Can be attached to a connector port with a wrench.
   components:
     - type: Sprite
       sprite: /Uploaded/chimera/canister.rsi
@@ -1520,23 +1520,23 @@
           - 0 # Frezon
         temperature: 293.15
 
-# Разбитая зелёная древняя канистра
+# Broken green ancient canister
 - type: entity
   parent: GasCanisterBrokenBase
   id: ChimeraGasCanisterGreenBroken_vol1
-  name: разбитая зелёная древняя газовая канистра
-  description: Разбитая канистра для газа. Не совсем бесполезна, так как может быть разобрана для получения высококачественных материалов.
+  name: broken green ancient gas canister
+  description: Broken Gas Canister. Not entirely useless, as it can be dismantled to obtain high-quality materials.
   components:
     - type: Sprite
       sprite: /Uploaded/chimera/canister.rsi
       state: green_broken
 
-# Синяя древняя канистра
+# Blue Ancient Canister
 - type: entity
   parent: ChimeraGasCanister_vol1
   id: ChimeraGasCanisterBlue_vol1
-  name: синяя древняя газовая канистра
-  description: Древняя канистра, которая может содержать огромное количество газа любого вида. Можно прикрепить к порту коннектора с помощью гаечного ключа.
+  name: blue ancient gas canister
+  description: An ancient canister that can hold a huge amount of any kind of gas. Can be attached to a connector port with a wrench.
   components:
     - type: Sprite
       sprite: /Uploaded/chimera/canister.rsi
@@ -1586,23 +1586,23 @@
           - 0 # Frezon
         temperature: 293.15
 
-# Разбитая синяя древняя канистра
+# Broken blue ancient canister
 - type: entity
   parent: GasCanisterBrokenBase
   id: ChimeraGasCanisterBlueBroken_vol1
-  name: разбитая синяя древняя газовая канистра
-  description: Разбитая канистра для газа. Не совсем бесполезна, так как может быть разобрана для получения высококачественных материалов.
+  name: broken blue ancient gas canister
+  description: Broken Gas Canister. Not entirely useless, as it can be dismantled to obtain high-quality materials.
   components:
     - type: Sprite
       sprite: /Uploaded/chimera/canister.rsi
       state: blue_broken
 
-# Древняя канистра воздуха
+# Ancient Air Canister
 - type: entity
   parent: ChimeraGasCanister_vol1
   id: ChimeraGasCanisterAir_vol1
-  name: древняя газовая канистра воздуха
-  description: Древняя канистра, которая может содержать огромное количество газа любого вида. Можно прикрепить к порту коннектора с помощью гаечного ключа.
+  name: ancient gas air canister
+  description: An ancient canister that can hold a huge amount of any kind of gas. Can be attached to a connector port with a wrench.
   components:
     - type: Sprite
       sprite: /Uploaded/chimera/canister.rsi
@@ -1640,23 +1640,23 @@
           - 1478.6513029 # nitrogen 79%
         temperature: 293.15
 
-# Разбитая древняя канистра воздуха
+# Broken ancient air canister
 - type: entity
   parent: GasCanisterBrokenBase
   id: ChimeraGasCanisterAirBroken_vol1
-  name: разбитая древняя газовая канистра воздуха
-  description: Разбитая канистра для газа. Не совсем бесполезна, так как может быть разобрана для получения высококачественных материалов.
+  name: broken ancient gas canister of air
+  description: Broken Gas Canister. Not entirely useless, as it can be dismantled to obtain high-quality materials.
   components:
     - type: Sprite
       sprite: /Uploaded/chimera/canister.rsi
       state: air_broken
 
-# Древняя канистра сжиженного кислорода
+# Ancient canister of liquefied oxygen
 - type: entity
   parent: ChimeraGasCanister_vol1
   id: ChimeraGasCanisterOxygen_vol1
-  name: древняя газовая канистра сжиженного кислорода
-  description: Древняя канистра, которая может содержать огромное количество газа любого вида. Можно прикрепить к порту коннектора с помощью гаечного ключа.
+  name: ancient liquefied oxygen gas canister
+  description: An ancient canister that can hold a huge amount of any kind of gas. Can be attached to a connector port with a wrench.
   components:
     - type: InteractionOutline
     - type: Transform
@@ -1696,21 +1696,21 @@
           - 18710.71051 # oxygen
         temperature: 72
 
-# Разбитая древняя канистра кислорода
+# Broken ancient oxygen canister
 - type: entity
   parent: ChimeraGasCanisterBroken_vol1
-  name: разбитая древняя канистра кислорода
+  name: broken ancient oxygen canister
   id: ChimeraGasCanisterOxygenBroken_vol1
   components:
     - type: Sprite
       state: oxygen_broken
 
-# Древняя канистра сжиженного азота
+# Ancient canister of liquefied nitrogen
 - type: entity
   parent: ChimeraGasCanister_vol1
   id: ChimeraGasCanisterNitrogen_vol1
-  name: древняя газовая канистра сжиженного азота
-  description: Древняя канистра, которая может содержать огромное количество газа любого вида. Можно прикрепить к порту коннектора с помощью гаечного ключа.
+  name: ancient liquid nitrogen gas canister
+  description: An ancient canister that can hold a huge amount of any kind of gas. Can be attached to a connector port with a wrench.
   components:
     - type: InteractionOutline
     - type: Transform
@@ -1751,10 +1751,10 @@
         - 18710.71051 # nitrogen
         temperature: 72
 
-# Разбитая древняя канистра азота
+# Broken ancient nitrogen canister
 - type: entity
   parent: ChimeraGasCanisterBroken_vol1
-  name: разбитая древняя канистра азота
+  name: broken ancient nitrogen canister
   id: ChimeraGasCanisterNitrogenBroken_vol1
   components:
     - type: Sprite
