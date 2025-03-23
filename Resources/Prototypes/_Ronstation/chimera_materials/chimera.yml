@@ -930,7 +930,7 @@
   parent: BaseItem
   name: inflatable wall
   description: A foldable inflatable wall that quickly expands into a reinforced cubic shape when activated.
-  suffix: Full
+  suffix: Chemop, Full
   components:
     - type: Stack
       stackType: ChimeraInflatableWallSwap_vol1
@@ -951,7 +951,7 @@
 - type: entity
   parent: ChimeraInflatableWallStack_vol1
   id: ChimeraInflatableWallStack1_vol1
-  suffix: 1
+  suffix: Chemop, 1
   components:
     - type: Sprite
       state: item_wall
@@ -962,6 +962,7 @@
 - type: entity
   id: ChimeraInflatableWall_vol1
   name: inflatable wall
+  suffix: Chemop
   description: Inflatable wall made of durable fabric.
   components:
   - type: Clickable
@@ -1023,6 +1024,7 @@
   id: ChimeraInflatableDoorStack_vol1
   parent: BaseItem
   name: inflatable door
+  suffix: Chemop
   description: A foldable inflatable wall with a door that quickly expands into a reinforced cubic shape when activated.
   suffix: Full
   components:
@@ -1045,7 +1047,7 @@
 - type: entity
   parent: ChimeraInflatableDoorStack_vol1
   id: ChimeraInflatableDoorStack1_vol1
-  suffix: 1
+  suffix: Chemop, 1
   components:
     - type: Sprite
       state: item_door
@@ -1114,6 +1116,7 @@
   parent: FoodSnackBase
   id: ChimeraFoodSnackEnergy_vol1
   name: energy bar
+  suffix: Chemop
   description: Energy bar with a large energy reserve.
   components:
   - type: Sprite
@@ -1132,6 +1135,7 @@
   parent: FoodSnackBase
   id: ChimeraFoodSnackEnergyBar_vol1
   name: energy bar
+  suffix: Chemop
   description: Energy bar with a large energy reserve.
   components:
   - type: FlavorProfile
@@ -1158,6 +1162,7 @@
   parent: FoodPacketTrash
   id: ChimeraFoodPacketEnergyTrash_vol1
   name: energy bar wrapper
+  suffix: Chemop
   description: This is trash.
   components:
   - type: Sprite
