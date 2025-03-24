@@ -523,7 +523,7 @@
 
 # Guitar
 - type: entity
-  parent: BaseHandheldInstrument
+  parent: [BaseHandheldInstrument, BaseSyndicateContraband]
   id: ChimeraGuitarInstrument_vol1
   name: bass guitar "Chimera"
   description: You feel more confident holding this weighty instrument in your hands.
@@ -596,7 +596,7 @@
 
 # Backpack
 - type: entity
-  parent: ClothingMilitaryBackpack
+  parent: [ClothingMilitaryBackpack, BaseSyndicateContraband]
   id: ChimeraClothingBackpack_vol1
   name: black backpack
   description: Stylish black backpack for storing rock paraphernalia.
@@ -606,7 +606,7 @@
 
 # Mantle
 - type: entity
-  parent: [ClothingNeckBase, BaseCommandContraband]
+  parent: [ClothingNeckBase, BaseSyndicateContraband]
   id: ChimeraMantle_vol1
   name: Mantle "Chimera"
   description: A robe designed for the leader of the Chemical Operatives. Appears to be custom made.
@@ -626,7 +626,7 @@
 
 # Magnetic boots
 - type: entity
-  parent: ClothingShoesBootsMag
+  parent: [ClothingShoesBootsMag, BaseSyndicateContraband]
   id: ChimeraClothingShoesBootsMagBase_vol1
   name: combat magnetic boots
   description: Shmel, Bumble, BMB, or simply - combat magnetic boots. Have a slot for storage.
@@ -697,7 +697,7 @@
 # Acid gun "Lymer", prototype toperor
 - type: entity
   name: лаймер
-  parent: BaseWeaponBatterySmall
+  parent: BaseWeaponBatterySmall, BaseSyndicateContraband
   id: ChimeraWeaponLaimer_vol1
   description: Self-loading pistol with solvent charges.
   components:
@@ -800,7 +800,7 @@
 
 # Spray can (Shaker) - yellow
 - type: entity
-  parent: DrinkShaker
+  parent: [DrinkShaker, BaseSyndicateContraband]
   id: ChimeraDrink_vol1
   name: lemon spray "Chimera"
   description: A canister designed for storing energy drinks with dye, lemon flavor.
@@ -927,7 +927,7 @@
 # Folded barricade
 - type: entity
   id: ChimeraInflatableWallStack_vol1
-  parent: BaseItem
+  parent: [BaseItem, BaseSyndicateContraband]
   name: inflatable wall
   description: A foldable inflatable wall that quickly expands into a reinforced cubic shape when activated.
   suffix: Chemop, Full
@@ -1022,7 +1022,7 @@
 # folded door
 - type: entity
   id: ChimeraInflatableDoorStack_vol1
-  parent: BaseItem
+  parent: [BaseItem, BaseSyndicateContraband]
   name: inflatable door
   suffix: Chemop
   description: A foldable inflatable wall with a door that quickly expands into a reinforced cubic shape when activated.
@@ -1058,7 +1058,7 @@
 - type: entity
   id: ChimeraInflatableDoor_vol1
   name: Chemical Operatives inflatable door
-  parent: BaseMaterialDoor
+  parent: [BaseMaterialDoor, BaseSyndicateContraband]
   description: Inflatable door made of durable material.
   components:
   - type: Clickable
@@ -1113,7 +1113,7 @@
 
 # Wrapped bar
 - type: entity
-  parent: FoodSnackBase
+  parent: [FoodSnackBase, BaseSyndicateContraband]
   id: ChimeraFoodSnackEnergy_vol1
   name: energy bar
   suffix: Chemop
@@ -1132,7 +1132,7 @@
 
 # Bar
 - type: entity
-  parent: FoodSnackBase
+  parent: [FoodSnackBase, BaseSyndicateContraband]
   id: ChimeraFoodSnackEnergyBar_vol1
   name: energy bar
   suffix: Chemop
@@ -1159,7 +1159,7 @@
 # Candy bar wrapper
 - type: entity
   categories: [ HideSpawnMenu ]
-  parent: FoodPacketTrash
+  parent: [FoodPacketTrash, BaseSyndicateContraband]
   id: ChimeraFoodPacketEnergyTrash_vol1
   name: energy bar wrapper
   suffix: Chemop
@@ -1249,7 +1249,7 @@
 
 # Barrier Holoprojector
 - type: entity
-  parent: HoloprojectorField
+  parent: [HoloprojectorField, BaseSyndicateContraband]
   id: ChimeraHoloProjector_vol1
   name: chimera projector
   description: For suicidal assistants and killing the rest during depressurization.
@@ -1287,7 +1287,7 @@
 # Shotgun "Korrozor"
 - type: entity
   name: korrozor
-  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseRestrictedContraband]
+  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSyndicateContraband]
   id: ChimeraWeaponCorrozor_vol1
   description: A modified Silovik that holds the coveted eighth round. Uses the .50 shotgun caliber.
   components:
@@ -1307,7 +1307,7 @@
 # Shield
 - type: entity
   name: Bulletproof shield "chimera"
-  parent: RiotBulletShield
+  parent: [RiotBulletShield, BaseSyndicateContraband]
   id: ChimeraShield_vol1
   description: A shield designed to resist bullets and nothing more.
   components:
@@ -1336,7 +1336,7 @@
 
 # Yellow ancient canister
 - type: entity
-  parent: GasCanister
+  parent: [GasCanister, BaseSyndicateContraband]
   id: ChimeraGasCanister_vol1
   name: yellow ancient gas canister
   description: An ancient canister that can hold a huge amount of any kind of gas. Can be attached to a connector port with a wrench.
@@ -1395,7 +1395,7 @@
 
 # Broken yellow ancient canister
 - type: entity
-  parent: GasCanisterBrokenBase
+  parent: [GasCanisterBrokenBase, BaseSyndicateContraband]
   id: ChimeraGasCanisterBroken_vol1
   name: broken yellow ancient gas canister
   description: Broken Gas Canister. Not entirely useless, as it can be dismantled to obtain high-quality materials.
