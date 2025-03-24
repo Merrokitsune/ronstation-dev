@@ -696,7 +696,7 @@
 
 # Acid gun "Lymer", prototype toperor
 - type: entity
-  name: лаймер
+  name: limer
   parent: BaseWeaponBatterySmall, BaseSyndicateContraband
   id: ChimeraWeaponLaimer_vol1
   description: Self-loading pistol with solvent charges.
@@ -746,7 +746,7 @@
 
 # Limer for the cool ones.
 - type: entity
-  name: лаймер для крутых
+  name: limer for cool
   parent: ChimeraWeaponLaimer_vol1
   id: ChimeraWeaponLaimerCool_vol1
   description: A self-loading pistol with solvent charges, only for the tough guys.
