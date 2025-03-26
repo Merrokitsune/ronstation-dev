@@ -1,8 +1,8 @@
 - type: entity
   parent: [ ClothingOuterHardsuitBase, BaseSyndicateContraband ]
   id: CustomArmadaClothingOuterHardsuit_vol1
-  name: скафандр "Армада"
-  description: Тяжелобронированный скафандр подрывника, предназначенный для террористических представлений, обладает взрывоустойчивой конструкцией.
+  name: armada spacesuit
+  description: The heavily armored demolition suit, designed for terrorist displays, has an explosion-proof design.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/custom/hardsuite_armada.rsi
@@ -47,12 +47,12 @@
   - type: TTS
     voice: Overwatch
 
-# Шлем Армады
+# Armada Helmet
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: CustomArmadaClothingOuterHardsuitHelmet_vol1
-  name: шлем "Армада"
-  description: Тяжелобронированный шлем подрывника, предназначенный для террористических представлений, обладает взрывоустойчивой конструкцией.
+  name: armada helmet
+  description: The heavily armored demolition helmet, designed for terrorist displays, has a blast-resistant design.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/custom/hardsuite_armada_helmet.rsi
@@ -82,13 +82,13 @@
         Radiation: 0.9
         Caustic: 0.9
 
-# Химический торговец (жёлтый)
-# Скафандр химического торговца. (жёлтый)
+# Chemical Trader (Yellow)
+# Chemical Trader's Suit (Yellow)
 - type: entity
   parent: ChimeraClothingOuterHardsuit_vol1
   id: ChimeraNeutralClothingOuterHardsuit_vol1
-  name: скафандр торговца
-  description: Тяжелобронированный скафандр, предназначенный для торговых операций.
+  name: merchant's spacesuit
+  description: A heavily armored spacesuit designed for trading operations.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/hardsuite_neutral.rsi
@@ -114,12 +114,12 @@
   - type: ToggleableClothing
     clothingPrototype: ChimeraNeutralClothingOuterHardsuitHelmet_vol1
 
-# шлем химического торговца (жёлтый)
+# chemical merchant helmet (yellow)
 - type: entity
   parent: ChimeraClothingOuterHardsuitHelmet_vol1
   id: ChimeraNeutralClothingOuterHardsuitHelmet_vol1
-  name: шлем торговца
-  description: Тяжелобронированный шлем, предназначенный для торговых операций.
+  name: merchant helmet
+  description: A heavily armored helmet designed for trading operations.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/hardsuite_neutral_helmet.rsi
@@ -139,13 +139,13 @@
         Radiation: 0.95
         Caustic: 0.95
 
-# Химический торговец (синий)
-# Скафандр химического торговца. (синий)
+# Chemical Merchant (Blue)
+# Chemical Trader's Suit (Blue)
 - type: entity
   parent: ChimeraNeutralClothingOuterHardsuit_vol1
   id: ChimeraMerchantClothingOuterHardsuit_vol1
-  name: скафандр торговца
-  description: Тяжелобронированный скафандр, предназначенный для торговых операций.
+  name: merchant's spacesuit
+  description: A heavily armored spacesuit designed for trading operations.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/hardsuite_merchant.rsi
@@ -154,12 +154,12 @@
   - type: ToggleableClothing
     clothingPrototype: ChimeraMerchantClothingOuterHardsuitHelmet_vol1
 
-# шлем химического торговца (синий)
+# Chemical Trader's Helmet (Blue)
 - type: entity
   parent: ChimeraNeutralClothingOuterHardsuitHelmet_vol1
   id: ChimeraMerchantClothingOuterHardsuitHelmet_vol1
   name: шлем торговца
-  description: Тяжелобронированный шлем, предназначенный для торговых операций.
+  description: A heavily armored helmet designed for trading operations.
   components:
   - type: Sprite
     sprite: /Uploaded/chimera/hardsuite_merchant_helmet.rsi
