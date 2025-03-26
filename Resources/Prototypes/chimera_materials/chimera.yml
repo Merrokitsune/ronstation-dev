@@ -8,7 +8,7 @@
   - type: Pda
     id: AgentIDCard
   - type: Sprite
-    sprite: /Uploaded/chimera/pda/pda.rsi
+    sprite: _Chimera_Materials/Objects/Devices/pda.rsi
     layers:
     - map: [ "enum.PdaVisualLayers.Base" ]
       state: "pda"
@@ -41,9 +41,9 @@
   description: When healing simple Syndicate agents isn't enough, turn to healing Chemical Operatives!
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/pda/pda_med.rsi
+    sprite: _Chimera_Materials/Objects/Devices/pda_med.rsi
   - type: Icon
-    sprite: /Uploaded/chimera/pda/pda_med.rsi
+    sprite: _Chimera_Materials/Objects/Devices/pda_med.rsi
     state: pda
   - type: PdaBorderColor
     borderColor: "#56665e"
@@ -63,9 +63,9 @@
   description: Why would anyone want to ruin a PDA? Does it even work? And there are wires sticking out of it... better not to touch it.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/pda/pda_emag.rsi
+    sprite: _Chimera_Materials/Objects/Devices/pda_emag.rsi
   - type: Icon
-    sprite: /Uploaded/chimera/pda/pda_emag.rsi
+    sprite: _Chimera_Materials/Objects/Devices/pda_emag.rsi
     state: pda
   - type: PdaBorderColor
     borderColor: "#56665e"
@@ -84,11 +84,11 @@
   description: A heavily armored suit designed for terrorist performances.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/hardsuite.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite.rsi
   - type: Item
     size: Huge
   - type: Clothing
-    sprite: /Uploaded/chimera/hardsuite.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.05
     lowPressureMultiplier: 1000
@@ -134,9 +134,9 @@
   description: A heavily armored helmet designed for terrorist performances.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/hardsuite_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_helmet.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/hardsuite_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_helmet.rsi
   - type: PointLight
     color: orange
   - type: PressureProtection
@@ -168,11 +168,11 @@
   description: A custom-made, heavily armored spacesuit.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/hardsuite_leader.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_leader.rsi
   - type: Item
     size: Huge
   - type: Clothing
-    sprite: /Uploaded/chimera/hardsuite_leader.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_leader.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.05
     lowPressureMultiplier: 1000
@@ -218,9 +218,9 @@
   description: Custom made heavily armored helmet.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/hardsuite_leader_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_leader_helmet.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/hardsuite_leader_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_leader_helmet.rsi
   - type: PointLight
     color: orange
   - type: PressureProtection
@@ -252,9 +252,9 @@
   description: A heavily armored suit designed to provide medical assistance.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/hardsuite_medic.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_medic.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/hardsuite_medic.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_medic.rsi
   - type: ToggleableClothing
     clothingPrototype: ChimeraMedicClothingOuterHardsuitHelmet_vol1
   - type: ExplosionResistance
@@ -283,9 +283,9 @@
   description: A heavily armored helmet designed to provide medical assistance.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/hardsuite_medic_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_medic_helmet.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/hardsuite_medic_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_medic_helmet.rsi
   - type: PointLight
     color: "#adffec"
 
@@ -298,9 +298,9 @@
   description: A lightweight spacesuit that increases the wearer's speed and is designed to provide emergency medical care.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/hardsuite_paramedic.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_paramedic.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/hardsuite_paramedic.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_paramedic.rsi
   - type: ToggleableClothing
     clothingPrototype: ChimeraParamedicClothingOuterHardsuitHelmet_vol1
   - type: ExplosionResistance
@@ -329,9 +329,9 @@
   description: A lightweight helmet designed to provide emergency medical care.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/hardsuite_paramedic_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_paramedic_helmet.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/hardsuite_paramedic_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_paramedic_helmet.rsi
   - type: PointLight
     color: "#adffec"
 
@@ -344,9 +344,9 @@
   description: Heavily armored spacesuit that emits radiation.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/hardsuite_chemist.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_chemist.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/hardsuite_chemist.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_chemist.rsi
   - type: ToggleableClothing
     clothingPrototype: ChimeraChemistClothingOuterHardsuitHelmet_vol1
   - type: ExplosionResistance
@@ -379,9 +379,9 @@
   description: Heavily armored helmet that emits radiation.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/hardsuite_chemist_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_chemist_helmet.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/hardsuite_chemist_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_chemist_helmet.rsi
   - type: PointLight
     color: "#00FF7F"
 
@@ -394,9 +394,9 @@
   description: A heavily armored spacesuit designed to create a suitable atmosphere.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/hardsuite_atmos.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_atmos.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/hardsuite_atmos.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_atmos.rsi
   - type: ToggleableClothing
     clothingPrototype: ChimeraAtmosClothingOuterHardsuitHelmet_vol1
   - type: ExplosionResistance
@@ -425,9 +425,9 @@
   description: A heavily armored helmet designed to create the right atmosphere.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/hardsuite_atmos_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_atmos_helmet.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/hardsuite_atmos_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_atmos_helmet.rsi
 
 # Trumpeter's Spacesuit
 - type: entity
@@ -437,11 +437,11 @@
   description: A heavily armored spacesuit capable of storing gas.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/hardsuite_gas.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_gas.rsi
   - type: Item
     size: Huge
   - type: Clothing
-    sprite: /Uploaded/chimera/hardsuite_gas.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_gas.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.05
     lowPressureMultiplier: 1000
@@ -496,9 +496,9 @@
   description: A heavily armored helmet designed for gas attacks.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/hardsuite_gas_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_gas_helmet.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/hardsuite_gas_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_gas_helmet.rsi
   - type: PointLight
     color: "#00FF7F"
   - type: PressureProtection
@@ -1178,9 +1178,9 @@
   description: Drummer's Power Suit.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/hardsuite_support.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_support.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/hardsuite_support.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_support.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.05
     lowPressureMultiplier: 1000
@@ -1222,9 +1222,9 @@
   description: A power helmet no less heavy than the Drummer.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/hardsuite_support_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_support_helmet.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/hardsuite_support_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_support_helmet.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000

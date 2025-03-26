@@ -5,11 +5,11 @@
   description: The heavily armored demolition suit, designed for terrorist displays, has an explosion-proof design.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/custom/hardsuite_armada.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_armada.rsi
   - type: Item
     size: Huge
   - type: Clothing
-    sprite: /Uploaded/chimera/custom/hardsuite_armada.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_armada.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.05
     lowPressureMultiplier: 1000
@@ -55,9 +55,9 @@
   description: The heavily armored demolition helmet, designed for terrorist displays, has a blast-resistant design.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/custom/hardsuite_armada_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_armada_helmet.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/custom/hardsuite_armada_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_armada_helmet.rsi
   - type: PointLight
     color: orange
   - type: PressureProtection
@@ -91,9 +91,9 @@
   description: A heavily armored spacesuit designed for trading operations.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/hardsuite_neutral.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_neutral.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/hardsuite_neutral.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_neutral.rsi
   - type: ExplosionResistance
     damageCoefficient: 0.65
   - type: Armor
@@ -122,9 +122,9 @@
   description: A heavily armored helmet designed for trading operations.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/hardsuite_neutral_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_neutral_helmet.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/hardsuite_neutral_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_neutral_helmet.rsi
   - type: PointLight
     color: orange
   - type: Armor
@@ -148,9 +148,9 @@
   description: A heavily armored spacesuit designed for trading operations.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/hardsuite_merchant.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_merchant.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/hardsuite_merchant.rsi
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_merchant.rsi
   - type: ToggleableClothing
     clothingPrototype: ChimeraMerchantClothingOuterHardsuitHelmet_vol1
 
@@ -162,6 +162,6 @@
   description: A heavily armored helmet designed for trading operations.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/hardsuite_merchant_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_merchant_helmet.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/hardsuite_merchant_helmet.rsi
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_merchant_helmet.rsi
