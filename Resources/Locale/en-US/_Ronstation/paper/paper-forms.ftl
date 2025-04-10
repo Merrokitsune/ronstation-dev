@@ -283,3 +283,44 @@ book-text-form-medical-death-certificate = 'N. Death Certificate
                    --------------------------------------
 
     --------------------------------------
+
+# Syndicate
+book-text-form-syndicate-ransom = [.S']
+    --------------------------------------
+    Sender:  Sample Person
+    Recipient:  Sample Person/Organization
+    Subject:  Sample Subject
+    Context:  Sample Context
+
+    Signed:
+    -  Sample Person
+
+    Stamps below:
+    --------------------------------------
+
+book-text-form-syndicate-ransom = [.S']
+    --------------------------------------
+    To: Sample Name or Department
+
+    To whom it may concern:
+
+    We, the syndicate:
+    1. Sample details
+    2. Sample details
+
+    As such, we demand from you that:
+    1. Sample demand
+    2. Sample demand
+
+    If you do not meet our demands, consequences await, including:
+    1. Sample consequence
+    2. Sample consequence
+
+    We request that you read this.
+
+    We thank you for your co-operation.
+    Signed:
+    -  Sample Person
+
+    Stamps below:
+    --------------------------------------

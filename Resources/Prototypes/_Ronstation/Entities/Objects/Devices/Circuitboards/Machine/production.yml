@@ -125,3 +125,14 @@
     stackRequirements:
       MatterBin: 1
       Manipulator: 2
+
+- type: entity
+  id: PaperPrinterSyndicateMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: head of personnel's paper printer machine board
+  components:
+  - type: MachineBoard
+    prototype: PaperPrinterSyndicate
+    stackRequirements:
+      MatterBin: 1
+      Manipulator: 2

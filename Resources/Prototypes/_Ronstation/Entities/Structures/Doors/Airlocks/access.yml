@@ -1,0 +1,18 @@
+#HighSecDoors
+- type: entity
+  parent: HighSecDoor
+  id: HighSecSyndicateLocked
+  suffix: Syndicate, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSyndicateAgent ]
+
+- type: entity
+  parent: HighSecDoor
+  id: HighSecNukeopLocked
+  suffix: Nukeop, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsNukeop ]

@@ -1,0 +1,33 @@
+- type: entity
+  parent: ReinforcementRadio
+  id: ReinforcementRadioSyndicateOfficer # Reinforcement radio exclusive to certain grids like listening post.
+  name: syndicate officer radio
+  description: Call in a syndicate officer of questionable quality, instantly! Basic clothing and equipment provided.
+  components:
+  - type: GhostRole
+    name: ghost-role-information-syndicate-reinforcement-officer-name
+    description: ghost-role-information-syndicate-reinforcement-officer-description
+    rules: ghost-role-information-syndicate-reinforcement-officer-rules
+    mindRoles:
+    - MindRoleGhostRoleFreeAgentRestrictedSyndicate
+    raffle:
+      settings: default
+  - type: GhostRoleMobSpawner
+    prototype: MobHumanSyndicateOfficer
+
+- type: entity
+  parent: ReinforcementRadio
+  id: ReinforcementRadioSyndicateOfficerListeningPost # Reinforcement radio exclusive to certain grids like listening post.
+  name: syndicate listening post officer radio
+  description: Call in a listening post officer of questionable quality, instantly! Basic clothing and equipment provided.
+  components:
+  - type: GhostRole
+    name: ghost-role-information-syndicate-reinforcement-officer-listening-post-name
+    description: ghost-role-information-syndicate-reinforcement-officer-listening-post-description
+    rules: ghost-role-information-syndicate-reinforcement-officer-listening-post-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: default
+  - type: GhostRoleMobSpawner
+    prototype: MobHumanSyndicateOfficer

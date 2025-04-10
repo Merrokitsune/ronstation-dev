@@ -26,3 +26,9 @@
   id: PrinterMedicalBasic
   recipes:
   - PrinterPaperWrittenFormMedicalDeathCertificate
+
+- type: latheRecipePack
+  id: PrinterSyndicateBasic
+  recipes:
+  - PrinterPaperWrittenFormSyndicateLetter
+  - PrinterPaperWrittenFormSyndicateRansom

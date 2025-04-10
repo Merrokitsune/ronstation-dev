@@ -1,0 +1,18 @@
+#Syndie
+- type: entity
+  parent: MobHuman
+  id: MobHumanSyndicateOfficerBase
+  name: syndicate officer
+  suffix: Human, Base
+  components:
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+    hair: HairBald
+  - type: Loadout
+    prototypes: [SyndicateOfficerGearCivilian]
+    roleLoadout: [ RoleSurvivalSyndicate ]
+  - type: RandomMetadata
+    nameSegments: [NamesDeathCommando]
+  - type: NpcFactionMember
+    factions:
+    - Syndicate

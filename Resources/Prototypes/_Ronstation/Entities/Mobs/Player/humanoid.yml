@@ -1,0 +1,22 @@
+## Syndicate
+
+- type: entity
+  id: RandomHumanoidSpawnerSyndicateOfficer
+  name: syndicate officer
+  components:
+    - type: Sprite
+      sprite: Mobs/Species/Human/parts.rsi
+      state: full
+    - type: RandomMetadata
+      nameSegments: [ NamesDeathCommando ]
+    - type: RandomHumanoidSpawner
+      settings: SyndicateOfficer
+
+- type: randomHumanoidSettings
+  id: SyndicateOfficer
+  components:
+    - type: RandomHumanoidAppearance
+      randomizeName: false
+    - type: Loadout
+      prototypes: [SyndicateOfficerGearCivilian]
+      roleLoadout: [ RoleSurvivalSyndicate ]

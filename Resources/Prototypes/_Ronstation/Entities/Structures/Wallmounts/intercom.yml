@@ -1,0 +1,24 @@
+- type: entity
+  id: IntercomSyndicate
+  parent: Intercom
+  suffix: Syndicate
+  components:
+  - type: ContainerFill
+    containers:
+      board:
+      - IntercomElectronics
+      key_slots:
+      - EncryptionKeyCommon
+      - EncryptionKeySyndie
+
+- type: entity
+  id: IntercomSyndicateOnly
+  parent: Intercom
+  suffix: Syndicate only
+  components:
+  - type: ContainerFill
+    containers:
+      board:
+      - IntercomElectronics
+      key_slots:
+      - EncryptionKeySyndie

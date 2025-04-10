@@ -81,3 +81,19 @@
   completetime: 1
   materials:
     Paper: 50
+
+# Syndicate
+
+- type: latheRecipe
+  id: PrinterPaperWrittenFormSyndicateLetter
+  result: PaperWrittenFormSyndicateLetter
+  completetime: 1
+  materials:
+    Paper: 50
+
+- type: latheRecipe
+  id: PrinterPaperWrittenFormSyndicateRansom
+  result: PaperWrittenFormSyndicateRansom
+  completetime: 1
+  materials:
+    Paper: 50

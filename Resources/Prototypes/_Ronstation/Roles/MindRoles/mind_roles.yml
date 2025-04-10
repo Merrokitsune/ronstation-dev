@@ -1,0 +1,17 @@
+- type: entity
+  parent: BaseMindRole
+  id: MindRoleGhostRoleFreeAgentRestricted
+  name: Ghost Role (Restricted Free Agent)
+  components:
+  - type: MindRole
+    roleType: RestrictedFreeAgent
+  - type: GhostRoleMarkerRole
+
+- type: entity
+  parent: BaseMindRole
+  id: MindRoleGhostRoleFreeAgentRestrictedSyndicate
+  name: Ghost Role (Syndicate Restricted Free Agent)
+  components:
+  - type: MindRole
+    roleType: RestrictedFreeAgentSyndicate
+  - type: GhostRoleMarkerRole

@@ -100,3 +100,24 @@
   components:
   - type: Paper
     content: book-text-form-medical-death-certificate
+
+# Syndicate
+- type: entity
+  id: PaperWrittenFormSyndicateLetter
+  name: letter
+  suffix: Syndicate
+  description: It's a letter.
+  parent: PaperOffice
+  components:
+  - type: Paper
+    content: book-text-form-syndicate-letter
+
+- type: entity
+  id: PaperWrittenFormSyndicateRansom
+  name: letter
+  suffix: Syndicate, Ransom
+  description: It's a letter.
+  parent: PaperOffice
+  components:
+  - type: Paper
+    content: book-text-form-syndicate-ransom

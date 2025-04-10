@@ -1,0 +1,13 @@
+#Misc outfit startingGear definitions.
+
+# Syndicate Outfit - Civilian
+- type: startingGear
+  id: SyndicateOfficerGearCivilian
+  equipment:
+    head: ClothingHeadHatSyndie
+    jumpsuit: ClothingUniformJumpsuitSyndieFormal
+    back: ClothingBackpackSyndicate
+    shoes: ClothingShoesBootsCombat
+    gloves: ClothingHandsGlovesCombat
+    id: SyndiPDA
+    ears: ClothingHeadsetAltSyndicate

@@ -150,3 +150,16 @@
     staticPacks:
     - PrinterGeneralBasic
     - PrinterEngineeringBasic
+
+- type: entity
+  parent: PaperPrinter
+  id: PaperPrinterSyndicate
+  name: syndicate paper printer
+  components:
+  - type: Sprite
+    color: "#a1a1a1"
+  - type: Machine
+    board: PaperPrinterSyndicateMachineCircuitboard
+  - type: Lathe
+    staticPacks:
+    - PrinterSyndicateBasic

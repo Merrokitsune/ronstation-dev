@@ -1,0 +1,18 @@
+
+# lockable buttons
+
+- type: entity
+  id: LockableButtonSyndicate
+  suffix: Syndicate
+  parent: LockableButton
+  components:
+  - type: AccessReader
+    access: [["SyndicateAgent"]]
+
+- type: entity
+  id: LockableButtonNukeops
+  suffix: Nukeops
+  parent: LockableButton
+  components:
+  - type: AccessReader
+    access: [["NuclearOperative"]]
