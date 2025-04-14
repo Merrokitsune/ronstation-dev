@@ -9,6 +9,7 @@
         prob: 0.8
       - id: WeaponDisabler
       - id: ClothingUniformJumpsuitBlueshieldGrey
+      - id: MedkitCombat
         prob: 0.3
       - id: ClothingHeadHelmetBasic
       - id: ClothingOuterArmorBasic
