@@ -285,7 +285,7 @@ book-text-form-medical-death-certificate = 'N. Death Certificate
     --------------------------------------
 
 # Syndicate
-book-text-form-syndicate-ransom = [.S']
+book-text-form-syndicate-letter = [.S']
     --------------------------------------
     Sender:  Sample Person
     Recipient:  Sample Person/Organization
