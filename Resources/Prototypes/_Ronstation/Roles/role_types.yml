@@ -5,8 +5,4 @@
   id: RestrictedFreeAgent
   name: role-type-free-agent-restricted-name
   color: '#00ff00'
-
-- type: roleType
-  id: RestrictedFreeAgentSyndicate
-  name: role-type-free-agent-restricted-syndicate-name
-  color: '#ffaa00'
+  symbol: "®"

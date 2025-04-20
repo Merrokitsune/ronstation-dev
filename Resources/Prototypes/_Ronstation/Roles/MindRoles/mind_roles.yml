@@ -13,5 +13,6 @@
   name: Ghost Role (Syndicate Restricted Free Agent)
   components:
   - type: MindRole
-    roleType: RestrictedFreeAgentSyndicate
+    roleType: RestrictedFreeAgent
+    subtype: role-subtype-syndicate-personnel
   - type: GhostRoleMarkerRole
