@@ -49,6 +49,9 @@
           Quantity: 1
   - type: Item
     size: Tiny
+  - type: PhysicalComposition # Ronstation - Needs to be recyclable.
+    materialComposition:
+      Paper: 25
 
 - type: entity
   name: paper
@@ -599,7 +602,7 @@
           tags:
           - Write
   - type: CargoOrderConsole
-  - type: BankClient
+    removeLimitAccess: [ "Quartermaster" ]
   - type: ActivatableUI
     verbText: qm-clipboard-computer-verb-text
     key: enum.CargoConsoleUiKey.Orders
