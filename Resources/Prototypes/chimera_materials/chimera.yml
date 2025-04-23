@@ -573,9 +573,9 @@
   description: Universal unloading vest for spray paint and musical instruments.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/webbing.rsi
+    sprite: _Chimera_Materials/Clothing/Belt/webbing.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/webbing.rsi
+    sprite: _Chimera_Materials/Clothing/Belt/webbing.rsi
 
 # Completed RPS
 - type: entity
@@ -602,7 +602,7 @@
   description: Stylish black backpack for storing rock paraphernalia.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/backpack.rsi
+    sprite: _Chimera_Materials/Clothing/Back/backpacks/backpack.rsi
 
 # Mantle
 - type: entity
@@ -612,9 +612,9 @@
   description: A robe designed for the leader of the Chemical Operatives. Appears to be custom made.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/mantle.rsi
+    sprite: _Chimera_Materials/Clothing/Neck/mantles/mantle.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/mantle.rsi
+    sprite: _Chimera_Materials/Clothing/Neck/mantles/mantle.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -632,9 +632,9 @@
   description: Shmel, Bumble, BMB, or simply - combat magnetic boots. Have a slot for storage.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/magboots.rsi
+    sprite: _Chimera_Materials/Clothing/Shoes/Boots/magboots.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/magboots.rsi
+    sprite: _Chimera_Materials/Clothing/Shoes/Boots/magboots.rsi
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
@@ -788,7 +788,7 @@
   description: Tactical suit with protection against cuts, corrosive substances and radiation.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/jumpsuit.rsi
+    sprite: _Chimera_Materials/Clothing/Uniforms/Jumpsuit/jumpsuit.rsi
   - type: Clothing
     sprite: /Uploaded/chimera/jumpsuit.rsi
   - type: Armor
@@ -888,9 +888,9 @@
   description: Gas mask for protection from paparazzi and annoying fans.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/mask.rsi
+    sprite: _Chimera_Materials/Clothing/Mask/mask.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/mask.rsi
+    sprite: _Chimera_Materials/Clothing/Mask/mask.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -906,9 +906,9 @@
   description: These tactical gloves are fireproof and impact resistant.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/gloves.rsi
+    sprite: _Chimera_Materials/Clothing/Hands/Gloves/gloves.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/gloves.rsi
+    sprite: _Chimera_Materials/Clothing/Hands/Gloves/gloves.rsi
   - type: Armor
     modifiers:
       coefficients:
