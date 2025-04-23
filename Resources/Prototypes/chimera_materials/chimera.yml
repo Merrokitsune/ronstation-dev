@@ -678,7 +678,7 @@
   description: Steel badge with the Chemical Operatives emblem.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/poster_chimera.rsi
+    sprite: _Chimera_Materials/Structures/Wallmounts/poster_chimera.rsi
     state: poster_chimera
     scale: 0.85, 0.85
 
@@ -690,7 +690,7 @@
   description: Steel sign with the emblem of an unknown organization.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/poster_serpent_aria.rsi
+    sprite: _Chimera_Materials/Structures/Wallmounts/poster_serpent_aria.rsi
     state: poster_serpent_aria
     scale: 0.85, 0.85
 
@@ -806,7 +806,7 @@
   description: A canister designed for storing energy drinks with dye, lemon flavor.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/drink/drink_yellow.rsi
+    sprite: _Chimera_Materials/Objects/Consumables/Drinks/drink_yellow.rsi
   - type: Item
     size: Small
 
@@ -818,7 +818,7 @@
   description: A canister designed for storing energy drinks with dye, orange flavor.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/drink/drink_orange.rsi
+    sprite: _Chimera_Materials/Objects/Consumables/Drinks/drink_orange.rsi
 
 # Spray Can (Shaker) - Red
 - type: entity
@@ -828,7 +828,7 @@
   description: A canister designed for storing energy drinks with dye, pomegranate flavor.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/drink/drink_red.rsi
+    sprite: _Chimera_Materials/Objects/Consumables/Drinks/drink_red.rsi
 
 # Spray can (Shaker) - green
 - type: entity
@@ -838,7 +838,7 @@
   description: A canister designed for storing energy drinks with dye, apple flavor.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/drink/drink_green.rsi
+    sprite: _Chimera_Materials/Objects/Consumables/Drinks/drink_green.rsi
 
 # Spray Can (Shaker) - Blue
 - type: entity
@@ -848,7 +848,7 @@
   description: A canister designed for storing energy drinks with dye, blueberry flavor.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/drink/drink_blue.rsi
+    sprite: _Chimera_Materials/Objects/Consumables/Drinks/drink_blue.rsi
 
 # Spray Can (Shaker) - Purple
 - type: entity
@@ -858,7 +858,7 @@
   description: A canister designed for storing energy drinks with dye, with grape flavor.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/drink/drink_purple.rsi
+    sprite: _Chimera_Materials/Objects/Consumables/Drinks/drink_purple.rsi
 
 # Spray Can (Shaker) - Purple
 - type: entity
@@ -868,7 +868,7 @@
   description: A canister designed for storing energy drinks with coloring, with bubble gum flavor.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/drink/drink_pink.rsi
+    sprite: _Chimera_Materials/Objects/Consumables/Drinks/drink_pink.rsi
 
 # Spray Can (Shaker) - Gray
 - type: entity
@@ -878,7 +878,7 @@
   description: A canister designed for storing energy drinks with dye, without sugar.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/drink/drink_grey.rsi
+    sprite: _Chimera_Materials/Objects/Consumables/Drinks/drink_grey.rsi
 
 # gas mask
 - type: entity
@@ -1341,7 +1341,7 @@
   description: An ancient canister that can hold a huge amount of any kind of gas. Can be attached to a connector port with a wrench.
   components:
     - type: Sprite
-      sprite: /Uploaded/chimera/canister.rsi
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
       noRot: true
       layers:
         - state: yellow
@@ -1400,7 +1400,7 @@
   description: Broken Gas Canister. Not entirely useless, as it can be dismantled to obtain high-quality materials.
   components:
     - type: Sprite
-      sprite: /Uploaded/chimera/canister.rsi
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
       state: yellow_broken
 
 # Red Ancient Canister
@@ -1411,7 +1411,7 @@
   description: An ancient canister that can hold a huge amount of any kind of gas. Can be attached to a connector port with a wrench.
   components:
     - type: Sprite
-      sprite: /Uploaded/chimera/canister.rsi
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
       noRot: true
       layers:
         - state: red
@@ -1466,7 +1466,7 @@
   description: Broken Gas Canister. Not entirely useless, as it can be dismantled to obtain high-quality materials.
   components:
     - type: Sprite
-      sprite: /Uploaded/chimera/canister.rsi
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
       state: red_broken
 
 # Green Ancient Canister
@@ -1477,7 +1477,7 @@
   description: An ancient canister that can hold a huge amount of any kind of gas. Can be attached to a connector port with a wrench.
   components:
     - type: Sprite
-      sprite: /Uploaded/chimera/canister.rsi
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
       noRot: true
       layers:
         - state: green
@@ -1532,7 +1532,7 @@
   description: Broken Gas Canister. Not entirely useless, as it can be dismantled to obtain high-quality materials.
   components:
     - type: Sprite
-      sprite: /Uploaded/chimera/canister.rsi
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
       state: green_broken
 
 # Blue Ancient Canister
@@ -1543,7 +1543,7 @@
   description: An ancient canister that can hold a huge amount of any kind of gas. Can be attached to a connector port with a wrench.
   components:
     - type: Sprite
-      sprite: /Uploaded/chimera/canister.rsi
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
       noRot: true
       layers:
         - state: blue
@@ -1598,7 +1598,7 @@
   description: Broken Gas Canister. Not entirely useless, as it can be dismantled to obtain high-quality materials.
   components:
     - type: Sprite
-      sprite: /Uploaded/chimera/canister.rsi
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
       state: blue_broken
 
 # Ancient Air Canister
@@ -1609,7 +1609,7 @@
   description: An ancient canister that can hold a huge amount of any kind of gas. Can be attached to a connector port with a wrench.
   components:
     - type: Sprite
-      sprite: /Uploaded/chimera/canister.rsi
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
       noRot: true
       layers:
         - state: air
@@ -1652,7 +1652,7 @@
   description: Broken Gas Canister. Not entirely useless, as it can be dismantled to obtain high-quality materials.
   components:
     - type: Sprite
-      sprite: /Uploaded/chimera/canister.rsi
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
       state: air_broken
 
 # Ancient canister of liquefied oxygen
@@ -1666,7 +1666,7 @@
     - type: Transform
       noRot: true
     - type: Sprite
-      sprite: /Uploaded/chimera/canister.rsi
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
       noRot: true
       layers:
         - state: oxygen
@@ -1720,7 +1720,7 @@
     - type: Transform
       noRot: true
     - type: Sprite
-      sprite: /Uploaded/chimera/canister.rsi
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
       noRot: true
       layers:
         - state: nitrogen
