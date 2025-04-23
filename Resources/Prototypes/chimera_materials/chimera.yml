@@ -1024,9 +1024,8 @@
   id: ChimeraInflatableDoorStack_vol1
   parent: [BaseItem, BaseSyndicateContraband]
   name: inflatable door
-  suffix: Chemop
+  suffix: Chemop, Full
   description: A foldable inflatable wall with a door that quickly expands into a reinforced cubic shape when activated.
-  suffix: Full
   components:
     - type: Stack
       stackType: ChimeraInflatableDoorSwap_vol1
