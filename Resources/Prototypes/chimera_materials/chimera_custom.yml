@@ -35,17 +35,17 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
-  - type: HeldSpeedModifier
-  - type: HardsuitIdentification
+  # - type: HeldSpeedModifier
+  # - type: HardsuitIdentification
   - type: ToggleableClothing
     clothingPrototype: CustomArmadaClothingOuterHardsuitHelmet_vol1
   - type: Tag
     tags:
     - Hardsuit
     - WhitelistChameleon
-  - type: Speech
-  - type: TTS
-    voice: Overwatch
+  # - type: Speech
+  # - type: TTS
+  #   voice: Overwatch
 
 # Armada Helmet
 - type: entity
@@ -158,7 +158,7 @@
 - type: entity
   parent: ChimeraNeutralClothingOuterHardsuitHelmet_vol1
   id: ChimeraMerchantClothingOuterHardsuitHelmet_vol1
-  name: шлем торговца
+  name: merchant helmet
   description: A heavily armored helmet designed for trading operations.
   components:
   - type: Sprite

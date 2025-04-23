@@ -30,7 +30,7 @@
     uiKey: enum.PdaUiKey.Key
     preinstalled:
       - NotekeeperCartridge
-      - BankCartridge
+      # - BankCartridge # Ronstation - No bank cartridge exists.
       - AstroNavCartridge
 
 # medical PDA of chemical operatives
@@ -53,7 +53,7 @@
     preinstalled:
       - NotekeeperCartridge
       - MedTekCartridge
-      - BankCartridge
+      # - BankCartridge # Ronstation - No bank cartridge exists.
 
 # EMAG Chemical Operatives PDA
 - type: entity
@@ -115,16 +115,16 @@
     walkModifier: 0.916
     sprintModifier: 0.916
   - type: HeldSpeedModifier
-  - type: HardsuitIdentification
+  # - type: HardsuitIdentification # Ronstation - There is no component of that type.
   - type: ToggleableClothing
     clothingPrototype: ChimeraClothingOuterHardsuitHelmet_vol1
   - type: Tag
     tags:
     - Hardsuit
     - WhitelistChameleon
-  - type: Speech
-  - type: TTS
-    voice: Overwatch
+  # - type: Speech
+  # - type: TTS # Ronstation - We have no text-to-speech software.
+  #   voice: Overwatch
 
 # Basic helmet
 - type: entity
@@ -205,10 +205,10 @@
     tags:
     - Hardsuit
     - WhitelistChameleon
-  - type: HardsuitIdentification
-  - type: Speech
-  - type: TTS
-    voice: Overwatch
+  # - type: HardsuitIdentification # Ronstation - There is no component of that type.
+  # - type: Speech
+  # - type: TTS # Ronstation - We have no text-to-speech software.
+  #   voice: Overwatch
 
 # Leader's Helm
 - type: entity
@@ -467,7 +467,7 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.833
     sprintModifier: 0.833
-  - type: HardsuitIdentification
+  # - type: HardsuitIdentification # Ronstation - There is no component of that type.
   - type: ToggleableClothing
     clothingPrototype: ChimeraGasClothingOuterHardsuitHelmet_vol1
   - type: Tag
@@ -596,7 +596,7 @@
 
 # Backpack
 - type: entity
-  parent: [ClothingMilitaryBackpack, BaseSyndicateContraband]
+  parent: [ClothingBackpack, BaseSyndicateContraband]
   id: ChimeraClothingBackpack_vol1
   name: black backpack
   description: Stylish black backpack for storing rock paraphernalia.
@@ -697,7 +697,7 @@
 # Acid gun "Lymer", prototype toperor
 - type: entity
   name: limer
-  parent: BaseWeaponBatterySmall, BaseSyndicateContraband
+  parent: [ BaseWeaponBatterySmall, BaseSyndicateContraband ]
   id: ChimeraWeaponLaimer_vol1
   description: Self-loading pistol with solvent charges.
   components:
@@ -790,7 +790,7 @@
   - type: Sprite
     sprite: _Chimera_Materials/Clothing/Uniforms/Jumpsuit/jumpsuit.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/jumpsuit.rsi
+    sprite: _Chimera_Materials/Clothing/Uniforms/Jumpsuit/jumpsuit.rsi
   - type: Armor
     modifiers:
       coefficients:
@@ -1208,10 +1208,10 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ChimeraSupportClothingHeadHelmetHardsuit_vol1
-  - type: HardsuitIdentification
-  - type: Speech
-  - type: TTS
-    voice: Overwatch
+  # - type: HardsuitIdentification # Ronstation - There is no component of that type.
+  # - type: Speech
+  # - type: TTS # Ronstation - We have no text-to-speech software.
+  #   voice: Overwatch
 
 # Support Helmet
 - type: entity
