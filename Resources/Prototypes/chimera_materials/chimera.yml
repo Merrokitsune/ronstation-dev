@@ -536,17 +536,17 @@
       "Distortion": {30: 0}
       "Harmonics": {31: 0}
   - type: Sprite
-    sprite: /Uploaded/chimera/guitar.rsi
+    sprite: _Chimera_Materials/Objects/Fun/Instruments/guitar.rsi
     state: icon
   - type: Item
     size: Normal
-    sprite: /Uploaded/chimera/guitar.rsi
+    sprite: _Chimera_Materials/Objects/Fun/Instruments/guitar.rsi
   - type: Clothing
     quickEquip: false
     slots:
     - back
     - suitStorage
-    sprite: /Uploaded/chimera/guitar.rsi
+    sprite: _Chimera_Materials/Objects/Fun/Instruments/guitar.rsi
   - type: Tag
     tags:
     - StringInstrument
@@ -702,7 +702,7 @@
   description: Self-loading pistol with solvent charges.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/pistol.rsi
+    sprite: _Chimera_Materials/Objects/Weapons/Guns/Pistols/pistol.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -710,7 +710,7 @@
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
   - type: Clothing
-    sprite: /Uploaded/chimera/pistol.rsi
+    sprite: _Chimera_Materials/Objects/Weapons/Guns/Pistols/pistol.rsi
   - type: Gun
     fireRate: 1
     selectedMode: SemiAuto
@@ -735,13 +735,13 @@
     types:
       Caustic: 13
   muzzleFlash:
-    sprite: /Uploaded/chimera/hitscan.rsi
+    sprite: _Chimera_Materials/Objects/Weapons/Guns/Projectiles/hitscan.rsi
     state: muzzle_beam_yellow
   travelFlash:
-    sprite: /Uploaded/chimera/hitscan.rsi
+    sprite: _Chimera_Materials/Objects/Weapons/Guns/Projectiles/hitscan.rsi
     state: beam_yellow
   impactFlash:
-    sprite: /Uploaded/chimera/hitscan.rsi
+    sprite: _Chimera_Materials/Objects/Weapons/Guns/Projectiles/hitscan.rsi
     state: impact_beam_yellow
 
 # Limer for the cool ones.
@@ -752,7 +752,7 @@
   description: A self-loading pistol with solvent charges, only for the tough guys.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/pistol_cool.rsi
+    sprite: _Chimera_Materials/Objects/Weapons/Guns/Pistols/pistol_cool.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -760,7 +760,7 @@
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
   - type: Clothing
-    sprite: /Uploaded/chimera/pistol_cool.rsi
+    sprite: _Chimera_Materials/Objects/Weapons/Guns/Pistols/pistol_cool.rsi
   - type: HitscanBatteryAmmoProvider
     proto: PulseYellowCool_vol1
 
@@ -771,13 +771,13 @@
     types:
       Caustic: 15
   muzzleFlash:
-    sprite: /Uploaded/chimera/hitscan.rsi
+    sprite: _Chimera_Materials/Objects/Weapons/Guns/Projectiles/hitscan.rsi
     state: muzzle_beam_yellow
   travelFlash:
-    sprite: /Uploaded/chimera/hitscan.rsi
+    sprite: _Chimera_Materials/Objects/Weapons/Guns/Projectiles/hitscan.rsi
     state: beam_yellow
   impactFlash:
-    sprite: /Uploaded/chimera/hitscan.rsi
+    sprite: _Chimera_Materials/Objects/Weapons/Guns/Projectiles/hitscan.rsi
     state: impact_beam_yellow
 
 # Overalls
@@ -936,10 +936,10 @@
       stackType: ChimeraInflatableWallSwap_vol1
       count: 8
     - type: Sprite
-      sprite: /Uploaded/chimera/inflatable_wall.rsi
+      sprite: _Chimera_Materials/Objects/Misc/inflatable_wall.rsi
       state: item_wall
     - type: Item
-      sprite: /Uploaded/chimera/inflatable_wall.rsi
+      sprite: _Chimera_Materials/Objects/Misc/inflatable_wall.rsi
       size: Small
     - type: SpawnAfterInteract
       prototype: ChimeraInflatableWall_vol1
@@ -968,7 +968,7 @@
   - type: Clickable
   - type: InteractionOutline
   - type: Sprite
-    sprite: /Uploaded/chimera/inflatable_wall.rsi
+    sprite: _Chimera_Materials/Objects/Misc/inflatable_wall.rsi
     state: inflatable_wall
   - type: Physics
     bodyType: Static
@@ -1031,10 +1031,10 @@
       stackType: ChimeraInflatableDoorSwap_vol1
       count: 4
     - type: Sprite
-      sprite: /Uploaded/chimera/inflatable_door.rsi
+      sprite: _Chimera_Materials/Objects/Misc/inflatable_door.rsi
       state: item_door
     - type: Item
-      sprite: /Uploaded/chimera/inflatable_door.rsi
+      sprite: _Chimera_Materials/Objects/Misc/inflatable_door.rsi
       size: Small
     - type: SpawnAfterInteract
       prototype: ChimeraInflatableDoor_vol1
@@ -1063,7 +1063,7 @@
   - type: Clickable
   - type: InteractionOutline
   - type: Sprite
-    sprite: /Uploaded/chimera/inflatable_door.rsi
+    sprite: _Chimera_Materials/Objects/Misc/inflatable_door.rsi
     state: closed
   - type: Physics
     bodyType: Static
@@ -1291,11 +1291,11 @@
   description: A modified Silovik that holds the coveted eighth round. Uses the .50 shotgun caliber.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/corrozor.rsi
+    sprite: _Chimera_Materials/Weapons/Guns/Shotguns/corrozor.rsi
   - type: Clothing
-    sprite: /Uploaded/chimera/corrozor.rsi
+    sprite: _Chimera_Materials/Weapons/Guns/Shotguns/corrozor.rsi
   - type: Item
-    sprite: /Uploaded/chimera/corrozor_inhands_64x.rsi
+    sprite: _Chimera_Materials/Weapons/Guns/Shotguns/corrozor_inhands_64x.rsi
   - type: BallisticAmmoProvider
     capacity: 8
   - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
@@ -1311,13 +1311,13 @@
   description: A shield designed to resist bullets and nothing more.
   components:
     - type: Sprite
-      sprite: /Uploaded/chimera/shield.rsi
+      sprite: _Chimera_Materials/Weapons/Melee/shield.rsi
       state: icon
     - type: Item
-      sprite: /Uploaded/chimera/shield.rsi
+      sprite: _Chimera_Materials/Weapons/Melee/shield.rsi
       heldPrefix: icon
     - type: Clothing
-      sprite: /Uploaded/chimera/shield.rsi
+      sprite: _Chimera_Materials/Weapons/Melee/shield.rsi
       quickEquip: false
       slots:
       - suitStorage
