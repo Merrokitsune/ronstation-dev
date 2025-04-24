@@ -1119,7 +1119,7 @@
   description: Energy bar with a large energy reserve.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/snacks.rsi
+    sprite: _Chimera_Materials/Objects/Consumable/Food/snacks.rsi
     state: energybar
   - type: Item
   - type: SpawnItemsOnUse
@@ -1144,7 +1144,7 @@
       - fiber
       - sweet
   - type: Sprite
-    sprite: /Uploaded/chimera/snacks.rsi
+    sprite: _Chimera_Materials/Objects/Consumable/Food/snacks.rsi
     state: energybar-open
   - type: Item
   - type: SolutionContainerManager
@@ -1165,7 +1165,7 @@
   description: This is trash.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/snacks.rsi
+    sprite: _Chimera_Materials/Objects/Consumable/Food/snacks.rsi
     state: energybar-trash
 
 # SUPPORT - Drummer
