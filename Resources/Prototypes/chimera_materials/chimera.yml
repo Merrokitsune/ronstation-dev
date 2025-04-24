@@ -1257,7 +1257,7 @@
     signProto: ChimeraHolo_vol1
     chargeUse: 120
   - type: Sprite
-    sprite: /Uploaded/chimera/holoprojector.rsi
+    sprite: _Chimera_Materials/Structures/Holo/holoprojector.rsi
     state: icon
 
 # Holoprojector barrier
@@ -1268,7 +1268,7 @@
   description: A holographic barrier with the symbols of chemical operatives, it clearly does not bode well.
   components:
   - type: Sprite
-    sprite: /Uploaded/chimera/holo.rsi
+    sprite: _Chimera_Materials/Structures/Holo/holo.rsi
     state: icon
   - type: PointLight
     enabled: true
