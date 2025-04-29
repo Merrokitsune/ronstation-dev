@@ -1,0 +1,5 @@
+# uplink categories
+- type: storeCategory
+  id: UplinkSustenance
+  name: store-category-sustenance
+  priority: 0

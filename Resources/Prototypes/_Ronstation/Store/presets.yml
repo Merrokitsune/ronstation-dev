@@ -1,0 +1,12 @@
+- type: entity
+  id: StorePresetSustenanceUplink
+  abstract: true
+  components:
+  - type: Store
+    name: store-preset-name-sustenance-uplink
+    categories:
+    - UplinkSustenance
+    currencyWhitelist:
+    - Telecrystal
+    balance:
+      Telecrystal: 0
