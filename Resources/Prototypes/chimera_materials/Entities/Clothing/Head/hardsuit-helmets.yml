@@ -1,0 +1,254 @@
+# GRENADIER - SOLOIST
+# The Grenadier's suit is the basic suit for the Chimera squad.
+# Basic helmet
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ChimeraClothingOuterHardsuitHelmet_vol1
+  name: Soloist helmet
+  description: A heavily armored helmet designed for terrorist performances.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_helmet.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_helmet.rsi
+  - type: PointLight
+    color: orange
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.005
+    coolingCoefficient: 0.005
+  - type: FireProtection
+    reduction: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+        Cold: 0.9
+        Shock: 0.9
+        Radiation: 0.9
+        Caustic: 0.9
+
+# LEADER - VOCALIST
+# Leader's Helm
+- type: entity
+  parent: ChimeraClothingOuterHardsuitHelmet_vol1
+  id: ChimeraLeaderClothingOuterHardsuitHelmet_vol1
+  name: Vocalist helmet
+  description: Custom made heavily armored helmet.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_leader_helmet.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_leader_helmet.rsi
+  - type: PointLight
+    color: orange
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.005
+    coolingCoefficient: 0.005
+  - type: FireProtection
+    reduction: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.85
+        Heat: 0.85
+        Cold: 0.85
+        Shock: 0.85
+        Radiation: 0.85
+        Caustic: 0.85
+
+# MEDIC - PIANIST
+# Medic Helmet
+- type: entity
+  parent: ChimeraClothingOuterHardsuitHelmet_vol1
+  id: ChimeraMedicClothingOuterHardsuitHelmet_vol1
+  name: Pianist helmet
+  description: A heavily armored helmet designed to provide medical assistance.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_medic_helmet.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_medic_helmet.rsi
+  - type: PointLight
+    color: "#adffec"
+
+# Melodist - PIANIST-PARAMEDIC
+# Pianist-paramedic helmet
+- type: entity
+  parent: ChimeraClothingOuterHardsuitHelmet_vol1
+  id: ChimeraParamedicClothingOuterHardsuitHelmet_vol1
+  name: Melodist helmet
+  description: A lightweight helmet designed to provide emergency medical care.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_paramedic_helmet.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_paramedic_helmet.rsi
+  - type: PointLight
+    color: "#adffec"
+
+# Organist
+# Organist's Helmet
+- type: entity
+  parent: ChimeraClothingOuterHardsuitHelmet_vol1
+  id: ChimeraChemistClothingOuterHardsuitHelmet_vol1
+  name: Organist helmet
+  description: Heavily armored helmet that emits radiation.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_chemist_helmet.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_chemist_helmet.rsi
+  - type: PointLight
+    color: "#00FF7F"
+
+# ATMOS - BASSIST
+# Atmos helmet
+- type: entity
+  parent: ChimeraClothingOuterHardsuitHelmet_vol1
+  id: ChimeraAtmosClothingOuterHardsuitHelmet_vol1
+  name: Bassist helmet
+  description: A heavily armored helmet designed to create the right atmosphere.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_atmos_helmet.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_atmos_helmet.rsi
+
+# SUPPORT - Drummer
+# Support Helmet
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ChimeraSupportClothingHeadHelmetHardsuit_vol1
+  name: Ram's Power Helmet
+  description: A power helmet no less heavy than the Drummer.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_support_helmet.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_support_helmet.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.005
+    coolingCoefficient: 0.005
+  - type: FireProtection
+    reduction: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85
+        Piercing: 0.85
+        Heat: 0.85
+        Cold: 0.85
+        Shock: 0.85
+        Radiation: 0.85
+        Caustic: 0.85
+  - type: PointLight
+    color: "#66FF00"
+
+# Trumpeter's Helmet
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: ChimeraGasClothingOuterHardsuitHelmet_vol1
+  name: Trumpeter helmet
+  description: A heavily armored helmet designed for gas attacks.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_gas_helmet.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_gas_helmet.rsi
+  - type: PointLight
+    color: "#00FF7F"
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.005
+    coolingCoefficient: 0.005
+  - type: FireProtection
+    reduction: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+        Cold: 0.9
+        Shock: 0.9
+        Radiation: 0.9
+        Caustic: 0.9
+
+# ARMADA - Bonus suit for those who work with explosions.
+# Armada Helmet
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: CustomArmadaClothingOuterHardsuitHelmet_vol1
+  name: armada helmet
+  description: The heavily armored demolition helmet, designed for terrorist displays, has a blast-resistant design.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_armada_helmet.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_armada_helmet.rsi
+  - type: PointLight
+    color: orange
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.005
+    coolingCoefficient: 0.005
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: FireProtection
+    reduction: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+        Cold: 0.9
+        Shock: 0.9
+        Radiation: 0.9
+        Caustic: 0.9
+
+# chemical merchant helmet (yellow)
+- type: entity
+  parent: ChimeraClothingOuterHardsuitHelmet_vol1
+  id: ChimeraNeutralClothingOuterHardsuitHelmet_vol1
+  name: merchant helmet
+  description: A heavily armored helmet designed for trading operations.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_neutral_helmet.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_neutral_helmet.rsi
+  - type: PointLight
+    color: orange
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+        Cold: 0.95
+        Shock: 0.95
+        Radiation: 0.95
+        Caustic: 0.95

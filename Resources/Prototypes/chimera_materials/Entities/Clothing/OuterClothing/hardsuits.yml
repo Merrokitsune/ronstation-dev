@@ -1,0 +1,447 @@
+# GRENADIER - SOLOIST
+# The Grenadier's suit is the basic suit for the Chimera squad.
+- type: entity
+  parent: [ ClothingOuterHardsuitBase, BaseSyndicateContraband ]
+  id: ChimeraClothingOuterHardsuit_vol1
+  name: Soloist's spacesuit
+  description: A heavily armored suit designed for terrorist performances.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite.rsi
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: FireProtection
+    reduction: 0.8
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.55
+        Heat: 0.55
+        Cold: 0.55
+        Shock: 0.55
+        Radiation: 0.1
+        Caustic: 0.1
+        Stun: 0.55
+  - type: ClothingSpeedModifier
+    walkModifier: 0.916
+    sprintModifier: 0.916
+  - type: HeldSpeedModifier
+  # - type: HardsuitIdentification # Ronstation - There is no component of that type.
+  - type: ToggleableClothing
+    clothingPrototype: ChimeraClothingOuterHardsuitHelmet_vol1
+  - type: Tag
+    tags:
+    - Hardsuit
+    - WhitelistChameleon
+  # - type: Speech
+  # - type: TTS # Ronstation - We have no text-to-speech software.
+  #   voice: Overwatch
+
+# LEADER - VOCALIST
+# Leader's suit
+- type: entity
+  parent: [ ClothingOuterHardsuitBase, BaseSyndicateContraband ]
+  id: ChimeraLeaderClothingOuterHardsuit_vol1
+  name: Vocalist's spacesuit
+  description: A custom-made, heavily armored spacesuit.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_leader.rsi
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_leader.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.6
+  - type: FireProtection
+    reduction: 0.8
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.5
+        Heat: 0.5
+        Cold: 0.5
+        Shock: 0.5
+        Radiation: 0.1
+        Caustic: 0.1
+        Stun: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ChimeraLeaderClothingOuterHardsuitHelmet_vol1
+  - type: Tag
+    tags:
+    - Hardsuit
+    - WhitelistChameleon
+  # - type: HardsuitIdentification # Ronstation - There is no component of that type.
+  # - type: Speech
+  # - type: TTS # Ronstation - We have no text-to-speech software.
+  #   voice: Overwatch
+
+# MEDIC - PIANIST
+# Medic's spacesuit
+- type: entity
+  parent: ChimeraClothingOuterHardsuit_vol1
+  id: ChimeraMedicClothingOuterHardsuit_vol1
+  name: Pianist's Spacesuit
+  description: A heavily armored suit designed to provide medical assistance.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_medic.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_medic.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ChimeraMedicClothingOuterHardsuitHelmet_vol1
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.6
+        Heat: 0.6
+        Cold: 0.6
+        Shock: 0.6
+        Radiation: 0.1
+        Caustic: 0.1
+        Stun: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+
+# Melodist - PIANIST-PARAMEDIC
+# Pianist-paramedic's spacesuit
+- type: entity
+  parent: ChimeraClothingOuterHardsuit_vol1
+  id: ChimeraParamedicClothingOuterHardsuit_vol1
+  name: Melodist's spacesuit
+  description: A lightweight spacesuit that increases the wearer's speed and is designed to provide emergency medical care.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_paramedic.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_paramedic.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ChimeraParamedicClothingOuterHardsuitHelmet_vol1
+  - type: ExplosionResistance
+    damageCoefficient: 0.75
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.65
+        Heat: 0.65
+        Cold: 0.65
+        Shock: 0.65
+        Radiation: 0.1
+        Caustic: 0.1
+        Stun: 0.65
+  - type: ClothingSpeedModifier
+    walkModifier: 1.125
+    sprintModifier: 1.125
+
+# Organist
+# Organist's Spacesuit
+- type: entity
+  parent: ChimeraClothingOuterHardsuit_vol1
+  id: ChimeraChemistClothingOuterHardsuit_vol1
+  name: Organist's spacesuit
+  description: Heavily armored spacesuit that emits radiation.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_chemist.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_chemist.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ChimeraChemistClothingOuterHardsuitHelmet_vol1
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.55
+        Heat: 0.25
+        Cold: 0.25
+        Shock: 0.25
+        Radiation: 0
+        Caustic: 0.1
+        Stun: 0.55
+  - type: RadiationSource
+    intensity: 3.5
+    slope: 0.14
+  - type: Geiger
+  - type: ClothingSpeedModifier
+    walkModifier: 0.833
+    sprintModifier: 0.833
+
+# ATMOS - BASSIST
+# Atmos spacesuit
+- type: entity
+  parent: ChimeraClothingOuterHardsuit_vol1
+  id: ChimeraAtmosClothingOuterHardsuit_vol1
+  name: Basist's spacesuit
+  description: A heavily armored spacesuit designed to create a suitable atmosphere.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_atmos.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_atmos.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ChimeraAtmosClothingOuterHardsuitHelmet_vol1
+  - type: ExplosionResistance
+    damageCoefficient: 0.7
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.6
+        Heat: 0.6
+        Cold: 0.6
+        Shock: 0.6
+        Radiation: 0.1
+        Caustic: 0.1
+        Stun: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+
+# SUPPORT - Drummer
+# Support Suit
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseSyndicateContraband]
+  id: ChimeraSupportOuterClothingHardsuit_vol1
+  name: Drummer power suit
+  description: Drummer's Power Suit.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_support.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_support.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.25
+  - type: FireProtection
+    reduction: 0.8
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.25
+        Slash: 0.25
+        Piercing: 0.15
+        Heat: 0.15
+        Cold: 0.15
+        Shock: 0.15
+        Radiation: 0.1
+        Caustic: 0.1
+        Stun: 0.15
+  - type: ClothingSpeedModifier
+    walkModifier: 0.416
+    sprintModifier: 0.416
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ChimeraSupportClothingHeadHelmetHardsuit_vol1
+  # - type: HardsuitIdentification # Ronstation - There is no component of that type.
+  # - type: Speech
+  # - type: TTS # Ronstation - We have no text-to-speech software.
+  #   voice: Overwatch
+
+# Trumpeter's Spacesuit
+- type: entity
+  parent: [ ClothingOuterHardsuitBase, BaseSyndicateContraband ]
+  id: ChimeraGasClothingOuterHardsuit_vol1
+  name: Trumpeter Spacesuit
+  description: A heavily armored spacesuit capable of storing gas.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_gas.rsi
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_gas.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: FireProtection
+    reduction: 0.8
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.65
+        Slash: 0.65
+        Piercing: 0.55
+        Heat: 0.55
+        Cold: 0.55
+        Shock: 0.55
+        Radiation: 0.1
+        Caustic: 0.1
+        Stun: 0.55
+  - type: ClothingSpeedModifier
+    walkModifier: 0.833
+    sprintModifier: 0.833
+  # - type: HardsuitIdentification # Ronstation - There is no component of that type.
+  - type: ToggleableClothing
+    clothingPrototype: ChimeraGasClothingOuterHardsuitHelmet_vol1
+  - type: Tag
+    tags:
+    - Hardsuit
+    - WhitelistChameleon
+    - GasTank
+  - type: ActivatableUI
+    key: enum.SharedGasTankUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.SharedGasTankUiKey.Key:
+        type: GasTankBoundUserInterface
+  - type: GasTank
+    outputPressure: 21.3
+    air:
+      volume: 500
+      temperature: 293.15
+    tankLowPressure: 30.0
+
+# ARMADA - Bonus suit for those who work with explosions.
+# Armada Spacesuit
+- type: entity
+  parent: [ ClothingOuterHardsuitBase, BaseSyndicateContraband ]
+  id: CustomArmadaClothingOuterHardsuit_vol1
+  name: armada spacesuit
+  description: The heavily armored demolition suit, designed for terrorist displays, has an explosion-proof design.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_armada.rsi
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_armada.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.4
+  - type: FireProtection
+    reduction: 0.8
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.6
+        Heat: 0.25
+        Cold: 0.25
+        Shock: 0.25
+        Radiation: 0.1
+        Caustic: 0.1
+        Stun: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  # - type: HeldSpeedModifier
+  # - type: HardsuitIdentification
+  - type: ToggleableClothing
+    clothingPrototype: CustomArmadaClothingOuterHardsuitHelmet_vol1
+  - type: Tag
+    tags:
+    - Hardsuit
+    - WhitelistChameleon
+  # - type: Speech
+  # - type: TTS
+  #   voice: Overwatch
+
+# Chemical Trader (Yellow)
+# Chemical Trader's Suit (Yellow)
+- type: entity
+  parent: ChimeraClothingOuterHardsuit_vol1
+  id: ChimeraNeutralClothingOuterHardsuit_vol1
+  name: merchant's spacesuit
+  description: A heavily armored spacesuit designed for trading operations.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_neutral.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_neutral.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.55
+        Slash: 0.65
+        Piercing: 0.65
+        Heat: 0.55
+        Cold: 0.55
+        Shock: 0.55
+        Radiation: 0.1
+        Caustic: 0.1
+        Stun: 0.55
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1
+  - type: ToggleableClothing
+    clothingPrototype: ChimeraNeutralClothingOuterHardsuitHelmet_vol1
+
+# Chemical Merchant (Blue)
+# Chemical Trader's Suit (Blue)
+- type: entity
+  parent: ChimeraNeutralClothingOuterHardsuit_vol1
+  id: ChimeraMerchantClothingOuterHardsuit_vol1
+  name: merchant's spacesuit
+  description: A heavily armored spacesuit designed for trading operations.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_merchant.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/OuterClothing/Hardsuits/hardsuite_merchant.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ChimeraMerchantClothingOuterHardsuitHelmet_vol1
+
+# Chemical Trader's Helmet (Blue)
+- type: entity
+  parent: ChimeraNeutralClothingOuterHardsuitHelmet_vol1
+  id: ChimeraMerchantClothingOuterHardsuitHelmet_vol1
+  name: merchant helmet
+  description: A heavily armored helmet designed for trading operations.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_merchant_helmet.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/Head/Hardsuits/hardsuite_merchant_helmet.rsi
