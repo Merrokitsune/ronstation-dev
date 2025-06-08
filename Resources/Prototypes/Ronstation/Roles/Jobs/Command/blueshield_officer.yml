@@ -9,7 +9,7 @@
       time: 36000 # 10 hrs
     - !type:DepartmentTimeRequirement
       department: Command
-      time: 36000 # 10 hours
+      time: 54000 # 15 hours
   weight: 20
   startingGear: BlueshieldOfficerGear
   icon: "JobIconNanotrasen"
@@ -53,3 +53,13 @@
     - Flash
     - WeaponPistolMk58
     - MagazinePistol
+
+- type: chameleonOutfit
+  id: BlueshieldOfficerOutfit
+  job: BlueshieldOfficer
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatBeretBlueshield
+    mask: ClothingMaskGasSecurity
+    neck: Dinkyshield
+    gloves: ClothingHandsGlovesColorBlack

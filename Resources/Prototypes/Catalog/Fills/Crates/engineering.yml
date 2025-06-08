@@ -162,19 +162,6 @@
         amount: 6
 
 - type: entity
-  id: CrateEvaKit
-  parent: CrateCommandSecure
-  name: EVA kit
-  description: A set consisting of two prestigious EVA suits and helmets.
-  components:
-  - type: StorageFill
-    contents:
-      - id: ClothingHeadHelmetEVA
-        amount: 2
-      - id: ClothingOuterHardsuitEVA
-        amount: 2
-
-- type: entity
   id: CrateRCDAmmo
   parent: CrateEngineering
   name: compressed matter crate
@@ -228,6 +215,8 @@
     - id: SignalTimerElectronics
     - id: SMESMachineCircuitboard
     - id: SubstationMachineCircuitboard
+    - id: BorgChargerCircuitboard
+    - id: CellRechargerCircuitboard
     - id: SpaceVillainArcadeComputerCircuitboard
     - id: BlockGameArcadeComputerCircuitboard
 
@@ -242,4 +231,15 @@
       entity_storage: !type:NestedSelector
         tableId: RandomTechBoardTable
         rolls: !type:RangeNumberSelector
-          range: 3, 7
+          range: 6, 8
+
+- type: entity
+  id: CrateAirGrenade
+  parent: CrateEngineering
+  name: air grenade crate
+  description: A crate containing 3 air grenades.
+  components:
+  - type: StorageFill
+    contents:
+    - id: AirGrenade
+      amount: 3

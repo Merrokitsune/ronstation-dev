@@ -10,14 +10,14 @@
       layers:
         - state: icon
         - state: screen
-          map: [ "enum.ToggleVisuals.Layer" ]
+          map: [ "enum.ToggleableVisuals.Layer" ]
           visible: false
           shader: unshaded
     - type: Appearance
     - type: GenericVisualizer
       visuals:
-        enum.ToggleVisuals.Toggled:
-          enum.ToggleVisuals.Layer:
+        enum.ToggleableVisuals.Enabled:
+          enum.ToggleableVisuals.Layer:
             True: { visible: true }
             False: { visible: false }
     - type: Item
@@ -63,10 +63,10 @@
 - type: entity
   id: DefibrillatorOneHandedUnpowered
   parent: BaseDefibrillator
-  suffix: One-Handed, Unpowered
+  suffix: One-Handed, Always Powered
 
 - type: entity
-  id: DefibrillatorCompact # This should be a research item at some point
+  id: DefibrillatorCompact
   parent: [ BaseDefibrillator, PowerCellSlotMediumItem ]
   name: compact defibrillator
   description: Now in fun size!
@@ -76,7 +76,7 @@
     layers:
       - state: icon
       - state: screen
-        map: [ "enum.ToggleVisuals.Layer" ]
+        map: [ "enum.ToggleableVisuals.Layer" ]
         visible: false
         shader: unshaded
       - state: ready
@@ -96,8 +96,18 @@
   - type: UseDelay
 
 - type: entity
-  id: DefibrillatorSyndicate
   parent: DefibrillatorCompact
+  id: DefibrillatorCompactEmpty
+  suffix: Empty
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+
+- type: entity
+  id: DefibrillatorSyndicate
+  parent: [ DefibrillatorCompact, BaseSyndicateContraband ]
   name: interdyne defibrillator
   description: Doubles as a self-defense weapon against war-crime inclined tiders.
   components:
@@ -106,7 +116,7 @@
     layers:
       - state: icon
       - state: screen
-        map: [ "enum.ToggleVisuals.Layer" ]
+        map: [ "enum.ToggleableVisuals.Layer" ]
         visible: false
         shader: unshaded
       - state: ready

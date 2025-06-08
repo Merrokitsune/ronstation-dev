@@ -80,6 +80,10 @@
             - Multitool
     sprite: Clothing/Belt/belt_overlay.rsi
   - type: Appearance
+  - type: Tag
+    tags:
+    - UtilityBelt
+    - WhitelistChameleon
 
 - type: entity
   parent: ClothingBeltStorageBase
@@ -277,6 +281,7 @@
         - Injector
         - Pill
         - HandLabeler
+        - Defibrillator
   - type: ItemMapper
     mapLayers:
       bottle:
@@ -297,14 +302,10 @@
         whitelist:
           tags:
           - Spray
-      # spray_med:
-      #   whitelist:
-      #     tags:
-      #     - SprayMedical
-      # wrench_medical:
-      #   whitelist:
-      #     tags:
-      #     - WrenchMedical
+      defib:
+        whitelist:
+          components:
+          - Defibrillator
       wrench:
         whitelist:
           tags:
@@ -612,6 +613,8 @@
         - Gun
         - BallisticAmmoProvider
         - CartridgeAmmo
+  - type: StaticPrice
+    price: 500
 
 - type: entity
   parent: ClothingBeltSecurity
@@ -658,6 +661,8 @@
     sprite: Clothing/Belt/militarywebbing.rsi
   - type: ExplosionResistance
     damageCoefficient: 0.1
+  - type: StaticPrice
+    price: 500
 
 - type: entity
   parent: ClothingBeltMilitaryWebbing

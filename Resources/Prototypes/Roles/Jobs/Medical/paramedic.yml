@@ -13,6 +13,7 @@
   access:
   - Medical
   - Maintenance
+  - External
   extendedAccess:
   - Chemistry
 
@@ -25,3 +26,14 @@
   storage:
     back:
     - EmergencyRollerBedSpawnFolded
+
+- type: chameleonOutfit
+  id: ParamedicChameleonOutfit
+  job: Paramedic
+  equipment:
+    head: ClothingHeadHatParamedicsoft
+    eyes: ClothingEyesHudMedical
+    mask: ClothingMaskSterile
+    neck: ClothingNeckStethoscope
+    outerClothing: ClothingOuterCoatParamedicWB
+    gloves: ClothingHandsGlovesLatex
