@@ -1,0 +1,16 @@
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ChimeraClothingHandsGlovesCombat_vol1
+  name: combat gloves "Chimera"
+  description: These tactical gloves are fireproof and impact resistant.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/Hands/Gloves/gloves.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/Hands/Gloves/gloves.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Radiation: 0.95
+        Caustic: 0.95

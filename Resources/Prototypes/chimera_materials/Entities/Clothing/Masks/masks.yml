@@ -1,0 +1,16 @@
+- type: entity
+  parent: ClothingMaskGasSyndicate
+  id: ChimeraClothingMaskGas_vol1
+  name: gas mask "Chimera"
+  description: Gas mask for protection from paparazzi and annoying fans.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/Mask/mask.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/Mask/mask.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.9
+        Radiation: 0.9
+        Caustic: 0.9

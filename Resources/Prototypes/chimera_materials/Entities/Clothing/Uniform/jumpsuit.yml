@@ -1,0 +1,16 @@
+- type: entity
+  parent: ClothingUniformJumpsuitOperative
+  id: ChimeraClothingUJumpsuit_vol1
+  name: Tactical suit "Chimera"
+  description: Tactical suit with protection against cuts, corrosive substances and radiation.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/Uniforms/Jumpsuit/jumpsuit.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/Uniforms/Jumpsuit/jumpsuit.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.8
+        Radiation: 0.2
+        Caustic: 0.2

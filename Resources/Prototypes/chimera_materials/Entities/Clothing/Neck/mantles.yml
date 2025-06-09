@@ -1,0 +1,18 @@
+- type: entity
+  parent: [ClothingNeckBase, BaseSyndicateContraband]
+  id: ChimeraMantle_vol1
+  name: Mantle "Chimera"
+  description: A robe designed for the leader of the Chemical Operatives. Appears to be custom made.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/Neck/mantles/mantle.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/Neck/mantles/mantle.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.85
+        Piercing: 0.9
+        Heat: 0.9
+        Cold: 0.75
+        Caustic: 0.7
