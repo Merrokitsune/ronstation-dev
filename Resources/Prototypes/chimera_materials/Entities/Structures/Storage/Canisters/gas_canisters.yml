@@ -1,0 +1,430 @@
+# Yellow ancient canister
+- type: entity
+  parent: [GasCanister, BaseSyndicateContraband]
+  id: ChimeraGasCanister_vol1
+  name: yellow ancient gas canister
+  description: An ancient canister that can hold a huge amount of any kind of gas. Can be attached to a connector port with a wrench.
+  components:
+    - type: Sprite
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
+      noRot: true
+      layers:
+        - state: yellow
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 600
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 300
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ChimeraGasCanisterBroken_vol1:
+                  min: 1
+                  max: 1
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:DumpCanisterBehavior
+    - type: GasCanister
+      gasTankSlot:
+        name: comp-gas-canister-slot-name-gas-tank
+        whitelist:
+          components:
+            - GasTank
+      gasMixture:
+        volume: 3500
+        moles: # List of gasses for easy reference
+          - 0 # oxygen
+          - 0 # nitrogen
+          - 0 # CO2
+          - 0 # Plasma
+          - 0 # Tritium
+          - 0 # Water vapor
+          - 0 # Ammonia
+          - 0 # N2O
+          - 0 # Frezon
+        temperature: 293.15
+    - type: AccessReader
+      access: [["SyndicateAgent"]]
+    - type: Lock
+      locked: true
+
+# Broken yellow ancient canister
+- type: entity
+  parent: [GasCanisterBrokenBase, BaseSyndicateContraband]
+  id: ChimeraGasCanisterBroken_vol1
+  name: broken yellow ancient gas canister
+  description: Broken Gas Canister. Not entirely useless, as it can be dismantled to obtain high-quality materials.
+  components:
+    - type: Sprite
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
+      state: yellow_broken
+
+# Red Ancient Canister
+- type: entity
+  parent: ChimeraGasCanister_vol1
+  id: ChimeraGasCanisterRed_vol1
+  name: red ancient gas canister
+  description: An ancient canister that can hold a huge amount of any kind of gas. Can be attached to a connector port with a wrench.
+  components:
+    - type: Sprite
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
+      noRot: true
+      layers:
+        - state: red
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 600
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 300
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ChimeraGasCanisterRedBroken_vol1:
+                  min: 1
+                  max: 1
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:DumpCanisterBehavior
+    - type: GasCanister
+      gasTankSlot:
+        name: comp-gas-canister-slot-name-gas-tank
+        whitelist:
+          components:
+            - GasTank
+      gasMixture:
+        volume: 3500
+        moles: # List of gasses for easy reference
+          - 0 # oxygen
+          - 0 # nitrogen
+          - 0 # CO2
+          - 0 # Plasma
+          - 0 # Tritium
+          - 0 # Water vapor
+          - 0 # Ammonia
+          - 0 # N2O
+          - 0 # Frezon
+        temperature: 293.15
+
+# Broken red ancient canister
+- type: entity
+  parent: GasCanisterBrokenBase
+  id: ChimeraGasCanisterRedBroken_vol1
+  name: broken red ancient gas canister
+  description: Broken Gas Canister. Not entirely useless, as it can be dismantled to obtain high-quality materials.
+  components:
+    - type: Sprite
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
+      state: red_broken
+
+# Green Ancient Canister
+- type: entity
+  parent: ChimeraGasCanister_vol1
+  id: ChimeraGasCanisterGreen_vol1
+  name: green ancient gas canister
+  description: An ancient canister that can hold a huge amount of any kind of gas. Can be attached to a connector port with a wrench.
+  components:
+    - type: Sprite
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
+      noRot: true
+      layers:
+        - state: green
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 600
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 300
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ChimeraGasCanisterGreenBroken_vol1:
+                  min: 1
+                  max: 1
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:DumpCanisterBehavior
+    - type: GasCanister
+      gasTankSlot:
+        name: comp-gas-canister-slot-name-gas-tank
+        whitelist:
+          components:
+            - GasTank
+      gasMixture:
+        volume: 3500
+        moles: # List of gasses for easy reference
+          - 0 # oxygen
+          - 0 # nitrogen
+          - 0 # CO2
+          - 0 # Plasma
+          - 0 # Tritium
+          - 0 # Water vapor
+          - 0 # Ammonia
+          - 0 # N2O
+          - 0 # Frezon
+        temperature: 293.15
+
+# Broken green ancient canister
+- type: entity
+  parent: GasCanisterBrokenBase
+  id: ChimeraGasCanisterGreenBroken_vol1
+  name: broken green ancient gas canister
+  description: Broken Gas Canister. Not entirely useless, as it can be dismantled to obtain high-quality materials.
+  components:
+    - type: Sprite
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
+      state: green_broken
+
+# Blue Ancient Canister
+- type: entity
+  parent: ChimeraGasCanister_vol1
+  id: ChimeraGasCanisterBlue_vol1
+  name: blue ancient gas canister
+  description: An ancient canister that can hold a huge amount of any kind of gas. Can be attached to a connector port with a wrench.
+  components:
+    - type: Sprite
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
+      noRot: true
+      layers:
+        - state: blue
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 600
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 300
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ChimeraGasCanisterBlueBroken_vol1:
+                  min: 1
+                  max: 1
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:DumpCanisterBehavior
+    - type: GasCanister
+      gasTankSlot:
+        name: comp-gas-canister-slot-name-gas-tank
+        whitelist:
+          components:
+            - GasTank
+      gasMixture:
+        volume: 3500
+        moles: # List of gasses for easy reference
+          - 0 # oxygen
+          - 0 # nitrogen
+          - 0 # CO2
+          - 0 # Plasma
+          - 0 # Tritium
+          - 0 # Water vapor
+          - 0 # Ammonia
+          - 0 # N2O
+          - 0 # Frezon
+        temperature: 293.15
+
+# Broken blue ancient canister
+- type: entity
+  parent: GasCanisterBrokenBase
+  id: ChimeraGasCanisterBlueBroken_vol1
+  name: broken blue ancient gas canister
+  description: Broken Gas Canister. Not entirely useless, as it can be dismantled to obtain high-quality materials.
+  components:
+    - type: Sprite
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
+      state: blue_broken
+
+# Ancient Air Canister
+- type: entity
+  parent: ChimeraGasCanister_vol1
+  id: ChimeraGasCanisterAir_vol1
+  name: ancient gas air canister
+  description: An ancient canister that can hold a huge amount of any kind of gas. Can be attached to a connector port with a wrench.
+  components:
+    - type: Sprite
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
+      noRot: true
+      layers:
+        - state: air
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 600
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 300
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ChimeraGasCanisterAirBroken_vol1:
+                  min: 1
+                  max: 1
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:DumpCanisterBehavior
+    - type: GasCanister
+      gasMixture:
+        volume: 3500
+        moles:
+          - 393.0592071 # oxygen 21%
+          - 1478.6513029 # nitrogen 79%
+        temperature: 293.15
+
+# Broken ancient air canister
+- type: entity
+  parent: GasCanisterBrokenBase
+  id: ChimeraGasCanisterAirBroken_vol1
+  name: broken ancient gas canister of air
+  description: Broken Gas Canister. Not entirely useless, as it can be dismantled to obtain high-quality materials.
+  components:
+    - type: Sprite
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
+      state: air_broken
+
+# Ancient canister of liquefied oxygen
+- type: entity
+  parent: ChimeraGasCanister_vol1
+  id: ChimeraGasCanisterOxygen_vol1
+  name: ancient liquefied oxygen gas canister
+  description: An ancient canister that can hold a huge amount of any kind of gas. Can be attached to a connector port with a wrench.
+  components:
+    - type: InteractionOutline
+    - type: Transform
+      noRot: true
+    - type: Sprite
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
+      noRot: true
+      layers:
+        - state: oxygen
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 600
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 300
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ChimeraGasCanisterOxygenBroken_vol1:
+                  min: 1
+                  max: 1
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:DumpCanisterBehavior
+    - type: GasCanister
+      gasMixture:
+        volume: 3500
+        moles:
+          - 18710.71051 # oxygen
+        temperature: 72
+
+# Broken ancient oxygen canister
+- type: entity
+  parent: ChimeraGasCanisterBroken_vol1
+  name: broken ancient oxygen canister
+  id: ChimeraGasCanisterOxygenBroken_vol1
+  components:
+    - type: Sprite
+      state: oxygen_broken
+
+# Ancient canister of liquefied nitrogen
+- type: entity
+  parent: ChimeraGasCanister_vol1
+  id: ChimeraGasCanisterNitrogen_vol1
+  name: ancient liquid nitrogen gas canister
+  description: An ancient canister that can hold a huge amount of any kind of gas. Can be attached to a connector port with a wrench.
+  components:
+    - type: InteractionOutline
+    - type: Transform
+      noRot: true
+    - type: Sprite
+      sprite: _Chimera_Materials/Structures/Storage/canister.rsi
+      noRot: true
+      layers:
+        - state: nitrogen
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 600
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 300
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                ChimeraGasCanisterNitrogenBroken_vol1:
+                  min: 1
+                  max: 1
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:DumpCanisterBehavior
+    - type: GasCanister
+      gasMixture:
+        volume: 3500
+        moles:
+        - 0 # oxygen
+        - 18710.71051 # nitrogen
+        temperature: 72
+
+# Broken ancient nitrogen canister
+- type: entity
+  parent: ChimeraGasCanisterBroken_vol1
+  name: broken ancient nitrogen canister
+  id: ChimeraGasCanisterNitrogenBroken_vol1
+  components:
+    - type: Sprite
+      state: nitrogen_broken

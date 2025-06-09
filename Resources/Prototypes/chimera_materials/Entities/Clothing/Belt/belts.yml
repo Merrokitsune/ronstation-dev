@@ -1,0 +1,29 @@
+# EQUIPMENT
+# RPS
+- type: entity
+  parent: ClothingBeltMilitaryWebbing
+  id: ChimeraClothingBeltWebbing_vol1
+  name: RPS artist-musician
+  description: Universal unloading vest for spray paint and musical instruments.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/Belt/webbing.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/Belt/webbing.rsi
+
+# Completed RPS
+- type: entity
+  id: ChimeraClothingBeltWebbingFilled_vol1
+  parent: ChimeraClothingBeltWebbing_vol1
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: CrowbarYellow
+      - id: Wrench
+      - id: Screwdriver
+      - id: Wirecutter
+      - id: Welder
+      - id: Multitool
+      - id: trayScanner
+      - id: GasAnalyzer

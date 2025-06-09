@@ -1,0 +1,67 @@
+# Folded barricade
+- type: entity
+  id: ChimeraInflatableWallStack_vol1
+  parent: [BaseItem, BaseSyndicateContraband]
+  name: inflatable wall
+  description: A foldable inflatable wall that quickly expands into a reinforced cubic shape when activated.
+  suffix: Chemop, Full
+  components:
+    - type: Stack
+      stackType: ChimeraInflatableWallSwap_vol1
+      count: 8
+    - type: Sprite
+      sprite: _Chimera_Materials/Objects/Misc/inflatable_wall.rsi
+      state: item_wall
+    - type: Item
+      sprite: _Chimera_Materials/Objects/Misc/inflatable_wall.rsi
+      size: Small
+    - type: SpawnAfterInteract
+      prototype: ChimeraInflatableWall_vol1
+      doAfter: 1
+      removeOnInteract: true
+    - type: Clickable
+
+# folded door
+- type: entity
+  id: ChimeraInflatableDoorStack_vol1
+  parent: [BaseItem, BaseSyndicateContraband]
+  name: inflatable door
+  suffix: Chemop, Full
+  description: A foldable inflatable wall with a door that quickly expands into a reinforced cubic shape when activated.
+  components:
+    - type: Stack
+      stackType: ChimeraInflatableDoorSwap_vol1
+      count: 4
+    - type: Sprite
+      sprite: _Chimera_Materials/Objects/Misc/inflatable_door.rsi
+      state: item_door
+    - type: Item
+      sprite: _Chimera_Materials/Objects/Misc/inflatable_door.rsi
+      size: Small
+    - type: SpawnAfterInteract
+      prototype: ChimeraInflatableDoor_vol1
+      doAfter: 1
+      removeOnInteract: true
+    - type: Clickable
+
+# One folded barricade
+- type: entity
+  parent: ChimeraInflatableWallStack_vol1
+  id: ChimeraInflatableWallStack1_vol1
+  suffix: Chemop, 1
+  components:
+    - type: Sprite
+      state: item_wall
+    - type: Stack
+      count: 1
+
+# One folded door
+- type: entity
+  parent: ChimeraInflatableDoorStack_vol1
+  id: ChimeraInflatableDoorStack1_vol1
+  suffix: Chemop, 1
+  components:
+    - type: Sprite
+      state: item_door
+    - type: Stack
+      count: 1

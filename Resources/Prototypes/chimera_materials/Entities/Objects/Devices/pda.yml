@@ -1,0 +1,76 @@
+# Chemical operatives' PDA
+- type: entity
+  parent: BasePDA
+  id: ChimeraPDA_vol1
+  name: toxic yellow PDA
+  description: Looking at this PDA makes your heart beat faster... as if its owner had done something terrible.
+  components:
+  - type: Pda
+    id: AgentIDCard
+  - type: Sprite
+    sprite: _Chimera_Materials/Objects/Devices/pda.rsi
+    layers:
+    - map: [ "enum.PdaVisualLayers.Base" ]
+      state: "pda"
+    - state: "light_overlay"
+      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      shader: "unshaded"
+      visible: false
+    - state: "id_overlay"
+      map: [ "enum.PdaVisualLayers.IdLight" ]
+      shader: "unshaded"
+      visible: false
+  - type: Icon
+    sprite: /Uploaded/chimera/pda/pda.rsi
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#56665e"
+    accentVColor: "#f7c113"
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - NotekeeperCartridge
+      # - BankCartridge # Ronstation - No bank cartridge exists.
+      - AstroNavCartridge
+
+# medical PDA of chemical operatives
+- type: entity
+  parent: ChimeraPDA_vol1
+  id: ChimeraMedPDA_vol1
+  name: medical toxic yellow PDA
+  description: When healing simple Syndicate agents isn't enough, turn to healing Chemical Operatives!
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Objects/Devices/pda_med.rsi
+  - type: Icon
+    sprite: _Chimera_Materials/Objects/Devices/pda_med.rsi
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#56665e"
+    accentVColor: "#13c9f7"
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - NotekeeperCartridge
+      - MedTekCartridge
+      # - BankCartridge # Ronstation - No bank cartridge exists.
+
+# EMAG Chemical Operatives PDA
+- type: entity
+  parent: ChimeraPDA_vol1
+  id: ChimeraEmagPDA_vol1
+  name: modified toxic yellow PDA
+  description: Why would anyone want to ruin a PDA? Does it even work? And there are wires sticking out of it... better not to touch it.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Objects/Devices/pda_emag.rsi
+  - type: Icon
+    sprite: _Chimera_Materials/Objects/Devices/pda_emag.rsi
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#56665e"
+    accentVColor: "#f7134c"
+  - type: Emag
+    emagType: Access
+  - type: LimitedCharges
+  - type: AutoRecharge

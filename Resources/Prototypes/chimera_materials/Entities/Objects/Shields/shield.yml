@@ -1,0 +1,29 @@
+# Shield
+- type: entity
+  name: Bulletproof shield "chimera"
+  parent: [RiotBulletShield, BaseSyndicateContraband]
+  id: ChimeraShield_vol1
+  description: A shield designed to resist bullets and nothing more.
+  components:
+    - type: Sprite
+      sprite: _Chimera_Materials/Weapons/Melee/shield.rsi
+      state: icon
+    - type: Item
+      sprite: _Chimera_Materials/Weapons/Melee/shield.rsi
+      heldPrefix: icon
+    - type: Clothing
+      sprite: _Chimera_Materials/Weapons/Melee/shield.rsi
+      quickEquip: false
+      slots:
+      - suitStorage
+    - type: Blocking
+      passiveBlockModifier:
+        coefficients:
+          Blunt: 0.6
+          Piercing: 0.5
+      activeBlockModifier:
+        coefficients:
+          Blunt: 0.4
+          Piercing: 0.3
+        flatReductions:
+          Piercing: 1

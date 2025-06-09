@@ -1,0 +1,45 @@
+# Magnetic boots
+- type: entity
+  parent: [ClothingShoesBootsMag, BaseSyndicateContraband]
+  id: ChimeraClothingShoesBootsMagBase_vol1
+  name: combat magnetic boots
+  description: Shmel, Bumble, BMB, or simply - combat magnetic boots. Have a slot for storage.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/Shoes/Boots/magboots.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Clothing/Shoes/Boots/magboots.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Radiation: 0.95
+        Caustic: 0.95
+  - type: Matchbox
+  - type: ItemSlots
+    slots:
+      item:
+        name: clothing-boots-sidearm
+        whitelist:
+          tags:
+          - Knife
+          - Sidearm
+  - type: StaticPrice
+    price: 600
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+
+# Filled magnetic boots
+- type: entity
+  parent: ChimeraClothingShoesBootsMagBase_vol1
+  id: ChimeraClothingShoesBootsMagBaseFilled_vol1
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - KukriKnife

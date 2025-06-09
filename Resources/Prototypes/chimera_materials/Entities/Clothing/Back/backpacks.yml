@@ -1,0 +1,9 @@
+# Backpack
+- type: entity
+  parent: [ClothingBackpack, BaseSyndicateContraband]
+  id: ChimeraClothingBackpack_vol1
+  name: black backpack
+  description: Stylish black backpack for storing rock paraphernalia.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Clothing/Back/backpacks/backpack.rsi

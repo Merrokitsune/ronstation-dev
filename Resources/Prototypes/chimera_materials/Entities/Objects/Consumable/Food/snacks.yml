@@ -1,0 +1,61 @@
+# Snacks
+
+# "Snacks" means food in a packet. Down the line this stuff can have multiple
+# reagents and shit for healing or different effects.
+
+- type: entity
+  parent: [FoodSnackBase, BaseSyndicateContraband]
+  id: ChimeraFoodSnackEnergy_vol1
+  name: energy bar
+  suffix: Chemop
+  description: Energy bar with a large energy reserve.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Objects/Consumable/Food/snacks.rsi
+    state: energybar
+  - type: Item
+  - type: SpawnItemsOnUse
+    items:
+      - id: ChimeraFoodPacketEnergyTrash_vol1
+      - id: ChimeraFoodSnackEnergyBar_vol1
+    sound:
+      path: /Audio/Effects/unwrap.ogg
+
+- type: entity
+  parent: [FoodSnackBase, BaseSyndicateContraband]
+  id: ChimeraFoodSnackEnergyBar_vol1
+  name: energy bar
+  suffix: Chemop
+  description: Energy bar with a large energy reserve.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - nutty
+      - oats
+      - fiber
+      - sweet
+  - type: Sprite
+    sprite: _Chimera_Materials/Objects/Consumable/Food/snacks.rsi
+    state: energybar-open
+  - type: Item
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30 # Room for extra condiments
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+
+# Trash
+
+- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: [FoodPacketTrash, BaseSyndicateContraband]
+  id: ChimeraFoodPacketEnergyTrash_vol1
+  name: energy bar wrapper
+  suffix: Chemop
+  description: This is trash.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Objects/Consumable/Food/snacks.rsi
+    state: energybar-trash

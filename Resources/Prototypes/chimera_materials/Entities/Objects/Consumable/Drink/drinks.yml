@@ -1,0 +1,81 @@
+# Spray can (Shaker) - yellow
+- type: entity
+  parent: [DrinkShaker, BaseSyndicateContraband]
+  id: ChimeraDrink_vol1
+  name: lemon spray "Chimera"
+  description: A canister designed for storing energy drinks with dye, lemon flavor.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Objects/Consumables/Drinks/drink_yellow.rsi
+  - type: Item
+    size: Small
+
+# Spray Can (Shaker) - Orange
+- type: entity
+  parent: ChimeraDrink_vol1
+  id: ChimeraDrinkOrange_vol1
+  name: Orange spray can "Chimera"
+  description: A canister designed for storing energy drinks with dye, orange flavor.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Objects/Consumables/Drinks/drink_orange.rsi
+
+# Spray Can (Shaker) - Red
+- type: entity
+  parent: ChimeraDrink_vol1
+  id: ChimeraDrinkRed_vol1
+  name: Grenade spray "Chimera"
+  description: A canister designed for storing energy drinks with dye, pomegranate flavor.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Objects/Consumables/Drinks/drink_red.rsi
+
+# Spray can (Shaker) - green
+- type: entity
+  parent: ChimeraDrink_vol1
+  id: ChimeraDrinkGreen_vol1
+  name: Apple Spray "Chimera"
+  description: A canister designed for storing energy drinks with dye, apple flavor.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Objects/Consumables/Drinks/drink_green.rsi
+
+# Spray Can (Shaker) - Blue
+- type: entity
+  parent: ChimeraDrink_vol1
+  id: ChimeraDrinkBlue_vol1
+  name: Blueberry spray "Chimera"
+  description: A canister designed for storing energy drinks with dye, blueberry flavor.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Objects/Consumables/Drinks/drink_blue.rsi
+
+# Spray Can (Shaker) - Purple
+- type: entity
+  parent: ChimeraDrink_vol1
+  id: ChimeraDrinkPurple_vol1
+  name: grape spray "Chimera"
+  description: A canister designed for storing energy drinks with dye, with grape flavor.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Objects/Consumables/Drinks/drink_purple.rsi
+
+# Spray Can (Shaker) - Purple
+- type: entity
+  parent: ChimeraDrink_vol1
+  id: ChimeraDrinkPink_vol1
+  name: bubble gum spray can "Chimera"
+  description: A canister designed for storing energy drinks with coloring, with bubble gum flavor.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Objects/Consumables/Drinks/drink_pink.rsi
+
+# Spray Can (Shaker) - Gray
+- type: entity
+  parent: ChimeraDrink_vol1
+  id: ChimeraDrinkGrey_vol1
+  name: classic spray can "Chimera"
+  description: A canister designed for storing energy drinks with dye, without sugar.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Objects/Consumables/Drinks/drink_grey.rsi

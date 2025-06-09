@@ -1,0 +1,22 @@
+# Holoprojector barrier
+- type: entity
+  parent: HoloFan
+  id: ChimeraHolo_vol1
+  name: Himier
+  description: A holographic barrier with the symbols of chemical operatives, it clearly does not bode well.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Structures/Holo/holo.rsi
+    state: icon
+  - type: PointLight
+    enabled: true
+    radius: 3
+    color: orange
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 30
+  - type: RadiationSource
+    intesnity: 5
+    slope: 5

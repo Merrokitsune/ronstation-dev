@@ -1,0 +1,42 @@
+# Guitar
+- type: entity
+  parent: [BaseHandheldInstrument, BaseSyndicateContraband]
+  id: ChimeraGuitarInstrument_vol1
+  name: bass guitar "Chimera"
+  description: You feel more confident holding this weighty instrument in your hands.
+  components:
+  - type: Instrument
+    program: 29
+  - type: SwappableInstrument
+    instrumentList:
+      "Overdrive": {29: 0}
+      "Distortion": {30: 0}
+      "Harmonics": {31: 0}
+  - type: Sprite
+    sprite: _Chimera_Materials/Objects/Fun/Instruments/guitar.rsi
+    state: icon
+  - type: Item
+    size: Normal
+    sprite: _Chimera_Materials/Objects/Fun/Instruments/guitar.rsi
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+    - suitStorage
+    sprite: _Chimera_Materials/Objects/Fun/Instruments/guitar.rsi
+  - type: Tag
+    tags:
+    - StringInstrument
+  - type: MeleeWeapon
+    wideAnimationRotation: 45
+    damage:
+      types:
+        Blunt: 15
+    soundHit:
+      collection: MetalThud
+  - type: Wieldable
+  - type: IncreaseDamageOnWield
+    damage:
+      types:
+        Blunt: 15
+  - type: Reflect
