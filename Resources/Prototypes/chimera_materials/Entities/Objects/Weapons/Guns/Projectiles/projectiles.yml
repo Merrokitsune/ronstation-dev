@@ -1,0 +1,29 @@
+- type: hitscan
+  id: PulseYellow_vol1
+  damage:
+    types:
+      Caustic: 13
+  muzzleFlash:
+    sprite: _Chimera_Materials/Objects/Weapons/Guns/Projectiles/hitscan.rsi
+    state: muzzle_beam_yellow
+  travelFlash:
+    sprite: _Chimera_Materials/Objects/Weapons/Guns/Projectiles/hitscan.rsi
+    state: beam_yellow
+  impactFlash:
+    sprite: _Chimera_Materials/Objects/Weapons/Guns/Projectiles/hitscan.rsi
+    state: impact_beam_yellow
+
+- type: hitscan
+  id: PulseYellowCool_vol1
+  damage:
+    types:
+      Caustic: 15
+  muzzleFlash:
+    sprite: _Chimera_Materials/Objects/Weapons/Guns/Projectiles/hitscan.rsi
+    state: muzzle_beam_yellow
+  travelFlash:
+    sprite: _Chimera_Materials/Objects/Weapons/Guns/Projectiles/hitscan.rsi
+    state: beam_yellow
+  impactFlash:
+    sprite: _Chimera_Materials/Objects/Weapons/Guns/Projectiles/hitscan.rsi
+    state: impact_beam_yellow

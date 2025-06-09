@@ -1,0 +1,18 @@
+- type: entity
+  name: korrozor
+  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSyndicateContraband]
+  id: ChimeraWeaponCorrozor_vol1
+  description: A modified Silovik that holds the coveted eighth round. Uses the .50 shotgun caliber.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Weapons/Guns/Shotguns/corrozor.rsi
+  - type: Clothing
+    sprite: _Chimera_Materials/Weapons/Guns/Shotguns/corrozor.rsi
+  - type: Item
+    sprite: _Chimera_Materials/Weapons/Guns/Shotguns/corrozor_inhands_64x.rsi
+  - type: BallisticAmmoProvider
+    capacity: 8
+  - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
+  - type: Gun # Corvax-Guns
+    soundGunshot:
+      path: /Uploaded/chimera/audio/corrozor.ogg

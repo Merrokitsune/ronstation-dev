@@ -1,0 +1,51 @@
+- type: entity
+  name: limer
+  parent: [ BaseWeaponBatterySmall, BaseSyndicateContraband ]
+  id: ChimeraWeaponLaimer_vol1
+  description: Self-loading pistol with solvent charges.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Objects/Weapons/Guns/Pistols/pistol.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Clothing
+    sprite: _Chimera_Materials/Objects/Weapons/Guns/Pistols/pistol.rsi
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Uploaded/chimera/audio/laser-absorb.ogg
+  - type: HitscanBatteryAmmoProvider
+    proto: PulseYellow_vol1
+    fireCost: 200
+  - type: Battery
+    maxCharge: 2000
+    startingCharge: 2000
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 13
+
+- type: entity
+  name: limer for cool
+  parent: ChimeraWeaponLaimer_vol1
+  id: ChimeraWeaponLaimerCool_vol1
+  description: A self-loading pistol with solvent charges, only for the tough guys.
+  components:
+  - type: Sprite
+    sprite: _Chimera_Materials/Objects/Weapons/Guns/Pistols/pistol_cool.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+  - type: Clothing
+    sprite: _Chimera_Materials/Objects/Weapons/Guns/Pistols/pistol_cool.rsi
+  - type: HitscanBatteryAmmoProvider
+    proto: PulseYellowCool_vol1
