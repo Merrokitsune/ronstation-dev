@@ -20,7 +20,7 @@
     availableModes:
     - SemiAuto
     soundGunshot:
-      path: /Uploaded/chimera/audio/laser-absorb.ogg
+      path: /Audio/_Chimera_Materials/Weapons/Guns/Gunshots/laser-absorb.ogg
   - type: HitscanBatteryAmmoProvider
     proto: PulseYellow_vol1
     fireCost: 200

@@ -15,4 +15,4 @@
   - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
   - type: Gun # Corvax-Guns
     soundGunshot:
-      path: /Uploaded/chimera/audio/corrozor.ogg
+      path: /Audio/_Chimera_Materials/Weapons/Guns/Gunshots/corrozor.ogg
