@@ -5,19 +5,19 @@
   "copyright": "Doner#4037 (Discord)",
   "states": [
     {
-      "name": "icon"
+        "name": "chimera-icon"
     },
     {
-      "name": "icon-inhand-left",
-      "directions": 4
+        "name": "chimera-inhand-left",
+        "directions": 4
     },
     {
         "name": "equipped-SUITSTORAGE",
         "directions": 4
     },
     {
-      "name": "icon-inhand-right",
-      "directions": 4
+        "name": "chimera-inhand-right",
+        "directions": 4
     }
   ]
 }

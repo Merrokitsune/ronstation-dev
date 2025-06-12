@@ -6,13 +6,13 @@
   description: A shield designed to resist bullets and nothing more.
   components:
     - type: Sprite
-      sprite: _Chimera_Materials/Weapons/Melee/shield.rsi
-      state: icon
+      sprite: _Chimera_Materials/Objects/Weapons/Melee/shield_chimera.rsi # Ronstation - done to allow suit storage sprite.
+      state: chimera-icon
     - type: Item
-      sprite: _Chimera_Materials/Weapons/Melee/shield.rsi
-      heldPrefix: icon
+      sprite: _Chimera_Materials/Objects/Weapons/Melee/shield_chimera.rsi # Ronstation - done to allow suit storage sprite.
+      heldPrefix: chimera
     - type: Clothing
-      sprite: _Chimera_Materials/Weapons/Melee/shield.rsi
+      sprite: _Chimera_Materials/Objects/Weapons/Melee/shield_chimera.rsi # Ronstation - done to allow suit storage sprite.
       quickEquip: false
       slots:
       - suitStorage
