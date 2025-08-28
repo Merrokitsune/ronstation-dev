@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "license": "CC-BY-NC-4.0",
-  "copyright": "Doner#4037 (Discord)",
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/c838ba21dae97db345e0113f99596decd1d66039. Edited by Doner#4037 (Discord).",
   "size": {
     "x": 32,
     "y": 32

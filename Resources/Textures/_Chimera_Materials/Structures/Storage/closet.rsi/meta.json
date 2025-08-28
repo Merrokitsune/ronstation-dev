@@ -4,8 +4,8 @@
     "x": 32,
     "y": 32
   },
-  "copyright": "Doner#4037 (Discord)",
-  "license": "CC-BY-NC-4.0",
+  "copyright": "All sprites appear to be resprited from tgstation at commit https://github.com/tgstation/tgstation/blob/35090dce0d26a53e49a4bbe35933b27df2507378/icons/obj/closet.dmi by semkagamez (discord) for Мёртвый Космос (https://github.com/dead-space-server/space-station-14-fobos/pull/1/commits/72cb90770a9b78f286c7ac6577bd3b18681192a0). Anything with 'chimera' are said sprites modified by Doner#4037 (Discord)",
+  "license": "CC-BY-SA-3.0",
   "states": [
     {
       "name": "sparking",

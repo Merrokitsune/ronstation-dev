@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-NC-4.0",
-  "copyright": "Doner#4037 (Discord)",
+  "copyright": "Doner#4037 (Discord). inhand-left and inhand-right taken from Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/2e24b7af2221928e4b844a29408e821b60a5fe29 and are licensed under CC-BY-SA-3.0.",
   "size": {
     "x": 32,
     "y": 32
