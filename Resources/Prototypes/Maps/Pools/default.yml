@@ -1,23 +1,20 @@
+# Modified by Ronstation contributor(s), therefore this file is licensed as MIT sublicensed with AGPL-v3.0.
 - type: gameMapPool
   id: DefaultMapPool
   maps:
   - Amber
   - Bagel
   - Box
-  - Convex
-  #- Core
   - Elkridge
   - Fland
-  #- Gate
-  - Loop
   - Marathon
-  - Meta
   - Oasis
-  - Omega
   - Packed
   - Plasma
-  #- Reach
-  #- Train
-  - Saltern2
+  - Exo
+# start of modifications
+  - Atlas3
   - Cluster2
-  #- Atlas2 # Ronstation - Derotated for the time being until enough rework is made.
+  - Feint
+  - Saltern2
+# end of modifications

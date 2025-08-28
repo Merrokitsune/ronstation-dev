@@ -1,3 +1,5 @@
+# Contains modifications made by Ronstation contributors, therefore this file is subject to MIT sublicensed with AGPL v3.0.
+
 - type: entity
   name: BaseWeaponRevolver
   parent: BaseItem
@@ -12,6 +14,7 @@
     shape:
     - 0,0,1,0
     - 0,1,0,1
+    storedOffset: 0,-6
   - type: Tag
     tags:
     - Sidearm
@@ -57,7 +60,7 @@
   description: A beautifully machined, custom-built revolver. Used when there is no time for the Voight-Kampff test. Loads 5 rounds of .45 magnum.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Revolvers/deckard.rsi
+    sprite: _Ronstation/Objects/Weapons/Guns/Revolvers/deckard.rsi # Ronstation - modification
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -72,7 +75,7 @@
     ammoSlots: [ null, null, null, null, null ]
   - type: MagazineVisuals
     magState: mag
-    steps: 4
+    steps: 5 # Ronstation - modification
     zeroVisible: true
   - type: Appearance
   - type: StaticPrice
@@ -88,6 +91,8 @@
     sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
   - type: Clothing
     sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
+  - type: Item
+    storedOffset: 0,-2
   - type: RevolverAmmoProvider
     capacity: 6
     chambers: [ True, True, True, True, True, True ]
@@ -103,6 +108,8 @@
     sprite: Objects/Weapons/Guns/Revolvers/mateba.rsi
   - type: Clothing
     sprite: Objects/Weapons/Guns/Revolvers/mateba.rsi
+  - type: Item
+    storedOffset: 0,-3
   - type: Gun
     fireRate: 3
     soundGunshot:
@@ -126,6 +133,8 @@
     sprite: Objects/Weapons/Guns/Revolvers/python.rsi
   - type: Clothing
     sprite: Objects/Weapons/Guns/Revolvers/python.rsi
+  - type: Item
+    storedOffset: 0,-2
   - type: Gun
     selectedMode: SemiAuto
     fireRate: 2
@@ -161,6 +170,8 @@
     sprite: Objects/Weapons/Guns/Revolvers/pirate_revolver.rsi
   - type: Clothing
     sprite: Objects/Weapons/Guns/Revolvers/pirate_revolver.rsi
+  - type: Item
+    storedOffset: 1,-5
   - type: Gun
     fireRate: 1
   - type: ContainerContainer

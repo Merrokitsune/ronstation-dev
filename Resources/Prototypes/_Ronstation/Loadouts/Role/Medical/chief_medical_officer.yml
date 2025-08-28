@@ -1,0 +1,19 @@
+- type: roleLoadout
+  id: JobChiefMedicalOfficer
+  groups:
+  - GroupTankHarness
+  - ChiefMedicalOfficerHead
+  - MedicalGlasses
+  - MedicalMask
+  - ChiefMedicalOfficerNeck
+  - MedicalGloves
+  - ChiefMedicalOfficerJumpsuit
+  - MedicalBackpack
+  # - PDA
+  # - Belt
+  - ChiefMedicalOfficerOuterClothing
+  - ChiefMedicalOfficerShoes
+  # Backpack fills
+  - SurvivalMedical
+  - GroupSpeciesBreathToolMedical
+  - Trinkets

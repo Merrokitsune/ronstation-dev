@@ -1,3 +1,4 @@
+// Contains modifications made by Ronstation contributors, therefore this file is subject to MIT sublicensed with AGPL v3.0.
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -48,13 +49,12 @@ namespace Content.IntegrationTests.Tests
         {
             "/Maps/centcomm.yml",
             "/Maps/bagel.yml", // Contains mime's rubber stamp --> Either fix this, remove the category, or remove this comment if intentional.
-            "/Maps/gate.yml", // Contains positronic brain and LSE-1200c "Perforator"
-            "/Maps/meta.yml", // Contains warden's rubber stamp
             "/Maps/reach.yml", // Contains handheld crew monitor
             "/Maps/Shuttles/ShuttleEvent/cruiser.yml", // Contains LSE-1200c "Perforator"
             "/Maps/Shuttles/ShuttleEvent/honki.yml", // Contains golden honker, clown's rubber stamp
             "/Maps/Shuttles/ShuttleEvent/instigator.yml", // Contains EXP-320g "Friendship"
             "/Maps/Shuttles/ShuttleEvent/syndie_evacpod.yml", // Contains syndicate rubber stamp
+			"/Maps/_Ronstation/Shuttles/ShuttleEvent/syndie_evacpod.yml" // Contains syndicate rubber stamp Ronstation - Modification
         };
 
         private static readonly string[] GameMaps =
@@ -62,31 +62,29 @@ namespace Content.IntegrationTests.Tests
             "Dev",
             "TestTeg",
             "Fland",
-            "Meta",
             "Packed",
-            "Omega",
             "Bagel",
             "CentComm",
             "Box",
-            "Core",
             "Marathon",
             "MeteorArena",
             "Saltern",
             "Reach",
-            "Train",
             "Oasis",
-            "Gate",
             "Amber",
-            "Loop",
             "Plasma",
             "Elkridge",
-            "Convex",
             "Relic",
             "dm01-entryway",
+            "Exo",
             "Saltern2",
             "Cluster2",
-            "Atlas2"
+            "Atlas2",
+      	    "Atlas3",
+	          "Feint"
         };
+
+        private static readonly ProtoId<EntityCategoryPrototype> DoNotMapCategory = "DoNotMap";
 
         /// <summary>
         /// Asserts that specific files have been saved as grids and not maps.
@@ -265,7 +263,7 @@ namespace Content.IntegrationTests.Tests
                 return;
 
             var yamlEntities = node["entities"];
-            if (!protoManager.TryIndex<EntityCategoryPrototype>("DoNotMap", out var dnmCategory))
+            if (!protoManager.TryIndex(DoNotMapCategory, out var dnmCategory))
                 return;
 
             Assert.Multiple(() =>

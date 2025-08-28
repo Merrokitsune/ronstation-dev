@@ -1,3 +1,5 @@
+# Modified by Ronstation contributor(s), therefore this file is licensed as MIT sublicensed with AGPL-v3.0.
+
 - type: reagent
   id: Oxygen
   name: reagent-name-oxygen
@@ -282,6 +284,12 @@
         conditions:
         - !type:OrganType
           type: Slime
+      # start of modifications
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Avali
+      # end of modifications
       # Converts Nitrogen into CO2
       - !type:ModifyLungGas
         conditions:
@@ -297,6 +305,15 @@
         ratios:
           NitrousOxide: 1.0
           Nitrogen: -1.0
+      # start of modifications
+      - !type:ModifyLungGas
+        conditions:
+        - !type:OrganType
+          type: Avali
+        ratios:
+          Ammonia: 1.0
+          Nitrogen: -1.0
+      # end of modifications
 
 - type: reagent
   id: NitrousOxide
@@ -360,7 +377,7 @@
           shouldHave: false
         walkSpeedModifier: 0.65
         sprintSpeedModifier: 0.65
-      - !type:GenericStatusEffect
+      - !type:ModifyStatusEffect
         conditions:
         - !type:ReagentThreshold
           reagent: NitrousOxide
@@ -368,8 +385,7 @@
         - !type:OrganType
           type: Slime
           shouldHave: false
-        key: ForcedSleep
-        component: ForcedSleeping
+        effectProto: StatusEffectForcedSleeping
         time: 3
         type: Add
       - !type:HealthChange
@@ -403,14 +419,13 @@
         damage:
           types:
             Cellular: 1
-      - !type:GenericStatusEffect
-        key: SeeingRainbows
-        component: SeeingRainbows
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectSeeingRainbow
         type: Add
-        time: 100
+        time: 15
         refresh: false
       - !type:Drunk
-        boozePower: 100
+        boozePower: 15
       - !type:PopupMessage
         type: Local
         messages: [ "frezon-lungs-cold" ]
@@ -440,13 +455,12 @@
         damage:
           types:
             Cellular: 0.5
-      - !type:GenericStatusEffect
+      - !type:ModifyStatusEffect
         conditions:
         - !type:ReagentThreshold
           reagent: Frezon
           min: 1
-        key: SeeingRainbows
-        component: SeeingRainbows
+        effectProto: StatusEffectSeeingRainbow
         type: Add
         time: 500
         refresh: false

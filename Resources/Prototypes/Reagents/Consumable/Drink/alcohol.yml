@@ -1,3 +1,4 @@
+# Modified by Ronstation contributor(s), therefore this file is licensed as MIT sublicensed with AGPL-v3.0.
 
 # Base Alcohol
 
@@ -27,12 +28,11 @@
       - !type:AdjustReagent
         reagent: Ethanol
         amount: 0.05
-      - !type:GenericStatusEffect
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectSeeingRainbow
         conditions:
         - !type:ReagentThreshold
           min: 10
-        key: SeeingRainbows
-        component: SeeingRainbows
         type: Add
         time: 5
         refresh: false
@@ -192,6 +192,16 @@
         damage:
           groups:
             Brute: -1
+      # start of modifications
+      # overworks the overworked avali organs
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Avali
+        damage:
+          types:
+            Bloodloss: 0.5
+      # end of modifications
       - !type:ChemVomit
         probability: 0.04
         conditions:
@@ -2018,9 +2028,9 @@
         - !type:AdjustReagent
           reagent: Theobromine
           amount: 0.05
-        - !type:GenericStatusEffect
-          key: Drowsiness
-          time: 1.0
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectDrowsiness
+          time: 1
           type: Remove
   fizziness: 0.25
 
@@ -2049,9 +2059,9 @@
         - !type:AdjustReagent
           reagent: Theobromine
           amount: 0.05
-        - !type:GenericStatusEffect
-          key: Drowsiness
-          time: 1.0
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectDrowsiness
+          time: 1
           type: Remove
   fizziness: 0.15
 
@@ -2080,9 +2090,9 @@
         - !type:AdjustReagent
           reagent: Theobromine
           amount: 0.05
-        - !type:GenericStatusEffect
-          key: Drowsiness
-          time: 1.0
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectDrowsiness
+          time: 1
           type: Remove
   fizziness: 0.15
 
@@ -2111,9 +2121,9 @@
         - !type:AdjustReagent
           reagent: Theobromine
           amount: 0.05
-        - !type:GenericStatusEffect
-          key: Drowsiness
-          time: 1.0
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectDrowsiness
+          time: 1
           type: Remove
   fizziness: 0.25
 
@@ -2142,9 +2152,9 @@
         - !type:AdjustReagent
           reagent: Theobromine
           amount: 0.05
-        - !type:GenericStatusEffect
-          key: Drowsiness
-          time: 1.0
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectDrowsiness
+          time: 1
           type: Remove
   fizziness: 0.15
 
@@ -2173,9 +2183,9 @@
         - !type:AdjustReagent
           reagent: Theobromine
           amount: 0.05
-        - !type:GenericStatusEffect
-          key: Drowsiness
-          time: 1.0
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectDrowsiness
+          time: 1
           type: Remove
   fizziness: 0.25
 

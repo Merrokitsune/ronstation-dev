@@ -1,3 +1,4 @@
+# Modified by Ronstation contributor(s), therefore this file is licensed as MIT sublicensed with AGPL-v3.0.
 # also used in MakeGhostRuleWindow and MakeGhostRoleCommand
 ghost-role-component-default-rules = All normal rules apply unless an administrator tells you otherwise.
                                      You don't remember any of your previous life, and you don't remember anything you learned as a ghost.
@@ -35,6 +36,9 @@ ghost-role-information-mouse-description = A hungry and mischievous mouse.
 ghost-role-information-mothroach-name = Mothroach
 ghost-role-information-mothroach-description = A cute but mischievous mothroach.
 
+ghost-role-information-moproach-name = Moproach
+ghost-role-information-moproach-description = A cute mothroach with more cute moplike shoes on its feet.
+
 ghost-role-information-snail-name = Snail
 ghost-role-information-snail-description = A little snail who doesn't mind a bit of space. Just stay on grid!
 
@@ -46,7 +50,7 @@ ghost-role-information-snoth-description = A little snoth who doesn't mind a bit
 
 ghost-role-information-giant-spider-name = Giant Spider
 ghost-role-information-giant-spider-description = This station's inhabitants look mighty tasty, and your sticky web is perfect to catch them!
-ghost-role-information-giant-spider-rules = You are a [color={role-type-team-antagonist-color}][bold]{role-type-team-antagonist-name}[/bold][/color] with all other giant spiders.
+# ghost-role-information-giant-spider-rules = You are a [color={role-type-team-antagonist-color}][bold]{role-type-team-antagonist-name}[/bold][/color] with all other giant spiders. # Ronstation - modification
 
 ghost-role-information-cognizine-description = Made conscious with the magic of cognizine.
 
@@ -87,7 +91,7 @@ ghost-role-information-kobold-description = Be the little gremlin you are, yell 
 
 ghost-role-information-rat-king-name = Rat King
 
-ghost-role-information-rat-king-description = You are the Rat King, your interests are food, food, and more food. Cooperate with or fight against the station for food. Did I say food interests you?
+ghost-role-information-rat-king-description = You are the Rat King, your interests are food, food, and more food. Fight against the station for food. Did I say food interests you?
 
 ghost-role-information-rat-servant-name = Rat Servant
 ghost-role-information-rat-servant-description = You are a Rat Servant. You must follow your king's orders.
@@ -241,8 +245,23 @@ ghost-role-information-syndicate-cyborg-assault-name = Syndicate Assault Cyborg
 ghost-role-information-syndicate-cyborg-saboteur-name = Syndicate Saboteur Cyborg
 ghost-role-information-syndicate-cyborg-description = The Syndicate needs reinforcements. You, a cold silicon killing machine, will help them.
 
-ghost-role-information-derelict-cyborg-name = Derelict Cyborg
+ghost-role-information-derelict-engineering-cyborg-name = Derelict Engineer Cyborg
+ghost-role-information-derelict-engineering-cyborg-description = You are an engineer cyborg that got lost in space. After years of exposure to ion storms you find yourself near a space station.
+
+ghost-role-information-derelict-cyborg-name = Derelict Generic Cyborg
 ghost-role-information-derelict-cyborg-description = You are a regular cyborg that got lost in space. After years of exposure to ion storms you find yourself near a space station.
+
+ghost-role-information-derelict-janitor-cyborg-name = Derelict Janitor Cyborg
+ghost-role-information-derelict-janitor-cyborg-description = You are a janitor cyborg that got lost in space. After years of exposure to ion storms you find yourself near a space station.
+
+ghost-role-information-derelict-medical-cyborg-name = Derelict Medical Cyborg
+ghost-role-information-derelict-medical-cyborg-description = You are a medical cyborg that got lost in space. After years of exposure to ion storms you find yourself near a space station.
+
+ghost-role-information-derelict-mining-cyborg-name = Derelict Salvage Cyborg
+ghost-role-information-derelict-mining-cyborg-description = You are a salvage cyborg that got lost in space. After years of exposure to ion storms you find yourself near a space station.
+
+ghost-role-information-derelict-syndicate-assault-cyborg-name = Derelict Syndicate Assault Cyborg
+ghost-role-information-derelict-syndicate-assault-cyborg-description = You are an early model syndicate assault cyborg that got lost in space. After years of exposure to ion storms you find yourself near a space station.
 
 ghost-role-information-security-name = Security
 ghost-role-information-security-description = You are part of a security task force, but seem to have found yourself in a strange situation...
@@ -320,3 +339,6 @@ ghost-role-information-gingerbread-description = A being of pure holiday spirit.
 
 ghost-role-information-wizard-name = Wizard
 ghost-role-information-wizard-desc = YER A WIZARD! Show the station what your magic is made of.
+
+ghost-role-information-emotional-support-scurret-name = Emotional Support Scurret
+ghost-role-information-emotional-support-scurret-description = Support the crew, be adorable, say "wa" a lot.

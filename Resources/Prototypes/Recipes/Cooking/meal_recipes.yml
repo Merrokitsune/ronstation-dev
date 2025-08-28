@@ -1268,20 +1268,6 @@
     FoodPlateTin: 1
 
 - type: microwaveMealRecipe
-  id: RecipeRealGappleTart
-  name: golden apple streusel tart recipe
-  result: FoodTartGapple
-  time: 15
-  group: Pie
-  reagents:
-    Sugar: 5
-    Milk: 5
-  solids:
-    FoodDoughPie: 1
-    FoodGoldenApple: 3 #the real apple is no longer absent
-    FoodPlateTin: 1
-
-- type: microwaveMealRecipe
   id: RecipeGrapeTart
   name: grape tart recipe
   result: FoodTartGrape
@@ -1588,19 +1574,6 @@
     FoodBerries: 1 #dark colouring
 
 - type: microwaveMealRecipe
-  id: RecipeSpacemanCake
-  name: spacemans cake recipe
-  result: FoodCakeSpaceman
-  time: 5
-  group: Cake
-  reagents:
-    Cream: 10
-    Sugar: 5 #used for the frosting
-  solids:
-    FoodCakePlain: 1
-    FoodSpacemansTrumpet: 3
-
-- type: microwaveMealRecipe
   id: RecipeOrangeCake
   name: orange cake recipe
   result: FoodCakeOrange
@@ -1726,6 +1699,18 @@
     FoodCakePlain: 1
     FoodSnackRaisins: 1
     OrganAnimalHeart: 1
+
+- type: microwaveMealRecipe
+  id: RecipeBerryDelight
+  name: berry delight recipe
+  result: FoodCakeBerryDelight
+  time: 5
+  group: Cake
+  solids:
+    FoodCakePlain: 1
+    FoodBerries: 5
+  reagents:
+    Milk: 10
 
 - type: microwaveMealRecipe
   id: RecipeBreadDog
@@ -2422,3 +2407,55 @@
     FoodBreadCottonSlice: 2
     FoodCheeseSlice: 1
     FoodButterSlice: 1
+
+- type: microwaveMealRecipe
+  id: RecipeBreakfastAmerican
+  name: full american breakfast recipe
+  result: FoodBreakfastAmerican
+  time: 30
+  group: Savory
+  reagents:
+    Egg: 12
+  solids:
+    FoodMeatBacon: 2
+    FoodPotato: 1
+    FoodBakedPancake: 2
+
+- type: microwaveMealRecipe
+  id: RecipeBreakfastEnglish
+  name: full english breakfast recipe
+  result: FoodBreakfastEnglish
+  time: 30
+  group: Savory
+  reagents:
+    Egg: 12
+  solids:
+    FoodMeatBacon: 1
+    FoodMeat: 1
+    FoodTomato: 1
+    FoodSoybeans: 2 # replace these with green beans once those become a thing
+
+- type: microwaveMealRecipe
+  id: RecipeMoproach # TODO: Move this to be an actual surgery instead, once surgery gets implemented.
+  name: moproach recipe
+  result: MobMoproach
+  time: 30
+  group: Other
+  reagents:
+    SpaceCleaner: 15
+  solids:
+    MobMothroach: 1
+    OrganAnimalHeart: 1
+    MoproachShoes: 1
+
+- type: microwaveMealRecipe
+  id: RecipeCottonCake
+  name: cotton cake recipe
+  result: FoodCakeCotton
+  time: 5
+  group: Cake
+  reagents:
+    Fiber: 10
+  solids:
+    FoodCakePlain: 1
+    

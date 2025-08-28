@@ -1,9 +1,11 @@
+// Modified by Ronstation contributor(s), therefore this file is licensed as MIT sublicensed with AGPL-v3.0.
 using Content.Server.Bible.Components;
 using Content.Server.Ghost.Roles.Events;
 using Content.Server.Popups;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Actions;
 using Content.Shared.Bible;
+using Content.Shared.Bible.Components; // Ronstation - moved BibleUserComponent to Shared
 using Content.Shared.Damage;
 using Content.Shared.Ghost.Roles.Components;
 using Content.Shared.IdentityManagement;
@@ -79,7 +81,7 @@ namespace Content.Server.Bible
                 // Clean up the old body
                 if (summonableComp.Summon != null)
                 {
-                    EntityManager.DeleteEntity(summonableComp.Summon.Value);
+                    Del(summonableComp.Summon.Value);
                     summonableComp.Summon = null;
                 }
                 summonableComp.AlreadySummoned = false;
@@ -235,7 +237,7 @@ namespace Content.Server.Bible
                 return;
 
             // Make this familiar the component's summon
-            var familiar = EntityManager.SpawnEntity(component.SpecialItemPrototype, position.Coordinates);
+            var familiar = Spawn(component.SpecialItemPrototype, position.Coordinates);
             component.Summon = familiar;
 
             // If this is going to use a ghost role mob spawner, attach it to the bible.

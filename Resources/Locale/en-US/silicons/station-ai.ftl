@@ -1,8 +1,10 @@
+# Modified by Ronstation contributor(s), therefore this file is licensed as MIT sublicensed with AGPL-v3.0.
 # General
-ai-wire-snipped = Wire has been cut at {$coords}.
+ai-wire-snipped = One of your systems' wires has been cut at {$source}.
 wire-name-ai-vision-light = AIV
 wire-name-ai-act-light = AIA
 station-ai-takeover = AI takeover
+station-ai-eye-name = AI eye - {$name}
 
 # Radial actions
 ai-open = Open actions
@@ -41,6 +43,18 @@ station-ai-icon-smiley = All smiles
 
 station-ai-hologram-female = Female appearance
 station-ai-hologram-male = Male appearance
+# start of modifications
+station-ai-hologram-lizard = Lizard appearance
+station-ai-hologram-moth = Moth appearance
+station-ai-hologram-arachnid = Arachnid appearance
+station-ai-hologram-vox = Vox appearance
+station-ai-hologram-nymph = Diona Nymph Appearance
+# end of modifications
 station-ai-hologram-face = Disembodied head
 station-ai-hologram-cat = Cat form
 station-ai-hologram-dog = Corgi form
+# start of modifications
+station-ai-hologram-weh = Weh! Hew!
+station-ai-hologram-clown = Clown Form. Honk!
+station-ai-hologram-mothroach = Mothroach Form
+# end of modifications
